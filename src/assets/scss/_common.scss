@@ -1,0 +1,9 @@
+// Common styles and mixins
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Add other common styles here

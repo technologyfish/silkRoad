@@ -1,0 +1,31 @@
+@use "sass:math";
+
+$designVwSize: 7.5;
+@function pxToVw($pxz) {
+  @if $pxz == -2 {
+    @return -1px;
+  } @else if $pxz == -1 {
+    @return -1px;
+  } @else if $pxz == 1 {
+    @return 1px;
+  } @else if $pxz == 2 {
+    @return 1px;
+  } @else {
+    @return math.div($pxz, $designVwSize) * 1vw;
+  }
+}
+
+$designVwSizePc: 19.2;
+@function pxToVwPc($pxz) {
+  @if $pxz == -2 {
+    @return -1px;
+  } @else if $pxz == -1 {
+    @return -1px;
+  } @else if $pxz == 1 {
+    @return 1px;
+  } @else if $pxz == 2 {
+    @return 1px;
+  } @else {
+    @return math.div($pxz, $designVwSizePc) * 1vw;
+  }
+}

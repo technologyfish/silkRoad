@@ -1,0 +1,13 @@
+@charset "UTF-8";
+$sname: (padding:p, margin:m);
+$cname: (t:top, b:bottom, l:left, r:right);
+$num: 20;
+@each $n, $m in $sname {
+  @each $key, $value in $cname {
+    @for $i from 0 through $num {
+      .u-#{$m}#{$key}#{$i} {
+        #{$n}-#{$value}: $i + px !important;
+      }
+    }
+  }
+}

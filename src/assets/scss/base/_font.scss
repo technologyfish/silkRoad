@@ -1,0 +1,21 @@
+// Font definitions for the project
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/src/assets/font/CormorantGaramond-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Utility font classes
+.font-primary {
+  font-family: 'CormorantGaramond', Georgia;
+}
+
+.font-sans {
+  font-family: $font-sans;
+}
+
+.font-serif {
+  font-family: $font-serif;
+}
