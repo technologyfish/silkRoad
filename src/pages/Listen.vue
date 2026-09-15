@@ -17,18 +17,31 @@
         </div>
 
         <div class="people-column">
-          <div class="person">
+          <div class="person-row">
             <div class="avatar" />
-            <div class="name">Tokom</div>
-          </div>
-          <div class="person">
-            <div class="avatar" />
-            <div class="name">Suyundouke</div>
+            <div class="name-group">
+              <div class="name">Tokom &amp; Suyundouke</div>
+            </div>
           </div>
         </div>
 
-        <div class="down-indicator">
+        <div v-show="!expandedSections[0]" class="down-indicator" @click="toggleExpand(0)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
+        </div>
+      </div>
+      <!-- Expandable content for section 1 -->
+      <div v-if="expandedSections[0]" class="expand-content">
+        <h3 class="expand-title">Description</h3>
+        <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
+        <h3 class="expand-title">Edric Commentary</h3>
+        <ul class="expand-list">
+          <li>Why I chose this clip</li>
+          <li>What I noticed</li>
+          <li>What changed my understanding</li>
+          <li>What question it raised</li>
+        </ul>
+        <div class="collapse-indicator" @click="toggleExpand(0)">
+          <img src="../assets/images/home/icon-arrow.png" alt="up" class="arrow-up" />
         </div>
       </div>
     </main>
@@ -50,18 +63,30 @@
         </div>
 
         <div class="people-column">
-          <div class="person">
+          <div class="person-row">
             <div class="avatar avatar-2" />
-            <div class="name">买迪娜</div>
-          </div>
-          <div class="person">
-            <div class="avatar avatar-2" />
-            <div class="name">吐尔洪教授</div>
+            <div class="name-group">
+              <div class="name">买迪娜 &amp; 吐尔洪教授</div>
+            </div>
           </div>
         </div>
 
-        <div class="down-indicator">
+        <div v-show="!expandedSections[1]" class="down-indicator" @click="toggleExpand(1)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
+        </div>
+      </div>
+      <div v-if="expandedSections[1]" class="expand-content">
+        <h3 class="expand-title">Description</h3>
+        <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
+        <h3 class="expand-title">Edric Commentary</h3>
+        <ul class="expand-list">
+          <li>Why I chose this clip</li>
+          <li>What I noticed</li>
+          <li>What changed my understanding</li>
+          <li>What question it raised</li>
+        </ul>
+        <div class="collapse-indicator" @click="toggleExpand(1)">
+          <img src="../assets/images/home/icon-arrow.png" alt="up" class="arrow-up" />
         </div>
       </div>
     </main>
@@ -80,14 +105,30 @@
         </div>
 
         <div class="people-column">
-          <div class="person">
+          <div class="person-row">
             <div class="avatar" />
-            <div class="name">尼玛</div>
+            <div class="name-group">
+              <div class="name">尼玛</div>
+            </div>
           </div>
         </div>
 
-        <div class="down-indicator">
+        <div v-show="!expandedSections[2]" class="down-indicator" @click="toggleExpand(2)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
+        </div>
+      </div>
+      <div v-if="expandedSections[2]" class="expand-content">
+        <h3 class="expand-title">Description</h3>
+        <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
+        <h3 class="expand-title">Edric Commentary</h3>
+        <ul class="expand-list">
+          <li>Why I chose this clip</li>
+          <li>What I noticed</li>
+          <li>What changed my understanding</li>
+          <li>What question it raised</li>
+        </ul>
+        <div class="collapse-indicator" @click="toggleExpand(2)">
+          <img src="../assets/images/home/icon-arrow.png" alt="up" class="arrow-up" />
         </div>
       </div>
     </main>
@@ -107,14 +148,30 @@
         </div>
 
         <div class="people-column">
-          <div class="person">
+          <div class="person-row">
             <div class="avatar avatar-2" />
-            <div class="name">乌图那生</div>
+            <div class="name-group">
+              <div class="name">乌图那生</div>
+            </div>
           </div>
         </div>
 
-        <div class="down-indicator">
+        <div v-show="!expandedSections[3]" class="down-indicator" @click="toggleExpand(3)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
+        </div>
+      </div>
+      <div v-if="expandedSections[3]" class="expand-content">
+        <h3 class="expand-title">Description</h3>
+        <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
+        <h3 class="expand-title">Edric Commentary</h3>
+        <ul class="expand-list">
+          <li>Why I chose this clip</li>
+          <li>What I noticed</li>
+          <li>What changed my understanding</li>
+          <li>What question it raised</li>
+        </ul>
+        <div class="collapse-indicator" @click="toggleExpand(3)">
+          <img src="../assets/images/home/icon-arrow.png" alt="up" class="arrow-up" />
         </div>
       </div>
     </main>
@@ -134,14 +191,30 @@
         </div>
 
         <div class="people-column">
-          <div class="person">
+          <div class="person-row">
             <div class="avatar avatar-3" />
-            <div class="name">MORE</div>
+            <div class="name-group">
+              <div class="name">MORE</div>
+            </div>
           </div>
         </div>
 
-        <div class="down-indicator">
+        <div v-show="!expandedSections[4]" class="down-indicator" @click="toggleExpand(4)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
+        </div>
+      </div>
+      <div v-if="expandedSections[4]" class="expand-content">
+        <h3 class="expand-title">Description</h3>
+        <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
+        <h3 class="expand-title">Edric Commentary</h3>
+        <ul class="expand-list">
+          <li>Why I chose this clip</li>
+          <li>What I noticed</li>
+          <li>What changed my understanding</li>
+          <li>What question it raised</li>
+        </ul>
+        <div class="collapse-indicator" @click="toggleExpand(4)">
+          <img src="../assets/images/home/icon-arrow.png" alt="up" class="arrow-up" />
         </div>
       </div>
     </main>
@@ -150,8 +223,15 @@
 </template>
 
 <script setup>
+import { reactive } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
+
+const expandedSections = reactive([false, false, false, false, false])
+
+const toggleExpand = (index) => {
+  expandedSections[index] = !expandedSections[index]
+}
 </script>
 
 <style lang="scss" scoped>
@@ -231,25 +311,35 @@ import Footer from '../components/Footer.vue'
 }
 
 .people-column {
-  width: 240px;
+  width: 280px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
   margin-right: 80px;
 }
-.person {
+
+.person-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
+
 .avatar {
-  width: 96px;
-  height: 96px;
-  background-image: url('../assets/images/home/person_1.png');
+  width: 375px;
+  height: 420px;
+  background-color: #aec3bc;
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
-  margin: 0 auto 10px;
+  border-radius: 8px;
+  margin: 0 auto 16px;
 }
+
+.name-group {
+  text-align: center;
+}
+
 .name {
   font-family: $font-serif;
   font-size: 18px;
@@ -260,11 +350,72 @@ import Footer from '../components/Footer.vue'
   left: 50%;
   transform: translateX(-50%);
   bottom: 24px;
+  cursor: pointer;
 }
 .down-indicator img {
   width: 48px;
   height: 48px;
   opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+.down-indicator img.arrow-up {
+  transform: rotate(180deg);
+}
+
+/* Expand content area */
+.expand-content {
+  padding: 60px 0;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.expand-title {
+  font-family: $font-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #0e0a06;
+  margin: 0 0 20px;
+}
+
+.expand-desc {
+  font-size: 16px;
+  color: #444;
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.expand-list {
+  list-style: disc;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 40px;
+
+  li {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 8px;
+    list-style: disc inside;
+  }
+}
+
+.collapse-indicator {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  img {
+    width: 48px;
+    height: 48px;
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+  }
+  img.arrow-up {
+    transform: rotate(180deg);
+  }
 }
 
 @media (max-width: 1200px) {

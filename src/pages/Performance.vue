@@ -29,7 +29,9 @@
             </div>
           </div>
           <div class="see-more-absolute">
-            <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            <a href="#/performance-detail/manas" @click="scrollToTop">
+              <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            </a>
           </div>
         </div>
 
@@ -39,9 +41,9 @@
         <div class="performance-inner">
           <div class="perf-left">
             <h1 class="perf-title">
-<!--              <span class="title-en">MANAS</span> -->
-<!--              <span class="title-divider">|</span>-->
-<!--              <span class="title-zh">《玛纳斯》</span>-->
+              <span class="title-en">MUQAM</span>
+              <span class="title-divider">|</span>
+              <span class="title-zh">木卡姆</span>
             </h1>
 
             <div class="video-meta-row">
@@ -65,7 +67,9 @@
             </div>
           </div>
           <div class="see-more-absolute">
-            <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            <a href="#/performance-detail/muqam" @click="scrollToTop">
+              <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            </a>
           </div>
         </div>
 
@@ -97,7 +101,9 @@
             </div>
           </div>
           <div class="see-more-absolute">
-            <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            <a href="#/performance-detail/jangar" @click="scrollToTop">
+              <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            </a>
           </div>
         </div>
 
@@ -130,7 +136,9 @@
             </div>
           </div>
           <div class="see-more-absolute">
-            <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            <a href="#/performance-detail/mongolian" @click="scrollToTop">
+              <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            </a>
           </div>
         </div>
 
@@ -163,7 +171,9 @@
             </div>
           </div>
           <div class="see-more-absolute">
-            <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            <a href="#/performance-detail/aitys" @click="scrollToTop">
+              <img src="../assets/images/home/btn_1.png" alt="See more" class="see-more-btn" />
+            </a>
           </div>
         </div>
       </section>
@@ -181,6 +191,10 @@
 <script setup>
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 </script>
 
 <style lang="scss" scoped>
