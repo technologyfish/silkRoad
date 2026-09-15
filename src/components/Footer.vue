@@ -10,7 +10,7 @@
         <h2>Quick Links</h2>
         <ul>
           <li><a href="#/">HOME | 首页</a></li>
-          <li><a href="#/performance">UNDERSTAND | 理解</a></li>
+          <li><a href="#/performance">PERFORMANCE | 理解</a></li>
           <li><a href="#/listen">LISTEN | 倾听</a></li>
           <li><a href="#/voice">VOICE OF OUR OWN</a></li>
           <li><a href="#/contact">CONTACT | 联系</a></li>

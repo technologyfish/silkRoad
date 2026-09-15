@@ -2,6 +2,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import Home from './pages/Home.vue'
 import Performance from './pages/Performance.vue'
+import PerformanceDetail from './pages/PerformanceDetail.vue'
 import Listen from './pages/Listen.vue'
 import Voice from './pages/Voice.vue'
 import Contact from './pages/Contact.vue'
@@ -10,6 +11,7 @@ const currentRoute = ref(window.location.hash || '#/')
 
 function resolveView(hash) {
   if (hash === '#/performance') return Performance
+  if (hash.startsWith('#/performance-detail')) return PerformanceDetail
   if (hash === '#/listen') return Listen
   if (hash === '#/voice') return Voice
   if (hash === '#/contact') return Contact

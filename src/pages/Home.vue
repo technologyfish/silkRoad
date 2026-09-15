@@ -86,8 +86,8 @@
         <h2 class="mission-title">Mission</h2>
         <div class="mission-text">
           <p>Our mission is to create a clear way for young audiences to experience, <br></br>understand, and take part in these traditions.</p>
-          <p>Through <strong class="caps">PERFORMANCE</strong>, we begin with the traditions as they are experienced in sound, music, instruments, movement, and live performance. Through <strong class="caps">LISTEN</strong>, we document the perspectives of the performers, inheritors, teachers, and researchers who continue to carry and interpret these traditions today.</p>
-          <p>Finally, through <strong class="highlight">VOICE OF OUR OWN</strong>, we focus on Manas and provide scripts,<br> educational resources, and performance tools that allow young people<br> and educators to engage with the epic in a thoughtful and participatory way.</p>
+          <p>Through <a href="#/performance" class="caps-link" @click="scrollToTop">PERFORMANCE</a>, we begin with the traditions as they are experienced in sound, music, instruments, movement, and live performance. Through <a href="#/listen" class="caps-link" @click="scrollToTop">LISTEN</a>, we document the perspectives of the performers, inheritors, teachers, and researchers who continue to carry and interpret these traditions today.</p>
+          <p>Finally, through <a href="#/voice" class="highlight-link" @click="scrollToTop">VOICE OF OUR OWN</a>, we focus on Manas and provide scripts,<br> educational resources, and performance tools that allow young people<br> and educators to engage with the epic in a thoughtful and participatory way.</p>
           <p class="mission-conclude">Together, these three parts move from experiencing a tradition,
             to understanding the people<br> behind it,
             to creating a meaningful opportunity for a new generation to participate.</p>
@@ -132,6 +132,10 @@
 <script setup>
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 </script>
 
 <style lang="scss" scoped>
@@ -478,6 +482,17 @@ import Footer from '../components/Footer.vue';
     letter-spacing: 1px;
   }
 
+  .caps-link {
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #0e0a06;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .highlight {
     color: #fff;
     display: inline-block;
@@ -485,6 +500,20 @@ import Footer from '../components/Footer.vue';
     padding: 4px 8px;
     border-radius: 3px;
     font-weight: 700;
+  }
+
+  .highlight-link {
+    color: #fff;
+    display: inline-block;
+    background: #854529;
+    padding: 4px 12px;
+    border-radius: 3px;
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

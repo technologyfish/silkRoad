@@ -42,6 +42,10 @@ onBeforeUnmount(() => {
 function isActive(path) {
   const normalized = currentHash.value.replace(/^#/, '')
   if (path === '/') return normalized === '/' || normalized === ''
+  // performance-detail pages should highlight PERFORMANCE nav
+  if (path === '/performance' && normalized.startsWith('/performance-detail')) {
+    return true
+  }
   return normalized === path
 }
 </script>
