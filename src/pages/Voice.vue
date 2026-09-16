@@ -183,12 +183,15 @@
       <section class="community-section">
         <div class="container">
           <h2 class="community-title">Future Community Section</h2>
-          <div class="community-list">
-            <div class="community-box box-green">Student Performances</div>
-            <div class="community-box box-white">Student Reflections</div>
-            <div class="community-box box-brown">Teacher Feedback</div>
-            <div class="community-box box-gray">Participating Schools</div>
-            <div class="community-box box-green">Community/World Map</div>
+<!--          <div class="community-list">-->
+<!--            <div class="community-box box-green">Student Performances</div>-->
+<!--            <div class="community-box box-white">Student Reflections</div>-->
+<!--            <div class="community-box box-brown">Teacher Feedback</div>-->
+<!--            <div class="community-box box-gray">Participating Schools</div>-->
+<!--            <div class="community-box box-green">Community/World Map</div>-->
+<!--          </div>-->
+          <div class="map">
+            <img src="../assets/images/home/map.png" alt="icon" />
           </div>
         </div>
       </section>
@@ -480,6 +483,14 @@ import Footer from '../components/Footer.vue'
   font-family: $font-serif;
   font-size: 28px;
   margin-bottom: 30px;
+}
+.map{
+  margin-top: 80px;
+  height: 672px;
+  image{
+    width: 100%;
+    height: 100%;
+  }
 }
 .community-list {
   display: flex;
