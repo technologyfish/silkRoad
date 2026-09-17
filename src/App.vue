@@ -46,7 +46,7 @@ onBeforeUnmount(() => {
 
 body {
   margin: 0;
-  font-family: 'serif', serif;
+  font-family: Georgia, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $color-background-light;
