@@ -31,6 +31,13 @@
       </div>
       <!-- Expandable content for section 1 -->
       <div v-if="expandedSections[0]" class="expand-content">
+        <div class="howto-video">
+          <div class="video-placeholder">
+            <div class="play-circle">
+              <img src="../assets/images/home/icon-play.png" alt="play" />
+            </div>
+          </div>
+        </div>
         <h3 class="expand-title">Description</h3>
         <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
         <h3 class="expand-title">Edric Commentary</h3>
@@ -76,6 +83,13 @@
         </div>
       </div>
       <div v-if="expandedSections[1]" class="expand-content">
+        <div class="howto-video">
+          <div class="video-placeholder">
+            <div class="play-circle">
+              <img src="../assets/images/home/icon-play.png" alt="play" />
+            </div>
+          </div>
+        </div>
         <h3 class="expand-title">Description</h3>
         <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
         <h3 class="expand-title">Edric Commentary</h3>
@@ -118,6 +132,13 @@
         </div>
       </div>
       <div v-if="expandedSections[2]" class="expand-content">
+        <div class="howto-video">
+          <div class="video-placeholder">
+            <div class="play-circle">
+              <img src="../assets/images/home/icon-play.png" alt="play" />
+            </div>
+          </div>
+        </div>
         <h3 class="expand-title">Description</h3>
         <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
         <h3 class="expand-title">Edric Commentary</h3>
@@ -161,6 +182,13 @@
         </div>
       </div>
       <div v-if="expandedSections[3]" class="expand-content">
+        <div class="howto-video">
+          <div class="video-placeholder">
+            <div class="play-circle">
+              <img src="../assets/images/home/icon-play.png" alt="play" />
+            </div>
+          </div>
+        </div>
         <h3 class="expand-title">Description</h3>
         <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
         <h3 class="expand-title">Edric Commentary</h3>
@@ -204,6 +232,13 @@
         </div>
       </div>
       <div v-if="expandedSections[4]" class="expand-content">
+        <div class="howto-video">
+          <div class="video-placeholder">
+            <div class="play-circle">
+              <img src="../assets/images/home/icon-play.png" alt="play" />
+            </div>
+          </div>
+        </div>
         <h3 class="expand-title">Description</h3>
         <p class="expand-desc">Copywriting, copywriting copywriting, copywriting<br>Copywriting, copywriting copywriting, copywriting</p>
         <h3 class="expand-title">Edric Commentary</h3>
@@ -366,7 +401,7 @@ const toggleExpand = (index) => {
 .expand-content {
   padding: 60px 0;
   text-align: center;
-  max-width: 800px;
+  //max-width: 800px;
   margin: 0 auto;
 }
 
@@ -417,7 +452,30 @@ const toggleExpand = (index) => {
     transform: rotate(180deg);
   }
 }
-
+.howto-video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+.video-placeholder {
+  width: 1055px;
+  height: 480px;
+  background: #aec3bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  position: relative;
+}
+.play-circle {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+}
+.play-circle img {
+  width: 100%;
+  height:  100%;
+}
 @media (max-width: 1200px) {
   .listen-inner { width: 100%; padding: 0 20px; box-sizing: border-box; }
   .text-left { display: none; }

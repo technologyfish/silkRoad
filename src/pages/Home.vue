@@ -7,7 +7,7 @@
         <div class="banner-content">
           <div class="banner-left">
             <h1>Exploring <br> the intangible <br> cultural <br>heritage of <br>the Silk Road</h1>
-            <div class="banner-button"></div>
+            <a href="#hero_section"><div class="banner-button"></div></a>
           </div>
 
           <div class="banner-right">
@@ -18,17 +18,23 @@
 
       <!-- Intro Section -->
       <section class="intro-section">
-        <div class="title">Hero Section</div>
+        <div class="title" id="hero_section">Hero Section</div>
         <div class="desc">Stories live because people keep telling them.</div>
         <div class="intro-cards">
           <div class="card">
+            <a href="#/performance" target="_blank">
             <img src="../assets/images/home/img_4.png" alt="Understand" />
+            </a>
           </div>
           <div class="card">
+            <a href="#/listen"  target="_blank">
             <img src="../assets/images/home/img_3.png" alt="Preserve" />
+            </a>
           </div>
           <div class="card">
+            <a href="#/voice"  target="_blank">
             <img src="../assets/images/home/img_2.png" alt="VOUCHER BERLIN" />
+            </a>
           </div>
         </div>
       </section>
@@ -86,8 +92,8 @@
         <h2 class="mission-title">Mission</h2>
         <div class="mission-text">
           <p>Our mission is to create a clear way for young audiences to experience, <br></br>understand, and take part in these traditions.</p>
-          <p>Through <a href="#/performance" class="caps-link" @click="scrollToTop">PERFORMANCE</a>, we begin with the traditions as they are experienced in sound, music, instruments, movement, and live performance. Through <a href="#/listen" class="caps-link" @click="scrollToTop">LISTEN</a>, we document the perspectives of the performers, inheritors, teachers, and researchers who continue to carry and interpret these traditions today.</p>
-          <p>Finally, through <a href="#/voice" class="highlight-link" @click="scrollToTop">VOICE OF OUR OWN</a>, we focus on Manas and provide scripts,<br> educational resources, and performance tools that allow young people<br> and educators to engage with the epic in a thoughtful and participatory way.</p>
+          <p>Through <a href="#/performance"  class="caps-link" @click="scrollToTop">PERFORMANCE</a>, we begin with the traditions as they are experienced in sound, music, instruments, movement, and live performance. Through <a href="#/listen" class="caps-link" @click="scrollToTop">LISTEN</a>, we document the perspectives of the performers, inheritors, teachers, and researchers who continue to carry and interpret these traditions today.</p>
+          <p>Finally, through <a href="#/voice"  class="highlight-link" @click="scrollToTop">VOICE OF OUR OWN</a>, we focus on Manas and provide scripts,<br> educational resources, and performance tools that allow young people<br> and educators to engage with the epic in a thoughtful and participatory way.</p>
           <p class="mission-conclude">Together, these three parts move from experiencing a tradition,
             to understanding the people<br> behind it,
             to creating a meaningful opportunity for a new generation to participate.</p>
@@ -113,17 +119,17 @@
       </section>
 
       <!-- Call to Action Section (bottom images) -->
-      <section class="call-to-action-section">
-        <div class="cta-item">
-          <img src="../assets/images/home/btn_2.png" alt="CTA 1" />
-        </div>
-        <div class="cta-item">
-          <img src="../assets/images/home/btn_3.png" alt="CTA 2" />
-        </div>
-        <div class="cta-item">
-          <img src="../assets/images/home/btn_4.png" alt="CTA 3" />
-        </div>
-      </section>
+<!--      <section class="call-to-action-section">-->
+<!--        <div class="cta-item">-->
+<!--          <img src="../assets/images/home/btn_2.png" alt="CTA 1" />-->
+<!--        </div>-->
+<!--        <div class="cta-item">-->
+<!--          <img src="../assets/images/home/btn_3.png" alt="CTA 2" />-->
+<!--        </div>-->
+<!--        <div class="cta-item">-->
+<!--          <img src="../assets/images/home/btn_4.png" alt="CTA 3" />-->
+<!--        </div>-->
+<!--      </section>-->
     </main>
     <Footer />
   </div>
@@ -574,6 +580,7 @@ const scrollToTop = () => {
    .map-image{
      position: relative;
      top: 120px;
+     margin-bottom: 300px;
    }
   .map-image img {
     max-width: 760px;

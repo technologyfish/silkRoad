@@ -180,7 +180,9 @@
       <!-- Callout module under fifth part: centered button on bg4 -->
       <section class="performance-hero alt callout">
         <div class="callout-inner">
+          <a href="#/listen" target="_blank">
           <img src="../assets/images/home/btn_5.png" alt="Callout" class="callout-btn" />
+          </a>
         </div>
       </section>
     </main>
