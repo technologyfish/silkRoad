@@ -2,7 +2,7 @@
   <div class="listen-page">
     <Header />
     <main class="listen-hero">
-      <div class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
+      <div v-show="!expandedSections[0]" class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
         <img class="text-left text_1" src="../assets/images/home/text_1.png" alt="text" />
         <div class="main-content-box">
           <h3 class="mc-title">Main content:</h3>
@@ -25,12 +25,13 @@
           </div>
         </div>
 
-        <div v-show="!expandedSections[0]" class="down-indicator" @click="toggleExpand(0)">
+        <div class="down-indicator" @click="toggleExpand(0)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
         </div>
       </div>
       <!-- Expandable content for section 1 -->
       <div v-if="expandedSections[0]" class="expand-content">
+        <img class="text-left text_1" src="../assets/images/home/text_1.png" alt="text" />
         <div class="howto-video">
           <div class="video-placeholder">
             <div class="play-circle">
@@ -54,7 +55,7 @@
     </main>
     <!-- Second section: same layout, alt background and content -->
     <main class="listen-hero alt">
-      <div class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
+      <div v-show="!expandedSections[1]" class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
         <img class="text-left text_2" src="../assets/images/home/text_2.png" alt="text2" />
         <div class="main-content-box">
           <h3 class="mc-title">Performance / Audience Perspective</h3>
@@ -78,11 +79,12 @@
           </div>
         </div>
 
-        <div v-show="!expandedSections[1]" class="down-indicator" @click="toggleExpand(1)">
+        <div class="down-indicator" @click="toggleExpand(1)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
         </div>
       </div>
       <div v-if="expandedSections[1]" class="expand-content">
+        <img class="text-left text_2" src="../assets/images/home/text_2.png" alt="text2" />
         <div class="howto-video">
           <div class="video-placeholder">
             <div class="play-circle">
@@ -106,7 +108,7 @@
     </main>
     <!-- Third section: same layout as second, white background, different content -->
     <main class="listen-hero">
-      <div class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
+      <div v-show="!expandedSections[2]" class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
         <img class="text-left text_3" src="../assets/images/home/text_3.png" alt="text3" />
         <div class="main-content-box">
           <h3 class="mc-title">Main content:</h3>
@@ -127,11 +129,12 @@
           </div>
         </div>
 
-        <div v-show="!expandedSections[2]" class="down-indicator" @click="toggleExpand(2)">
+        <div class="down-indicator" @click="toggleExpand(2)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
         </div>
       </div>
       <div v-if="expandedSections[2]" class="expand-content">
+        <img class="text-left text_3" src="../assets/images/home/text_3.png" alt="text3" />
         <div class="howto-video">
           <div class="video-placeholder">
             <div class="play-circle">
@@ -155,7 +158,7 @@
     </main>
     <!-- Fourth section: alt background, different left image and person -->
     <main class="listen-hero alt">
-      <div class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
+      <div v-show="!expandedSections[3]" class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
         <img class="text-left text_4" src="../assets/images/home/text_4.png" alt="text4" />
         <div class="main-content-box">
           <h3 class="mc-title">Main content:</h3>
@@ -177,11 +180,12 @@
           </div>
         </div>
 
-        <div v-show="!expandedSections[3]" class="down-indicator" @click="toggleExpand(3)">
+        <div class="down-indicator" @click="toggleExpand(3)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
         </div>
       </div>
       <div v-if="expandedSections[3]" class="expand-content">
+        <img class="text-left text_4" src="../assets/images/home/text_4.png" alt="text4" />
         <div class="howto-video">
           <div class="video-placeholder">
             <div class="play-circle">
@@ -205,7 +209,7 @@
     </main>
     <!-- Fifth section: same layout as fourth, alt background -->
     <main class="listen-hero">
-      <div class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
+      <div v-show="!expandedSections[4]" class="listen-inner" style="width:1366px; height:751px; margin:0 auto; position:relative;">
         <img class="text-left text_5" src="../assets/images/home/text_5.png" alt="text5" />
         <div class="main-content-box">
           <h3 class="mc-title">Main content:</h3>
@@ -227,11 +231,12 @@
           </div>
         </div>
 
-        <div v-show="!expandedSections[4]" class="down-indicator" @click="toggleExpand(4)">
+        <div class="down-indicator" @click="toggleExpand(4)">
           <img src="../assets/images/home/icon-arrow.png" alt="down" />
         </div>
       </div>
       <div v-if="expandedSections[4]" class="expand-content">
+        <img class="text-left text_5" src="../assets/images/home/text_5.png" alt="text5" />
         <div class="howto-video">
           <div class="video-placeholder">
             <div class="play-circle">
@@ -399,6 +404,8 @@ const toggleExpand = (index) => {
 
 /* Expand content area */
 .expand-content {
+  position: relative;
+  max-width: 1366px;
   padding: 60px 0;
   text-align: center;
   //max-width: 800px;
@@ -458,7 +465,7 @@ const toggleExpand = (index) => {
   margin-bottom: 36px;
 }
 .video-placeholder {
-  width: 1055px;
+  width: 960px;
   height: 480px;
   background: #aec3bc;
   display: flex;
