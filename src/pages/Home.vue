@@ -148,7 +148,7 @@ const scrollToTop = () => {
 @import '../assets/scss/_var.scss';
 
 .home-page {
-  font-family: 'SourceHanSansCN-Regular';
+  font-family: Georgia, 'Times New Roman', serif;
   color: $color-text-dark;
   line-height: 1.6;
   /* page background image */
