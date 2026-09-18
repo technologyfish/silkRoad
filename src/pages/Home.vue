@@ -22,17 +22,17 @@
         <div class="desc">Stories live because people keep telling them.</div>
         <div class="intro-cards">
           <div class="card">
-            <a href="#/performance" target="_blank">
+            <a href="#/performance" target="_self">
             <img src="../assets/images/home/img_4.png" alt="Understand" />
             </a>
           </div>
           <div class="card">
-            <a href="#/listen"  target="_blank">
+            <a href="#/listen"  target="_self">
             <img src="../assets/images/home/img_3.png" alt="Preserve" />
             </a>
           </div>
           <div class="card">
-            <a href="#/voice"  target="_blank">
+            <a href="#/voice"  target="_self">
             <img src="../assets/images/home/img_2.png" alt="VOUCHER BERLIN" />
             </a>
           </div>
@@ -396,9 +396,9 @@ const scrollToTop = () => {
 
   h2.title {
     font-family: $font-serif;
-    font-size: 38px;
+    font-size: 48px;
     color: #222;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 40px; /* Adjusted margin-bottom for title as per design */
   }
 
