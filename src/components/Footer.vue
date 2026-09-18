@@ -9,11 +9,11 @@
       <div class="footer-section links">
         <h2>Quick Links</h2>
         <ul>
-          <li><a href="#/" target="_blank">HOME | 首页</a></li>
-          <li><a href="#/performance" target="_blank">PERFORMANCE | 表演</a></li>
-          <li><a href="#/listen" target="_blank">LISTEN | 倾听</a></li>
-          <li><a href="#/voice" target="_blank">VOICE OF OUR OWN</a></li>
-          <li><a href="#/contact" target="_blank">CONTACT | 联系</a></li>
+          <li><a href="#/" target="_self">HOME | 首页</a></li>
+          <li><a href="#/performance" target="_self">PERFORMANCE | 表演</a></li>
+          <li><a href="#/listen" target="_self">LISTEN | 倾听</a></li>
+          <li><a href="#/voice" target="_self">VOICE OF OUR OWN</a></li>
+          <li><a href="#/contact" target="_self">CONTACT | 联系</a></li>
         </ul>
       </div>
 
