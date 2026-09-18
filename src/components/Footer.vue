@@ -9,11 +9,11 @@
       <div class="footer-section links">
         <h2>Quick Links</h2>
         <ul>
-          <li><a href="#/" target="_self">HOME | 首页</a></li>
-          <li><a href="#/performance" target="_self">PERFORMANCE | 表演</a></li>
-          <li><a href="#/listen" target="_self">LISTEN | 倾听</a></li>
-          <li><a href="#/voice" target="_self">VOICE OF OUR OWN</a></li>
-          <li><a href="#/contact" target="_self">CONTACT | 联系</a></li>
+          <li><a href="#/" target="_self" @click="scrollToTop">HOME | 首页</a></li>
+          <li><a href="#/performance" target="_self" @click="scrollToTop">PERFORMANCE | 表演</a></li>
+          <li><a href="#/listen" target="_self" @click="scrollToTop">LISTEN | 倾听</a></li>
+          <li><a href="#/voice" target="_self" @click="scrollToTop">VOICE OF OUR OWN</a></li>
+          <li><a href="#/contact" target="_self" @click="scrollToTop">CONTACT | 联系</a></li>
         </ul>
       </div>
 
@@ -32,6 +32,9 @@
 </template>
 
 <script setup>
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 </script>
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';

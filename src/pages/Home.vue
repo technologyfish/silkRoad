@@ -22,17 +22,17 @@
         <div class="desc">Stories live because people keep telling them.</div>
         <div class="intro-cards">
           <div class="card">
-            <a href="#/performance" target="_self">
+            <a href="#/performance" target="_self" @click="scrollToTop">
             <img src="../assets/images/home/img_4.png" alt="Understand" />
             </a>
           </div>
           <div class="card">
-            <a href="#/listen"  target="_self">
+            <a href="#/listen"  target="_self" @click="scrollToTop">
             <img src="../assets/images/home/img_3.png" alt="Preserve" />
             </a>
           </div>
           <div class="card">
-            <a href="#/voice"  target="_self">
+            <a href="#/voice"  target="_self" @click="scrollToTop">
             <img src="../assets/images/home/img_2.png" alt="VOUCHER BERLIN" />
             </a>
           </div>
