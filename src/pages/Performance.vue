@@ -9,13 +9,14 @@
 
             <div class="video-meta-row">
               <div class="video-wrap">
+                <a href="https://www.bilibili.com/video/BV1D8hq6KES4/?vd_source=f06ef48deb4934f1ce8996b872ca1f91" target="_blank" class="video-link">
                 <div class="video-thumb">
-                  <!-- thumbnail color block, could be replaced by an image -->
                   <img src="../assets/images/home/bg9.png" alt="Performance thumbnail" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
                 </div>
+                </a>
               </div>
 
               <div class="meta-column">
@@ -257,6 +258,10 @@ const scrollToTop = () => {
   margin-left: 8px;
 }
 
+.video-link {
+  display: block;
+  text-decoration: none;
+}
 .video-wrap {
   margin-top: 12px;
 }
