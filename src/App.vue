@@ -4,6 +4,7 @@ import Home from './pages/Home.vue'
 import Performance from './pages/Performance.vue'
 import PerformanceDetail from './pages/PerformanceDetail.vue'
 import Listen from './pages/Listen.vue'
+import ListenDetail from './pages/ListenDetail.vue'
 import Voice from './pages/Voice.vue'
 import Contact from './pages/Contact.vue'
 
@@ -13,6 +14,7 @@ function resolveView(hash) {
   if (hash === '#/performance') return Performance
   if (hash.startsWith('#/performance-detail')) return PerformanceDetail
   if (hash === '#/listen') return Listen
+  if (hash.startsWith('#/listen-detail')) return ListenDetail
   if (hash === '#/voice') return Voice
   if (hash === '#/contact') return Contact
   return Home

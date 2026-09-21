@@ -46,6 +46,10 @@ function isActive(path) {
   if (path === '/performance' && normalized.startsWith('/performance-detail')) {
     return true
   }
+  // listen-detail pages should highlight LISTEN nav
+  if (path === '/listen' && normalized.startsWith('/listen-detail')) {
+    return true
+  }
   return normalized === path
 }
 </script>
