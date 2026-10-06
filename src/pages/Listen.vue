@@ -19,7 +19,7 @@
           <div class="person-row">
             <div class="avatar" />
             <div class="name-group">
-              <div class="name">Tokom &amp; Suyundouke</div>
+              <div class="name">Toktosun &amp; Suyundouke</div>
             </div>
           </div>
         </div>
@@ -42,6 +42,7 @@
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/manas-suyundouke1.png" alt="Suyundouke 1" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -61,6 +62,7 @@
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/manas-suyundouke2.png" alt="Suyundouke 2" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -72,61 +74,64 @@
           <p class="expand-desc">I used to think that writing down an oral epic was one of the clearest ways to preserve it. Suyundouke made that idea more complicated for me. A written text can preserve the words, but it cannot fully preserve the experience of hearing them performed. Voice, emotion, rhythm, and movement are not simply additions to the story. They are part of what makes the tradition alive.</p>
         </div>
 
-        <!-- Part 3: Tokom - Bringing Manas Into the Digital Age -->
+        <!-- Part 3: Toktosun - Bringing Manas Into the Digital Age -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">Tokom:</span>
+            <span class="expand-name">Toktosun:</span>
             <span class="expand-subtitle">Bringing Manas Into the Digital Age</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/manas-toktosun1.png" alt="Toktosun 1" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
           </div>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
-          <p class="expand-desc">Tokom describes how his relationship with Manas developed from memorization in childhood to deeper study, writing, and eventually digital media. Since 2022, he has used platforms such as Douyin, WeChat Channels, and Kuaishou to share performances, stories, and explanations of the epic. Because Manas is often too long for short-form platforms, he divides longer performances into smaller sections. For him, digital transmission means adjusting the form of the tradition so that it can fit the habits and attention of today's audiences.</p>
+          <p class="expand-desc">Toktosun describes how his relationship with Manas developed from memorization in childhood to deeper study, writing, and eventually digital media. Since 2022, he has used platforms such as Douyin, WeChat Channels, and Kuaishou to share performances, stories, and explanations of the epic. Because Manas is often too long for short-form platforms, he divides longer performances into smaller sections. For him, digital transmission means adjusting the form of the tradition so that it can fit the habits and attention of today's audiences.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
-          <p class="expand-desc">I used to think that bringing a tradition online simply meant giving more people access to it. Tokom made me notice that the platform itself can also change how a tradition is presented. A story that once unfolded through a long live performance may now be divided into several short videos. The content can remain connected to the same tradition, while the form changes for a different audience. It made me think about adaptation not only as a way to reach more people, but as part of how a tradition continues in a new media environment.</p>
+          <p class="expand-desc">I used to think that bringing a tradition online simply meant giving more people access to it. Toktosun made me notice that the platform itself can also change how a tradition is presented. A story that once unfolded through a long live performance may now be divided into several short videos. The content can remain connected to the same tradition, while the form changes for a different audience. It made me think about adaptation not only as a way to reach more people, but as part of how a tradition continues in a new media environment.</p>
         </div>
 
-        <!-- Part 4: Tokom - Memorizing Is Not the Same as Understanding -->
+        <!-- Part 4: Toktosun - Memorizing Is Not the Same as Understanding -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">Tokom:</span>
+            <span class="expand-name">Toktosun:</span>
             <span class="expand-subtitle">Memorizing Is Not the Same as Understanding</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/manas-toktosun2.png" alt="Toktosun 2" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
           </div>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
-          <p class="expand-desc">Tokom explains that passing on Manas requires much more than memorization. After learning the text, he believes a Manaschi must understand it, study it, and reorganize it before sharing it with others. He has read Manas six or seven times since childhood and still feels there are parts he does not fully understand. For him, the epic is almost like an entire field of study, containing history, customs, culture, and knowledge from different communities.</p>
+          <p class="expand-desc">Toktosun explains that passing on Manas requires much more than memorization. After learning the text, he believes a Manaschi must understand it, study it, and reorganize it before sharing it with others. He has read Manas six or seven times since childhood and still feels there are parts he does not fully understand. For him, the epic is almost like an entire field of study, containing history, customs, culture, and knowledge from different communities.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
-          <p class="expand-desc">I often thought of memorization as one of the main signs that someone had truly learned a tradition. Tokom made me see that memory is only the beginning. Understanding, research, and interpretation are also part of transmission. What interested me most is that passing something on does not mean repeating it exactly. It means doing enough work with the material that you can make sense of it and help someone else understand it too.</p>
+          <p class="expand-desc">I often thought of memorization as one of the main signs that someone had truly learned a tradition. Toktosun made me see that memory is only the beginning. Understanding, research, and interpretation are also part of transmission. What interested me most is that passing something on does not mean repeating it exactly. It means doing enough work with the material that you can make sense of it and help someone else understand it too.</p>
         </div>
 
-        <!-- Part 5: Tokom - The Same Story Is Never Told Exactly the Same Way -->
+        <!-- Part 5: Toktosun - The Same Story Is Never Told Exactly the Same Way -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">Tokom:</span>
+            <span class="expand-name">Toktosun:</span>
             <span class="expand-subtitle">The Same Story Is Never Told Exactly the Same Way</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/manas-toktosun3.png" alt="Toktosun 3" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
           </div>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
-          <p class="expand-desc">Tokom describes Manas as a "living epic" because the same story is never performed in exactly the same way. A Manaschi may change the tone, rhythm, gestures, wording, or level of detail depending on the setting, the audience, and the performer's own state. Even so, the main structure and storyline remain consistent. This balance between continuity and improvisation is part of what allows Manas to stay alive as an oral tradition.</p>
+          <p class="expand-desc">Toktosun describes Manas as a "living epic" because the same story is never performed in exactly the same way. A Manaschi may change the tone, rhythm, gestures, wording, or level of detail depending on the setting, the audience, and the performer's own state. Even so, the main structure and storyline remain consistent. This balance between continuity and improvisation is part of what allows Manas to stay alive as an oral tradition.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
-          <p class="expand-desc">I often thought of preservation as keeping something unchanged, but Tokom's explanation suggests a different idea. Manas stays recognizable because its core story remains, even while each performance can change. That made me think more carefully about the line between retelling and changing a tradition. Maybe the question is not whether change happens, but which parts can change without losing what makes the tradition itself.</p>
+          <p class="expand-desc">I often thought of preservation as keeping something unchanged, but Toktosun's explanation suggests a different idea. Manas stays recognizable because its core story remains, even while each performance can change. That made me think more carefully about the line between retelling and changing a tradition. Maybe the question is not whether change happens, but which parts can change without losing what makes the tradition itself.</p>
         </div>
 
         <div class="collapse-indicator" @click="toggleExpand(0)">
@@ -159,7 +164,7 @@
           <div class="person-row">
             <div class="avatar avatar-2" />
             <div class="name-group">
-              <div class="name">买迪娜 &amp; 吐尔洪教授</div>
+              <div class="name">Maidina &amp; Turghun</div>
             </div>
           </div>
         </div>
@@ -173,14 +178,15 @@
       <div v-if="expandedSections[1]" class="expand-content">
         <img class="text-left text_2" src="../assets/images/home/text_2.png" alt="text2" />
 
-        <!-- Part 1: 吐尔洪教授 -->
+        <!-- Part 1: Turghun -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">吐尔洪教授:</span>
+            <span class="expand-name">Turghun:</span>
             <span class="expand-subtitle">How Do You Preserve a Tradition Without Freezing It?</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/muqam-turghun.png" alt="Turghun" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -192,14 +198,15 @@
           <p class="expand-desc">I often think the hardest question is not whether a tradition should change, but how far that change can go. Professor Turhong's answer made me think about adaptation as a question of access and boundaries at the same time. A new format can help more people enter a tradition, but it should not erase the features that make the tradition distinct. That balance seems to be one of the central challenges of keeping cultural traditions meaningful today.</p>
         </div>
 
-        <!-- Part 2: 买迪娜 -->
+        <!-- Part 2: Maidina -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">买迪娜:</span>
+            <span class="expand-name">Maidina:</span>
             <span class="expand-subtitle">How Do You Make a Tradition Meaningful to a Child?</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/muqam-maidina.png" alt="Maidina" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -236,7 +243,7 @@
           <div class="person-row">
             <div class="avatar" />
             <div class="name-group">
-              <div class="name">尼玛</div>
+              <div class="name">Nyima</div>
             </div>
           </div>
         </div>
@@ -250,14 +257,15 @@
       <div v-if="expandedSections[2]" class="expand-content">
         <img class="text-left text_3" src="../assets/images/home/text_3.png" alt="text3" />
 
-        <!-- Part 1: 尼玛 -->
+        <!-- Part 1: Nyima -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">尼玛:</span>
+            <span class="expand-name">Nyima:</span>
             <span class="expand-subtitle">Tradition Has to Change to Stay Alive</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/jangar-nyima.png" alt="Nyima" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -274,8 +282,15 @@
           <div class="expand-header">
             <span class="expand-subtitle">Traditional vs Adapted Performance</span>
           </div>
-          <div class="howto-video">
-            <div class="video-placeholder">
+          <div class="howto-video howto-video-dual">
+            <div class="video-placeholder video-half">
+              <img src="../assets/images/listen/jangar-traditional.png" alt="Traditional Jangar" class="video-cover" />
+              <div class="play-circle">
+                <img src="../assets/images/home/icon-play.png" alt="play" />
+              </div>
+            </div>
+            <div class="video-placeholder video-half">
+              <img src="../assets/images/listen/jangar-adapted.png" alt="Adapted Jangar" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -309,7 +324,7 @@
           <div class="person-row">
             <div class="avatar avatar-2" />
             <div class="name-group">
-              <div class="name">乌图那生</div>
+              <div class="name">Utunason</div>
             </div>
           </div>
         </div>
@@ -323,14 +338,15 @@
       <div v-if="expandedSections[3]" class="expand-content">
         <img class="text-left text_4" src="../assets/images/home/text_4.png" alt="text4" />
 
-        <!-- Part 1: 乌图那生1 -->
+        <!-- Part 1: Utunason 1 -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">乌图那生:</span>
+            <span class="expand-name">Utunason:</span>
             <span class="expand-subtitle">Teaching One Line at a Time</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/longsong-utunason1.png" alt="Utunason 1" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -342,14 +358,15 @@
           <p class="expand-desc">I often assumed that writing music down would naturally make it easier to teach. What I saw here was more flexible. Notation can help, but the tradition does not depend on it. Listening, repetition, and learning directly from another person still remain at the center of the process. I was especially interested in how students can become teachers themselves, so transmission does not move in only one direction.</p>
         </div>
 
-        <!-- Part 2: 乌图那生2 -->
+        <!-- Part 2: Utunason 2 -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">乌图那生:</span>
+            <span class="expand-name">Utunason:</span>
             <span class="expand-subtitle">A Performance Is More Than Singing the Right Notes</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/longsong-utunason2.png" alt="Utunason 2" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -404,11 +421,12 @@
         <!-- Part 1: Listen, Think, Answer -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">阿肯:</span>
+            <span class="expand-name">Aqyn Aitys:</span>
             <span class="expand-subtitle">Listen, Think, Answer — All in Real Time</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/aitys-aqyn.png" alt="Aqyn Aitys" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -423,11 +441,12 @@
         <!-- Part 2: The Art of the Comeback -->
         <div class="expand-block">
           <div class="expand-header">
-            <span class="expand-name">男女对唱:</span>
+            <span class="expand-name">Aqyn Aitys:</span>
             <span class="expand-subtitle">The Art of the Comeback</span>
           </div>
           <div class="howto-video">
             <div class="video-placeholder">
+              <img src="../assets/images/listen/aitys-duet.png" alt="Aqyn Aitys Duet" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
@@ -454,7 +473,7 @@
           <h3>the Future of Cultural Transmission</h3>
         </div>
         <div class="interview-info">
-          <p><strong>采访者：</strong> Dan Wang is a professor at Xinjiang Arts University whose research focuses on Kazakh traditional music, oral performance, and related cultural traditions in Xinjiang. Her work includes areas such as Aqyn Aitys and other forms of Kazakh musical and oral culture. In this interview, she discusses the preservation of oral traditions, language and translation, digital media, and the challenges of cultural transmission today.</p>
+          <p><strong>Interviewer: </strong> Dan Wang is a professor at Xinjiang Arts University whose research focuses on Kazakh traditional music, oral performance, and related cultural traditions in Xinjiang. Her work includes areas such as Aqyn Aitys and other forms of Kazakh musical and oral culture. In this interview, she discusses the preservation of oral traditions, language and translation, digital media, and the challenges of cultural transmission today.</p>
         </div>
         <a href="#/listen-detail" class="interview-arrow" @click="scrollToTop">
           <img src="../assets/images/home/icon-arrow2.png" alt="go" />
@@ -742,11 +761,32 @@ const toggleExpand = (index) => {
   justify-content: center;
   border-radius: 4px;
   position: relative;
+  overflow: hidden;
+}
+.video-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.howto-video-dual {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.video-half {
+  width: 470px;
+  height: 264px;
 }
 .play-circle {
   width: 86px;
   height: 86px;
   border-radius: 50%;
+  position: relative;
+  z-index: 1;
 }
 .play-circle img {
   width: 100%;
