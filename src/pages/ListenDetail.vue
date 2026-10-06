@@ -5,13 +5,34 @@
       <!-- Top: Keeping.png image as title -->
       <div class="bubble-title-wrap">
         <img src="../assets/images/home/Keeping.png" class="bubble-img" alt="Keeping Oral Traditions Alive" />
+        <div
+          class="audio-wave-wrap"
+          @click="toggleAudio"
+          @mouseenter="isHovering = true"
+          @mouseleave="isHovering = false"
+        >
+          <img
+            src="../assets/images/audio/static-2.png"
+            class="audio-wave default"
+            :class="{ hidden: isHovering || isPlaying }"
+            alt="audio wave"
+          />
+          <img
+            src="../assets/images/audio/static-1.png"
+            class="audio-wave active"
+            :class="{ visible: isHovering || isPlaying }"
+            alt="audio wave playing"
+          />
+        </div>
       </div>
 
       <!-- Section 1: white bg -->
       <section class="detail-section white-bg">
         <div class="section-inner">
-          <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
-          <h3 class="section-subtitle">Keeping an Oral Tradition Does Not<br>Mean Turning It Into a Fixed Object</h3>
+          <div class="subtitle-row">
+            <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
+            <h3 class="section-subtitle">Keeping an Oral Tradition Does Not<br>Mean Turning It Into a Fixed Object</h3>
+          </div>
           <div class="section-text">
             <p>When we talk about preserving oral cultural heritage, one of the first questions is often how to keep it from disappearing. Professor Wang describes two processes that are happening at the same time.</p>
             <p>The first is documentation. Oral music and literature can now be recorded through audio, video, written text, and musical notation. These records create an archive and reduce the risk that important material will simply disappear when an older performer is no longer able to pass it on.</p>
@@ -25,8 +46,10 @@
       <!-- Section 2: bg4 background -->
       <section class="detail-section bg4-bg">
         <div class="section-inner">
-          <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
-          <h3 class="section-subtitle">Language Is More Than a Tool for Communication</h3>
+          <div class="subtitle-row">
+            <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
+            <h3 class="section-subtitle">Language Is More Than a Tool for Communication</h3>
+          </div>
           <div class="section-text">
             <p>One of the strongest themes in the interview is language.</p>
             <p>Many younger members of minority communities now grow up using Mandarin more often in school and daily life. Professor Wang sees this as a real challenge for oral traditions, because language is not simply the container for a story or a song. It carries ways of thinking, expression, rhythm, and cultural experience.</p>
@@ -41,8 +64,10 @@
       <!-- Section 3: white bg -->
       <section class="detail-section white-bg">
         <div class="section-inner">
-          <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
-          <h3 class="section-subtitle">Why Video Can Preserve Something a Score Cannot</h3>
+          <div class="subtitle-row">
+            <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
+            <h3 class="section-subtitle">Why Video Can Preserve Something a Score Cannot</h3>
+          </div>
           <div class="section-text">
             <p>The conversation then turns to documentation itself.</p>
             <p>Professor Wang explains why newer approaches such as audiovisual ethnography have become important in music research. No system of musical notation can capture everything that happens in a live performance. A score may record pitch or rhythm, but it cannot fully preserve facial expressions, gestures, the reactions of the audience, or the atmosphere of a particular moment.</p>
@@ -56,8 +81,10 @@
       <!-- Section 4: bg4 background -->
       <section class="detail-section bg4-bg">
         <div class="section-inner">
-          <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
-          <h3 class="section-subtitle">Digital Media Changes the Form, but Change Is Not Automatically Loss</h3>
+          <div class="subtitle-row">
+            <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
+            <h3 class="section-subtitle">Digital Media Changes the Form, but Change Is Not Automatically Loss</h3>
+          </div>
           <div class="section-text">
             <p>Short video creates another problem.</p>
             <p>Many oral traditions can last for hours. Muqam, Manas, and other forms do not naturally fit into a thirty-second or five-minute video. When they enter platforms built around short attention spans, they inevitably change.</p>
@@ -72,8 +99,10 @@
       <!-- Section 5: white bg -->
       <section class="detail-section white-bg">
         <div class="section-inner">
-          <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
-          <h3 class="section-subtitle">What Can Change, and What Must Remain?</h3>
+          <div class="subtitle-row">
+            <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
+            <h3 class="section-subtitle">What Can Change, and What Must Remain?</h3>
+          </div>
           <div class="section-text">
             <p>This leads to one of the most difficult questions in the interview: how do we know when a tradition has changed too much?</p>
             <p>Professor Wang does not offer a simple rule. Instead, she points to several things that can help us judge.</p>
@@ -88,8 +117,10 @@
       <!-- Section 6: bg4 background -->
       <section class="detail-section bg4-bg">
         <div class="section-inner">
-          <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
-          <h3 class="section-subtitle">Research Has to Go Back to Language and Fieldwork</h3>
+          <div class="subtitle-row">
+            <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
+            <h3 class="section-subtitle">Research Has to Go Back to Language and Fieldwork</h3>
+          </div>
           <div class="section-text">
             <p>Near the end of the conversation, Professor Wang turns from cultural transmission to academic research.</p>
             <p>For anyone studying oral music or oral literature, she sees language as a basic requirement. A researcher who only reads translated texts may miss the relationship between music, words, and cultural meaning. This is especially difficult in Xinjiang, where researchers may be working across very different language families.</p>
@@ -103,8 +134,10 @@
       <!-- Section 7: white bg -->
       <section class="detail-section white-bg">
         <div class="section-inner">
-          <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
-          <h3 class="section-subtitle">A Living Tradition Is Both Preserved and Changing</h3>
+          <div class="subtitle-row">
+            <img src="../assets/images/home/img_8.png" class="list-icon" alt="list" />
+            <h3 class="section-subtitle">A Living Tradition Is Both Preserved and Changing</h3>
+          </div>
           <div class="section-text">
             <p>Across the interview, a larger idea gradually emerges.</p>
             <p>Preservation is not the same as freezing a tradition in one historical form. Recording matters. Archives matter. Language matters. Inheritors matter. But so do new audiences, new technologies, and the choices made by the communities themselves.</p>
@@ -128,8 +161,40 @@
 </template>
 
 <script setup>
+import { ref, onUnmounted } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
+import audioSrc from '../assets/images/audio/audio.m4a'
+
+const isPlaying = ref(false)
+const isHovering = ref(false)
+
+let audio = null
+
+const toggleAudio = () => {
+  if (!audio) {
+    audio = new Audio(audioSrc)
+    audio.addEventListener('ended', () => {
+      isPlaying.value = false
+    })
+  }
+  if (isPlaying.value) {
+    audio.pause()
+    audio.currentTime = 0
+    isPlaying.value = false
+  } else {
+    audio.currentTime = 0
+    audio.play()
+    isPlaying.value = true
+  }
+}
+
+onUnmounted(() => {
+  if (audio) {
+    audio.pause()
+    audio = null
+  }
+})
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -150,7 +215,8 @@ const scrollToTop = () => {
 /* Bubble title image */
 .bubble-title-wrap {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 60px 0 40px;
   background-color: #f8f7ef;
 }
@@ -158,6 +224,35 @@ const scrollToTop = () => {
   width: 460px;
   height: auto;
   display: block;
+}
+/* Audio waveform */
+.audio-wave-wrap {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 200px;
+  cursor: pointer;
+  display: inline-block;
+}
+.audio-wave {
+  width: 180px;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s;
+}
+.audio-wave.default {
+  opacity: 1;
+  &.hidden {
+    opacity: 0;
+  }
+}
+.audio-wave.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  &.visible {
+    opacity: 1;
+  }
 }
 
 /* Section styles */
@@ -178,18 +273,24 @@ const scrollToTop = () => {
   margin: 0 auto;
   text-align: center;
 }
+.subtitle-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 36px;
+  text-align: left;
+}
 .list-icon {
-  width: 48px;
+  width: 36px;
   height: auto;
-  margin-bottom: 48px;
-  display: inline-block;
+  flex-shrink: 0;
 }
 .section-subtitle {
   font-size: 18px;
   font-weight: 700;
   color: #111;
   line-height: 1.6;
-  margin: 0 0 36px;
+  margin: 0;
 }
 .section-text {
   text-align: center;

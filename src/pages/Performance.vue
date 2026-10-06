@@ -5,13 +5,13 @@
       <section class="performance-hero">
         <div class="performance-inner">
           <div class="perf-left">
-            <h1 class="perf-title"><span class="title-en">MANAS</span> <span class="title-divider">|</span> <span class="title-zh">《玛纳斯》</span></h1>
+            <h1 class="perf-title"><span class="title-en">MANAS</span></h1>
 
             <div class="video-meta-row">
               <div class="video-wrap">
-                <a href="https://www.bilibili.com/video/BV1D8hq6KES4/?vd_source=f06ef48deb4934f1ce8996b872ca1f91" target="_blank" class="video-link">
+                <a href="https://youtu.be/wsSshEm5lDo" target="_blank" class="video-link">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/bg9.png" alt="Performance thumbnail" />
+                  <img src="../assets/images/home/manas-cover.jpg" alt="Manas Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
@@ -20,11 +20,11 @@
               </div>
 
               <div class="meta-column">
+                <h3 class="meta-title">Manas in Performance</h3>
                 <ul class="meta-list">
-                  <li><span class="dot"></span> Performance Title</li>
-                  <li><span class="dot"></span> Location</li>
-                  <li><span class="dot"></span> Performer / Group</li>
-                  <li><span class="dot"></span> Date</li>
+                  <li><span class="dot"></span> Location：Manas Epic Museum, Akqi County, Xinjiang, China</li>
+                  <li><span class="dot"></span> Performer：Toktosun Khadrakhon</li>
+                  <li><span class="dot"></span> Date：July 2, 2026</li>
                 </ul>
               </div>
             </div>
@@ -43,14 +43,12 @@
           <div class="perf-left">
             <h1 class="perf-title">
               <span class="title-en">MUQAM</span>
-              <span class="title-divider">|</span>
-              <span class="title-zh">木卡姆</span>
             </h1>
 
             <div class="video-meta-row">
               <div class="video-wrap">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/bg9.png" alt="Performance thumbnail" />
+                  <img src="../assets/images/home/muqam-cover.jpg" alt="Muqam Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
@@ -58,11 +56,11 @@
               </div>
 
               <div class="meta-column">
+                <h3 class="meta-title">The Strings of the Satar</h3>
                 <ul class="meta-list">
-                  <li><span class="dot"></span> Performance Title</li>
-                  <li><span class="dot"></span> Location</li>
-                  <li><span class="dot"></span> Performer / Group</li>
-                  <li><span class="dot"></span> Date</li>
+                  <li><span class="dot"></span> Location：Kashgar Ancient City, Xinjiang, China</li>
+                  <li><span class="dot"></span> Performer：Gaotai Artist Center</li>
+                  <li><span class="dot"></span> Date：July 1, 2026</li>
                 </ul>
               </div>
             </div>
@@ -79,12 +77,12 @@
       <section class="performance-hero">
         <div class="performance-inner">
           <div class="perf-left">
-            <h1 class="perf-title"><span class="title-en">JANGAR</span> <span class="title-divider">|</span> <span class="title-zh">《江格尔》</span></h1>
+            <h1 class="perf-title"><span class="title-en">JANGAR</span></h1>
 
             <div class="video-meta-row">
               <div class="video-wrap">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/bg9.png" alt="Performance thumbnail" />
+                  <img src="../assets/images/home/jangar-cover.jpg" alt="Jangar Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
@@ -92,11 +90,11 @@
               </div>
 
               <div class="meta-column">
+                <h3 class="meta-title">Jangar in Performance</h3>
                 <ul class="meta-list">
-                  <li><span class="dot"></span> Performance Title</li>
-                  <li><span class="dot"></span> Location</li>
-                  <li><span class="dot"></span> Performer / Group</li>
-                  <li><span class="dot"></span> Date</li>
+                  <li><span class="dot"></span> Location：Hoboksar County Cultural Center, Tacheng, Xinjiang, China</li>
+                  <li><span class="dot"></span> Performer：Dorj Nyima</li>
+                  <li><span class="dot"></span> Date：July 6, 2026</li>
                 </ul>
               </div>
             </div>
@@ -114,12 +112,12 @@
       <section class="performance-hero alt">
         <div class="performance-inner">
           <div class="perf-left">
-            <h1 class="perf-title"><span class="title-en">MONGOLIAN LONG SONG</span> <span class="title-divider"> <br>|</span> <span class="title-zh">蒙古族长调</span></h1>
+            <h1 class="perf-title"><span class="title-en">MONGOLIAN LONG SONG</span></h1>
 
             <div class="video-meta-row">
               <div class="video-wrap">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/bg9.png" alt="Performance thumbnail" />
+                  <img src="../assets/images/home/longsong-cover.jpg" alt="Mongolian Long Song Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
@@ -127,11 +125,11 @@
               </div>
 
               <div class="meta-column">
+                <h3 class="meta-title">Mongolian Long Song in Performance</h3>
                 <ul class="meta-list">
-                  <li><span class="dot"></span> Performance Title</li>
-                  <li><span class="dot"></span> Location</li>
-                  <li><span class="dot"></span> Performer / Group</li>
-                  <li><span class="dot"></span> Date</li>
+                  <li><span class="dot"></span> Location：Hoboksar County Cultural Center, Tacheng, Xinjiang, China</li>
+                  <li><span class="dot"></span> Performer：D. Utunason</li>
+                  <li><span class="dot"></span> Date：July 6, 2026</li>
                 </ul>
               </div>
             </div>
@@ -149,12 +147,12 @@
       <section class="performance-hero">
         <div class="performance-inner">
           <div class="perf-left">
-            <h1 class="perf-title"><span class="title-en">AITYS</span> <span class="title-divider">|</span> <span class="title-zh">阿肯阿依特斯</span></h1>
+            <h1 class="perf-title"><span class="title-en">AITYS</span></h1>
 
             <div class="video-meta-row">
               <div class="video-wrap">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/bg9.png" alt="Performance thumbnail" />
+                  <img src="../assets/images/home/aitys-cover.jpg" alt="Aitys Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
@@ -162,11 +160,11 @@
               </div>
 
               <div class="meta-column">
+                <h3 class="meta-title">Aqyn Aitys in Performance</h3>
                 <ul class="meta-list">
-                  <li><span class="dot"></span> Performance Title</li>
-                  <li><span class="dot"></span> Location</li>
-                  <li><span class="dot"></span> Performer / Group</li>
-                  <li><span class="dot"></span> Date</li>
+                  <li><span class="dot"></span> Location：Emin County Cultural Center, Tacheng, Xinjiang, China</li>
+                  <li><span class="dot"></span> Performer：A team of Aqyn Aitys inheritors led by Jiensihan Wulazimolla</li>
+                  <li><span class="dot"></span> Date：July 7, 2026</li>
                 </ul>
               </div>
             </div>
@@ -284,8 +282,8 @@ const scrollToTop = () => {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 110px;
-  height: 110px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,9 +298,18 @@ const scrollToTop = () => {
   width: 360px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* center the list vertically relative to the video */
+  justify-content: center;
   align-items: flex-start;
-  min-height: 327px; /* match video-thumb height */
+  min-height: 327px;
+}
+
+.meta-title {
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #5a3e28;
+  margin: 0 0 18px;
+  text-decoration: none;
 }
 
 .meta-column .see-more-wrap {
@@ -331,18 +338,20 @@ const scrollToTop = () => {
 }
 .meta-list li {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 28px;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 1.6;
   color: #222;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 .meta-list .dot {
-  width: 28px;
-  height: 28px;
+  width: 8px;
+  height: 8px;
   background: #000;
   border-radius: 50%;
-  flex: 0 0 28px;
+  flex: 0 0 8px;
+  margin-top: 7px;
 }
 
 .see-more-wrap {
