@@ -104,7 +104,7 @@ function isActive(path) {
 }
 
 .header-logo {
-  height: 72px;
+  height: 90px;
 }
 
 @media (max-width: 768px) {
