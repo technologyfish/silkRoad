@@ -40,14 +40,14 @@
             <span class="expand-name">Suyundouke:</span>
             <span class="expand-subtitle">A Childhood Built Around Manas</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/Oi6RjddkQII" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/manas-suyundouke1.png" alt="Suyundouke 1" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Suyundouke began learning Manas when he was about ten years old. As a child, he was so interested in the epic that he would secretly read it during class, even when his teacher tried to stop him. During school breaks, he performed parts of Manas for his classmates. After listening, his classmates would give him blank sheets of paper, and his mother would sew them together into a handmade notebook. Support from his mother, classmates, and teachers made Manas a strong part of his childhood and encouraged him to keep learning and performing it.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -60,14 +60,14 @@
             <span class="expand-name">Suyundouke:</span>
             <span class="expand-subtitle">A Book Can Preserve Manas. A Performer Makes It Alive.</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/757WEDrOYJg" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/manas-suyundouke2.png" alt="Suyundouke 2" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Suyundouke explains that written texts have helped preserve Manas more completely, especially parts that might otherwise be lost through oral transmission. But for many Manaschis, the version recorded in a book is still a "static" Manas. The epic becomes "living" through performance, when a Manaschi uses voice, rhythm, facial expressions, eye contact, and movement to bring emotion into the story and connect with the audience.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -80,14 +80,14 @@
             <span class="expand-name">Toktosun:</span>
             <span class="expand-subtitle">Bringing Manas Into the Digital Age</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/2JXF34YMSZk" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/manas-toktosun1.png" alt="Toktosun 1" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Toktosun describes how his relationship with Manas developed from memorization in childhood to deeper study, writing, and eventually digital media. Since 2022, he has used platforms such as Douyin, WeChat Channels, and Kuaishou to share performances, stories, and explanations of the epic. Because Manas is often too long for short-form platforms, he divides longer performances into smaller sections. For him, digital transmission means adjusting the form of the tradition so that it can fit the habits and attention of today's audiences.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -100,14 +100,14 @@
             <span class="expand-name">Toktosun:</span>
             <span class="expand-subtitle">Memorizing Is Not the Same as Understanding</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/5nd8TdwH0Fk" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/manas-toktosun2.png" alt="Toktosun 2" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Toktosun explains that passing on Manas requires much more than memorization. After learning the text, he believes a Manaschi must understand it, study it, and reorganize it before sharing it with others. He has read Manas six or seven times since childhood and still feels there are parts he does not fully understand. For him, the epic is almost like an entire field of study, containing history, customs, culture, and knowledge from different communities.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -120,14 +120,14 @@
             <span class="expand-name">Toktosun:</span>
             <span class="expand-subtitle">The Same Story Is Never Told Exactly the Same Way</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/5Xsm-ms13aU" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/manas-toktosun3.png" alt="Toktosun 3" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Toktosun describes Manas as a "living epic" because the same story is never performed in exactly the same way. A Manaschi may change the tone, rhythm, gestures, wording, or level of detail depending on the setting, the audience, and the performer's own state. Even so, the main structure and storyline remain consistent. This balance between continuity and improvisation is part of what allows Manas to stay alive as an oral tradition.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -184,14 +184,14 @@
             <span class="expand-name">Turghun:</span>
             <span class="expand-subtitle">How Do You Preserve a Tradition Without Freezing It?</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/YlqtAFit-B8" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/muqam-turghun.png" alt="Turghun" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Professor Turhong describes preservation and development as a balance rather than a choice between two extremes. He believes important parts of a tradition should be protected, but the ways it is presented may need to change as younger audiences and media habits change. Using Xinjiang folk music as an example, he explains how new arrangements, new languages, and online platforms can help unfamiliar audiences enter a tradition. For him, the goal is not simply to tell young people that a tradition is valuable, but to help them understand why it matters.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -204,14 +204,14 @@
             <span class="expand-name">Maidina:</span>
             <span class="expand-subtitle">How Do You Make a Tradition Meaningful to a Child?</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/U34Z5pbqD04" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/muqam-maidina.png" alt="Maidina" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Madina explains that young children do not need to begin by memorizing names, history, or musical terms. She suggests letting them watch and listen first, then asking what they noticed. Their own observations can become the starting point for learning about the performers, instruments, stories, and history behind the Twelve Muqam. For her, curiosity should come before explanation, so that children first connect with the experience and then gradually understand what they saw.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -263,14 +263,14 @@
             <span class="expand-name">Nyima:</span>
             <span class="expand-subtitle">Tradition Has to Change to Stay Alive</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/uB5oyJSCh4I" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/jangar-nyima.png" alt="Nyima" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Nima explains that Jangar has never remained completely unchanged because it has been passed down orally for generations. While details may shift, the main story and core ideas remain. Since around 2012, he and other performers have experimented with new ways of presenting the epic by shortening long sections, rearranging the music, adding instruments, and using throat singing. For Nima, these changes do not replace the original story. They help the tradition reach contemporary audiences while keeping its core recognizable.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -283,18 +283,18 @@
             <span class="expand-subtitle">Traditional vs Adapted Performance</span>
           </div>
           <div class="howto-video howto-video-dual">
-            <div class="video-placeholder video-half">
+            <a class="video-placeholder video-half" href="https://youtu.be/HzAUJqb24Gg" target="_blank">
               <img src="../assets/images/listen/jangar-traditional.png" alt="Traditional Jangar" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
-            </div>
-            <div class="video-placeholder video-half">
+            </a>
+            <a class="video-placeholder video-half" href="https://youtu.be/1UrW_ywKitI" target="_blank">
               <img src="../assets/images/listen/jangar-adapted.png" alt="Adapted Jangar" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -344,14 +344,14 @@
             <span class="expand-name">Utunason:</span>
             <span class="expand-subtitle">Teaching One Line at a Time</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/nNJUa9bjLqw" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/longsong-utunason1.png" alt="Utunason 1" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Wutunasheng explains that Mongolian Long Song can still be taught without formal music theory or written notation. He learned the tradition orally and now teaches his students in much the same way, guiding them through the melody and lyrics one line at a time. Students who read staff or numbered notation can use it as an additional tool, while others continue to learn by listening and repeating. Students who learn quickly may also help teach their classmates, creating another layer of transmission within the group.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -364,14 +364,14 @@
             <span class="expand-name">Utunason:</span>
             <span class="expand-subtitle">A Performance Is More Than Singing the Right Notes</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/MdwHZsXvFEQ" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/longsong-utunason2.png" alt="Utunason 2" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Wutunasheng explains that a strong Long Song performance is judged by more than vocal technique. Posture, stage presence, traditional clothing, confidence, and emotional expression all contribute to the performance as a whole. He believes a song should feel connected from beginning to end and should be sung sincerely enough to move the audience. That confidence on stage, he adds, comes from regular practice and long-term preparation.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -424,14 +424,14 @@
             <span class="expand-name">Aqyn Aitys:</span>
             <span class="expand-subtitle">Listen, Think, Answer — All in Real Time</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/jByd0tUbYGQ" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/aitys-aqyn.png" alt="Aqyn Aitys" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Aqyn Aitys is a form of live poetic exchange rather than a rehearsed song. Two performers listen to each other, think quickly, and respond immediately through improvised lyrics, melody, and dombra playing. Each Aqyn develops a personal vocal style and chooses melodic patterns that fit their own voice. The exchange can be competitive, humorous, or playful, but it always depends on the ability to turn thought into poetry and music in real time.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -444,14 +444,14 @@
             <span class="expand-name">Aqyn Aitys:</span>
             <span class="expand-subtitle">The Art of the Comeback</span>
           </div>
-          <div class="howto-video">
+          <a class="howto-video" href="https://youtu.be/Xim-shfhH6E" target="_blank">
             <div class="video-placeholder">
               <img src="../assets/images/listen/aitys-duet.png" alt="Aqyn Aitys Duet" class="video-cover" />
               <div class="play-circle">
                 <img src="../assets/images/home/icon-play.png" alt="play" />
               </div>
             </div>
-          </div>
+          </a>
           <h3 class="expand-title"><img src="../assets/images/home/img_9.png" class="title-icon" alt="star" /> Summary</h3>
           <p class="expand-desc">Humor is an important part of Aqyn Aitys. Performers do not simply take turns singing. They tease, joke, challenge each other, and react to what is happening in the moment. In male-female duets, this can become especially playful, with compliments, witty replies, and verbal sparring built into the exchange. Audience reaction also matters. Laughter and attention become part of the performance and help shape its rhythm and energy.</p>
           <h3 class="expand-title"><img src="../assets/images/home/img_10.png" class="title-icon" alt="dots" /> Edric Commentary</h3>
@@ -747,10 +747,12 @@ const toggleExpand = (index) => {
     transform: rotate(180deg);
   }
 }
+a.howto-video,
 .howto-video {
   display: flex;
   justify-content: center;
   margin-bottom: 36px;
+  text-decoration: none;
 }
 .video-placeholder {
   width: 960px;
