@@ -7,6 +7,7 @@ import Listen from './pages/Listen.vue'
 import ListenDetail from './pages/ListenDetail.vue'
 import Voice from './pages/Voice.vue'
 import Contact from './pages/Contact.vue'
+import PdfPreview from './pages/PdfPreview.vue'
 
 const currentRoute = ref(window.location.hash || '#/')
 
@@ -15,6 +16,7 @@ function resolveView(hash) {
   if (hash.startsWith('#/performance-detail')) return PerformanceDetail
   if (hash === '#/listen') return Listen
   if (hash.startsWith('#/listen-detail')) return ListenDetail
+  if (hash.startsWith('#/pdf-preview')) return PdfPreview
   if (hash === '#/voice') return Voice
   if (hash === '#/contact') return Contact
   return Home

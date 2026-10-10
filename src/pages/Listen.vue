@@ -279,8 +279,8 @@
 
         <!-- Part 2: Traditional vs Adapted Performance -->
         <div class="expand-block">
-          <div class="expand-header">
-            <span class="expand-subtitle">Traditional vs Adapted Performance</span>
+          <div class="expand-header" style="text-align:center;">
+            <span class="expand-name">Traditional vs Adapted Performance</span>
           </div>
           <div class="howto-video howto-video-dual">
             <a class="video-placeholder video-half" href="https://youtu.be/HzAUJqb24Gg" target="_blank">

@@ -94,7 +94,7 @@
       <section v-if="currentData.contextCards && currentData.contextCards.length" class="context-section">
         <h2 class="section-heading">Oral / Cultural Context</h2>
         <div class="context-cards">
-          <a v-for="(card, idx) in currentData.contextCards" :key="idx" :href="card.url" target="_blank" class="context-card">
+          <a v-for="(card, idx) in currentData.contextCards" :key="idx" :href="card.url" class="context-card" @click="scrollToTop">
             <div class="card-icon">
               <img src="../assets/images/home/icon-download2.png" alt="icon" />
             </div>
@@ -109,11 +109,13 @@
         <h2 class="section-heading">Expert Perspective</h2>
         <div class="expert-top">
           <a v-if="currentData.expert.videoUrl" :href="currentData.expert.videoUrl" target="_blank" class="expert-video">
+            <img src="../assets/images/home/expert_perspective.png" alt="Expert" class="expert-cover" />
             <div class="play-button small">
               <img src="../assets/images/home/icon-play.png" alt="play" class="play-icon" />
             </div>
           </a>
           <div v-else class="expert-video">
+            <img src="../assets/images/home/expert_perspective.png" alt="Expert" class="expert-cover" />
             <div class="play-button small">
               <img src="../assets/images/home/icon-play.png" alt="play" class="play-icon" />
             </div>
@@ -167,8 +169,8 @@ const performanceData = {
     videoUrl: 'https://youtu.be/wsSshEm5lDo',
     performerIntro: 'Toktosun is a new-generation Manas inheritor from Akqi County, Xinjiang. He began learning to perform the Epic of Manas at the age of eight and can perform it in both Kyrgyz and Mandarin. As a university-educated young inheritor, he is currently recognized as a county-level Manas inheritor in Akqi County, Kizilsu Prefecture, Xinjiang. He promotes the Epic of Manas through both traditional stage performances and new media platforms such as Douyin, WeChat Channels, and Kuaishou.',
     contextCards: [
-      { label: 'Manas Epic', sub: 'Kyrgyz language', url: 'https://www.mediafire.com/file/n2rt2fwjzapy9e1/Manas_in_Kyrgyz.pdf/file' },
-      { label: 'Manas Epic', sub: 'Chinese language', url: 'https://www.mediafire.com/file/6fb445xf0f0k16v/Manas_in_Chinese.pdf/file' },
+      { label: 'Manas Epic', sub: 'Kyrgyz language', url: '#/pdf-preview/manas-kyrgyz' },
+      { label: 'Manas Epic', sub: 'Chinese language', url: '#/pdf-preview/manas-chinese' },
     ],
   },
   muqam: {
@@ -225,8 +227,8 @@ const performanceData = {
       },
     ],
     contextCards: [
-      { label: 'The Twelve Muqam', sub: 'Uyghur language', url: 'https://www.mediafire.com/file/dt0oln046ec2v3a/Muqam_in_Uyghur.pdf/file' },
-      { label: 'The Twelve Muqam', sub: 'Chinese language', url: 'https://www.mediafire.com/file/ombdgafyckjwriw/Muqam_in_Chinese.pdf/file' },
+      { label: 'The Twelve Muqam', sub: 'Uyghur language', url: '#/pdf-preview/muqam-uyghur' },
+      { label: 'The Twelve Muqam', sub: 'Chinese language', url: '#/pdf-preview/muqam-chinese' },
     ],
     expert: {
       videoUrl: 'https://youtu.be/sjfZW9LWsFs',
@@ -263,9 +265,9 @@ const performanceData = {
       },
     ],
     contextCards: [
-      { label: 'Jiang Geer Epic', sub: 'Mongolian Togd Togd', url: 'https://www.mediafire.com/file/ieg6i16rjtyk3f5/Jangar_in_Tod_Script.pdf/file' },
-      { label: 'Jiang Geer Epic', sub: 'Mongolian Hudum', url: 'https://www.mediafire.com/file/5d3liz0rozy4w9s/Jangar_in_Hudum_Script.pdf/file' },
-      { label: 'Jiang Geer Epic', sub: 'Chinese language', url: 'https://www.mediafire.com/file/18t86agpto7eun5/Jargar_in_Chinese.pdf/file' },
+      { label: 'Jangar Epic', sub: 'Mongolian Tod', url: '#/pdf-preview/jangar-tod' },
+      { label: 'Jangar Epic', sub: 'Mongolian Hudum', url: '#/pdf-preview/jangar-hudum' },
+      { label: 'Jangar Epic', sub: 'Chinese language', url: '#/pdf-preview/jangar-chinese' },
     ],
   },
   mongolian: {
@@ -296,7 +298,7 @@ const performanceData = {
     contextCards: [],
   },
   aitys: {
-    title: 'A I T Y S',
+    title: 'Aqyn Aitys',
     cover: aitysCover,
     videoUrl: 'https://youtu.be/tkZAkURHLag',
     performerIntro: 'Local inheritors usually perform and promote Aqyn Aitys with the organization and support of the county cultural center. Beyond performance itself, the team also explains what kind of art Aqyn Aitys is. To make it easier for audiences to understand, the inheritors sometimes compare it with familiar Chinese performance forms such as xiangsheng (comic dialogue) and errenzhuan (a traditional duet performance), while emphasizing that Aitys has its own distinctive structure.\n\nAn Aqyn performs while playing the dombra, listening carefully to an opponent, and immediately creating new poetic lines in response to what has just been said. The other performer then answers in the same way, creating a continuous exchange that is both collaborative and competitive. Through these improvised verses, audiences experience the performers\' poetic skill, quick thinking, wit, and humor.\n\nAqyn Aitys therefore combines music, poetry, debate, cultural knowledge, and real-time improvisation. Each Aqyn has a distinctive voice, melodic style, and way of expression. In male-female duets, the exchange may also include humor, romance, teasing, and other themes drawn closely from everyday life.',
@@ -515,7 +517,7 @@ const goToNext = () => {
 
 /* Music & Instruments */
 .instruments-section {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 60px 40px;
 }
@@ -523,7 +525,7 @@ const goToNext = () => {
 .instruments-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 28px;
 }
 
 .inst-card {
@@ -544,14 +546,14 @@ const goToNext = () => {
 .inst-header {
   display: flex;
   align-items: center;
-  padding: 24px 40px;
-  gap: 40px;
+  padding: 40px 60px 0;
+  gap: 60px;
 }
 
 .inst-img-wrap {
-  width: 240px;
-  height: 150px;
-  flex-shrink: 0;
+  width: 470px;
+  //height: 200px;
+  //flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -570,25 +572,25 @@ const goToNext = () => {
 
 .inst-name {
   font-family: $font-serif;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   color: #5a3e28;
-  margin: 0 0 2px;
+  margin: 0 0 4px;
 }
 
 .inst-type {
-  font-size: 13px;
+  font-size: 14px;
   color: #555;
   font-style: italic;
-  margin: 0 0 14px;
+  margin: 0 0 18px;
 }
 
 .inst-label {
   font-family: $font-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: #0e0a06;
-  margin: 4px 0;
+  margin: 6px 0;
 }
 
 /* Expanded detail */
@@ -682,15 +684,15 @@ const goToNext = () => {
 }
 
 .context-card {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   background-color: #aec3bc;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 24px;
   text-decoration: none;
   cursor: pointer;
   transition: opacity 0.3s;
@@ -698,9 +700,9 @@ const goToNext = () => {
 }
 
 .card-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 16px;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
   img {
     width: 100%;
     height: 100%;
@@ -740,14 +742,27 @@ const goToNext = () => {
 }
 
 .expert-video {
+  position: relative;
   width: 500px;
   height: 280px;
-  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  border-radius: 4px;
+}
+.expert-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.expert-video .play-button {
+  position: relative;
+  z-index: 1;
 }
 
 .expert-intro {

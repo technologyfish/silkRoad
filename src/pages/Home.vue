@@ -377,7 +377,7 @@ const scrollToTop = () => {
   }
 
   .opening-box p {
-    font-family: 'font-primary';
+    font-family: Georgia, "Times New Roman", serif;
     margin: 0 0 12px 0;
     color: #fff;
     font-size: 18px;

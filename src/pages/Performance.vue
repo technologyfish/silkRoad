@@ -47,12 +47,14 @@
 
             <div class="video-meta-row">
               <div class="video-wrap">
+                <a href="https://youtu.be/B8_drszW2jU" target="_blank" class="video-link">
                 <div class="video-thumb">
                   <img src="../assets/images/home/muqam-cover.jpg" alt="Muqam Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
                 </div>
+                </a>
               </div>
 
               <div class="meta-column">
@@ -81,12 +83,14 @@
 
             <div class="video-meta-row">
               <div class="video-wrap">
+                <a href="https://youtu.be/O4LqQY__9Lw" target="_blank" class="video-link">
                 <div class="video-thumb">
                   <img src="../assets/images/home/jangar-cover.jpg" alt="Jangar Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
                 </div>
+                </a>
               </div>
 
               <div class="meta-column">
@@ -116,12 +120,14 @@
 
             <div class="video-meta-row">
               <div class="video-wrap">
+                <a href="https://youtu.be/l8rV6WqlFiA" target="_blank" class="video-link">
                 <div class="video-thumb">
                   <img src="../assets/images/home/longsong-cover.jpg" alt="Mongolian Long Song Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
                 </div>
+                </a>
               </div>
 
               <div class="meta-column">
@@ -147,16 +153,18 @@
       <section class="performance-hero">
         <div class="performance-inner">
           <div class="perf-left">
-            <h1 class="perf-title"><span class="title-en">AITYS</span></h1>
+            <h1 class="perf-title"><span class="title-en">Aqyn Aitys</span></h1>
 
             <div class="video-meta-row">
               <div class="video-wrap">
+                <a href="https://youtu.be/tkZAkURHLag" target="_blank" class="video-link">
                 <div class="video-thumb">
                   <img src="../assets/images/home/aitys-cover.jpg" alt="Aitys Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
                 </div>
+                </a>
               </div>
 
               <div class="meta-column">
