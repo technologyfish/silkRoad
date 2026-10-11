@@ -6,3 +6,9 @@ dist/
 .vite/
 npm-debug.log
 yarn-error.log
+
+# Large files - do not push to GitHub
+文档/*.psb
+文档/*.psd
+文档/*.pptx
+src/assets/pdf_compressed/
