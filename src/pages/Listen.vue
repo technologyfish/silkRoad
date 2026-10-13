@@ -17,7 +17,7 @@
 
         <div class="people-column">
           <div class="person-row">
-            <div class="avatar" />
+            <img src="../assets/images/listen-home/manas.png" alt="Manas" class="section-cover" />
             <div class="name-group">
               <div class="name">Toktosun &amp; Suyundouke</div>
             </div>
@@ -162,7 +162,7 @@
 
         <div class="people-column">
           <div class="person-row">
-            <div class="avatar avatar-2" />
+            <img src="../assets/images/listen-home/muqam.png" alt="Muqam" class="section-cover" />
             <div class="name-group">
               <div class="name">Maidina &amp; Turghun</div>
             </div>
@@ -241,7 +241,7 @@
 
         <div class="people-column">
           <div class="person-row">
-            <div class="avatar" />
+            <img src="../assets/images/listen-home/jangar.png" alt="Jangar" class="section-cover" />
             <div class="name-group">
               <div class="name">Nyima</div>
             </div>
@@ -322,7 +322,7 @@
 
         <div class="people-column">
           <div class="person-row">
-            <div class="avatar avatar-2" />
+            <img src="../assets/images/listen-home/longsong.png" alt="Longsong" class="section-cover" />
             <div class="name-group">
               <div class="name">Utunason</div>
             </div>
@@ -402,7 +402,7 @@
 
         <div class="people-column">
           <div class="person-row">
-            <div class="avatar avatar-3" />
+            <img src="../assets/images/listen-home/aitys.png" alt="Aitys" class="section-cover" />
             <div class="name-group">
               <div class="name">MORE</div>
             </div>
@@ -619,8 +619,14 @@ const toggleExpand = (index) => {
   }
 }
 
+.section-cover {
+  width: 375px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 .people-column {
-  width: 280px;
   display: flex;
   flex-direction: column;
   gap: 20px;
