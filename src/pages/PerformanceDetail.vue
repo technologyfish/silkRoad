@@ -91,9 +91,9 @@
       </section>
 
       <!-- Oral / Cultural Context -->
-      <section v-if="currentData.contextCards && currentData.contextCards.length" class="context-section">
+      <section v-if="hasDocCards" class="context-section">
         <h2 class="section-heading">Oral / Cultural Context</h2>
-        <div class="context-cards">
+        <div v-if="currentData.contextCards && currentData.contextCards.length" class="context-cards">
           <a v-for="(card, idx) in currentData.contextCards" :key="idx" :href="card.url" class="context-card" @click="scrollToTop">
             <div class="card-icon">
               <img src="../assets/images/home/icon-download2.png" alt="icon" />
@@ -101,6 +101,33 @@
             <p class="card-label">{{ card.label }}</p>
             <p class="card-sub">{{ card.sub }}</p>
           </a>
+        </div>
+
+        <!-- Documents swiper -->
+        <div v-if="currentData.swiperCards && currentData.swiperCards.length" class="english-swiper-wrap">
+          <div class="swiper-nav prev" :class="{ disabled: engIsBeginning }" @click="slideEnglish(-1)">
+            <img src="../assets/images/home/icon-left.png" alt="prev" class="nav-icon" />
+          </div>
+          <swiper
+            class="english-swiper"
+            :loop="true"
+            :breakpoints="{ 0: { slidesPerView: 1, spaceBetween: 20 }, 700: { slidesPerView: 3, spaceBetween: 40, centeredSlides: true } }"
+            @swiper="onEnglishSwiper"
+            @slide-change="onEnglishSlideChange"
+          >
+            <swiper-slide v-for="(card, idx) in renderedSwiperCards" :key="idx">
+              <a :href="card.url" class="context-card" @click="scrollToTop">
+                <div class="card-icon">
+                  <img src="../assets/images/home/icon-download2.png" alt="icon" />
+                </div>
+                <p class="card-label">{{ card.label }}</p>
+                <p class="card-sub">{{ card.sub }}</p>
+              </a>
+            </swiper-slide>
+          </swiper>
+          <div class="swiper-nav next" :class="{ disabled: engIsEnd }" @click="slideEnglish(1)">
+            <img src="../assets/images/home/icon-right.png" alt="next" class="nav-icon" />
+          </div>
         </div>
       </section>
 
@@ -140,6 +167,8 @@
 
 <script setup>
 import { ref, reactive, computed, onMounted, onBeforeUnmount } from 'vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import manasCover from '../assets/images/home/manas-detail-cover.png'
@@ -166,11 +195,24 @@ const performanceData = {
   manas: {
     title: 'M A N A S',
     cover: manasCover,
-    videoUrl: 'https://youtu.be/wsSshEm5lDo',
+    videoUrl: 'https://youtu.be/gRJhvyY8_qXw',
     performerIntro: 'Toktosun is a new-generation Manas inheritor from Akqi County, Xinjiang. He began learning to perform the Epic of Manas at the age of eight and can perform it in both Kyrgyz and Mandarin. As a university-educated young inheritor, he is currently recognized as a county-level Manas inheritor in Akqi County, Kizilsu Prefecture, Xinjiang. He promotes the Epic of Manas through both traditional stage performances and new media platforms such as Douyin, WeChat Channels, and Kuaishou.',
     contextCards: [
       { label: 'Manas Epic', sub: 'Kyrgyz language', url: '#/pdf-preview/manas-kyrgyz' },
       { label: 'Manas Epic', sub: 'Chinese language', url: '#/pdf-preview/manas-chinese' },
+    ],
+    swiperCards: [
+      { label: 'Manas Epic', sub: 'English language 1-1', url: '#/pdf-preview/manas-english-1-1' },
+      { label: 'Manas Epic', sub: 'English language 1-2', url: '#/pdf-preview/manas-english-1-2' },
+      { label: 'Manas Epic', sub: 'English language 1-3', url: '#/pdf-preview/manas-english-1-3' },
+      { label: 'Manas Epic', sub: 'English language 1-4', url: '#/pdf-preview/manas-english-1-4' },
+      { label: 'Manas Epic', sub: 'English language 2-1', url: '#/pdf-preview/manas-english-2-1' },
+      { label: 'Manas Epic', sub: 'English language 2-2', url: '#/pdf-preview/manas-english-2-2' },
+      { label: 'Manas Epic', sub: 'English language 2-3', url: '#/pdf-preview/manas-english-2-3' },
+      { label: 'Manas Epic', sub: 'English language 3-1', url: '#/pdf-preview/manas-english-3-1' },
+      { label: 'Manas Epic', sub: 'English language 3-2', url: '#/pdf-preview/manas-english-3-2' },
+      { label: 'Manas Epic', sub: 'English language 4-1', url: '#/pdf-preview/manas-english-4-1' },
+      { label: 'Manas Epic', sub: 'English language 4-2', url: '#/pdf-preview/manas-english-4-2' },
     ],
   },
   muqam: {
@@ -264,10 +306,12 @@ const performanceData = {
         features: 'The Tobshuur has a small, round body carved from a single piece of wood, covered with camel skin or goat skin. It has two strings made from horsehair. The short neck has no frets, allowing for flexible pitch control. The instrument is played by strumming or plucking with the right hand. Its tone is bright, percussive, and well-suited for rhythmic accompaniment.',
       },
     ],
-    contextCards: [
+    contextCards: [],
+    swiperCards: [
       { label: 'Jangar Epic', sub: 'Mongolian Tod', url: '#/pdf-preview/jangar-tod' },
       { label: 'Jangar Epic', sub: 'Mongolian Hudum', url: '#/pdf-preview/jangar-hudum' },
       { label: 'Jangar Epic', sub: 'Chinese language', url: '#/pdf-preview/jangar-chinese' },
+      { label: 'Jangar Epic', sub: 'English language', url: '#/pdf-preview/jangar-english' },
     ],
   },
   mongolian: {
@@ -332,6 +376,20 @@ const currentData = computed(() => {
   return performanceData[currentId.value] || performanceData.manas
 })
 
+const hasDocCards = computed(() => {
+  const data = currentData.value
+  return (data.contextCards && data.contextCards.length > 0) ||
+         (data.swiperCards && data.swiperCards.length > 0)
+})
+
+// Swiper loop (3 per view + centered) needs at least 5 slides to fill both
+// sides without blanks. When there are fewer documents (e.g. Jangar has 4),
+// render the list twice so the loop stays seamless.
+const renderedSwiperCards = computed(() => {
+  const cards = currentData.value.swiperCards || []
+  return cards.length >= 5 ? cards : [...cards, ...cards]
+})
+
 const initExpanded = () => {
   Object.keys(expandedInst).forEach(k => delete expandedInst[k])
   const data = performanceData[currentId.value]
@@ -345,6 +403,32 @@ const initExpanded = () => {
 const updateId = () => {
   currentId.value = getCurrentId()
   initExpanded()
+}
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+/* English documents swiper */
+let englishSwiper = null
+const engIsBeginning = ref(true)
+const engIsEnd = ref(false)
+
+const onEnglishSwiper = (swiperInstance) => {
+  englishSwiper = swiperInstance
+  engIsBeginning.value = swiperInstance.isBeginning
+  engIsEnd.value = swiperInstance.isEnd
+}
+
+const onEnglishSlideChange = (swiperInstance) => {
+  engIsBeginning.value = swiperInstance.isBeginning
+  engIsEnd.value = swiperInstance.isEnd
+}
+
+const slideEnglish = (dir) => {
+  if (!englishSwiper) return
+  if (dir < 0) englishSwiper.slidePrev()
+  else englishSwiper.slideNext()
 }
 
 onMounted(() => {
@@ -725,6 +809,71 @@ const goToNext = () => {
   font-weight: 700;
   color: #222;
   margin: 0;
+}
+
+/* English documents swiper */
+.english-swiper-wrap {
+  position: relative;
+  margin-top: 80px;
+}
+
+.english-swiper {
+  padding: 20px 0 30px;
+}
+
+.english-swiper :deep(.swiper-slide) {
+  display: flex;
+  justify-content: center;
+}
+
+/* Center active card: enlarged & prominent */
+.english-swiper :deep(.swiper-slide-active) {
+  z-index: 2;
+  .context-card {
+    transform: scale(1.15);
+  }
+}
+
+.english-swiper :deep(.context-card) {
+  transition: transform 0.35s ease;
+}
+
+.swiper-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 3px 10px rgba(14, 10, 6, 0.1);
+  transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+
+  &.prev { left: -20px; }
+  &.next { right: -20px; }
+
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    // arrows are white; darken them so they stay visible on the light-gray button
+    filter: brightness(0) opacity(0.55);
+  }
+
+  &:hover {
+    background-color: #c9c9c9;
+    transform: translateY(-50%) scale(1.08);
+  }
+  &.disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
 /* Expert Perspective */
