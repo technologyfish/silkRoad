@@ -195,7 +195,7 @@ const performanceData = {
   manas: {
     title: 'M A N A S',
     cover: manasCover,
-    videoUrl: 'https://youtu.be/gRJhvyY8_qXw',
+    videoUrl: 'https://youtu.be/gRJhvY8_qXw',
     performerIntro: 'Toktosun is a new-generation Manas inheritor from Akqi County, Xinjiang. He began learning to perform the Epic of Manas at the age of eight and can perform it in both Kyrgyz and Mandarin. As a university-educated young inheritor, he is currently recognized as a county-level Manas inheritor in Akqi County, Kizilsu Prefecture, Xinjiang. He promotes the Epic of Manas through both traditional stage performances and new media platforms such as Douyin, WeChat Channels, and Kuaishou.',
     contextCards: [
       { label: 'Manas Epic', sub: 'Kyrgyz language', url: '#/pdf-preview/manas-kyrgyz' },
