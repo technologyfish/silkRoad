@@ -9,7 +9,7 @@
 
             <div class="video-meta-row">
               <div class="video-wrap">
-                <a href="https://youtu.be/wsSshEm5lDo" target="_blank" class="video-link">
+                <a href="https://youtu.be/gRJhvY8_qXw" target="_blank" class="video-link">
                 <div class="video-thumb">
                   <img src="../assets/images/home/manas-cover.jpg" alt="Manas Performance" />
                   <div class="play-button">
