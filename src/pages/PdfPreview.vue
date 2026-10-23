@@ -7,14 +7,8 @@
         <a :href="pdfUrl" target="_blank" rel="noopener" class="download-btn">Download PDF</a>
       </div>
       <div class="pdf-container">
-        <div class="pdf-open-panel">
-          <div class="pdf-open-icon">
-            <img src="../assets/images/home/icon-download2.png" alt="PDF" />
-          </div>
-          <p class="pdf-open-name">{{ pdfFileName }}</p>
-          <p class="pdf-open-hint">This document is hosted on our own server.<br />Click below to open it in a new tab.</p>
-          <a :href="pdfUrl" target="_blank" rel="noopener" class="open-btn">View PDF</a>
-        </div>
+        <iframe :src="pdfUrl" class="pdf-iframe" />
+        <p class="pdf-open-hint">If the document doesn't display, <a :href="pdfUrl" target="_blank" rel="noopener" class="hint-link">open it in a new tab</a>.</p>
       </div>
     </main>
     <Footer />
@@ -26,11 +20,10 @@ import { computed } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 
-// PDFs are hosted on our own server (Aliyun, managed via BT panel),
-// NOT bundled into the site (GitHub Pages).
-// Note: absolute http URL + open in a new tab, because GitHub Pages is https
-// and embedding an http iframe would be blocked as mixed content.
-const PDF_BASE = 'http://8.148.30.7/pdfs/'
+// PDFs are hosted on our own server (Aliyun, managed via BT panel) over HTTPS,
+// NOT bundled into the site (GitHub Pages). The cert is a Let's Encrypt
+// IP-address certificate, auto-renewed by acme.sh on the server.
+const PDF_BASE = 'https://8.148.30.7/pdfs/'
 
 const pdfMap = {
   'manas-kyrgyz': { title: 'Manas Epic — Kyrgyz Language', file: PDF_BASE + 'manas-kyrgyz.pdf', fileName: 'Manas_in_Kyrgyz.pdf' },
@@ -124,59 +117,25 @@ const pdfFileName = computed(() => currentPdf.value.fileName || 'document.pdf')
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 40px 60px;
+  padding: 0 40px 40px;
 }
 
-.pdf-open-panel {
-  max-width: 460px;
-  margin: 0 auto;
-  background-color: #aec3bc;
-  border-radius: 16px;
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.pdf-open-icon {
-  width: 72px;
-  height: 72px;
-  margin: 0 auto 24px;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
-    opacity: 0.85;
-  }
-}
-
-.pdf-open-name {
-  font-family: $font-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #222;
-  margin: 0 0 12px;
-  word-break: break-all;
+.pdf-iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 
 .pdf-open-hint {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #333;
-  margin: 0 0 28px;
-}
-
-.open-btn {
-  display: inline-block;
-  padding: 12px 48px;
-  background-color: #854529;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: opacity 0.3s;
-  &:hover {
-    opacity: 0.85;
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  .hint-link {
+    color: #854529;
+    text-decoration: underline;
   }
 }
 </style>
