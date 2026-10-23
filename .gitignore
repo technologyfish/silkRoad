@@ -12,3 +12,8 @@ yarn-error.log
 文档/*.psd
 文档/*.pptx
 src/assets/pdf_compressed/
+
+# PDFs are now self-hosted on Aliyun server (BT panel), not bundled
+src/assets/pdf/
+pdfs-upload.zip
+silkroad-dist.zip
