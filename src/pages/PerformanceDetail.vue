@@ -171,8 +171,8 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import manasCover from '../assets/images/home/manas-detail-cover.png'
-import muqamCover from '../assets/images/home/muqam-cover.jpg'
+import manasCover from '../assets/images/home/manas1.png'
+import muqamCover from '../assets/images/home/muqam1.png'
 import bg9 from '../assets/images/home/bg9.png'
 import imgDap from '../assets/images/music/乐器-Dap.png'
 import imgRawap from '../assets/images/music/乐器-Rawap.png'
@@ -180,9 +180,9 @@ import imgTash from '../assets/images/music/乐器-Tash.png'
 import imgKomuz from '../assets/images/music/乐器-Komuz.png'
 import imgMorinKhuur from '../assets/images/music/乐器-Morin Khuur.png'
 import imgTobshuur from '../assets/images/music/乐器-Tubshuur.png'
-import jangarCover from '../assets/images/home/jangar-cover.jpg'
-import longsongCover from '../assets/images/home/longsong-cover.jpg'
-import aitysCover from '../assets/images/home/aitys-cover.jpg'
+import jangarCover from '../assets/images/home/jangar1.jpg'
+import longsongCover from '../assets/images/home/longsong1.jpg'
+import aitysCover from '../assets/images/home/aitys1.png'
 import imgDombra from '../assets/images/music/乐器-Dombra.png'
 
 const expandedInst = reactive({})
@@ -284,7 +284,7 @@ const performanceData = {
   jangar: {
     title: 'J A N G A R',
     cover: jangarCover,
-    videoUrl: 'https://youtu.be/O4LqQY__9Lw',
+    videoUrl: 'https://youtu.be/Lmp_Siamj0k',
     performerIntro: 'Dorji Nyima is an autonomous-region-level inheritor of the Jangar epic from Hoboksar County, Tacheng, Xinjiang. His grandfather and other members of his family were also Jangar inheritors. Growing up surrounded by performances of the epic, he was deeply influenced by his elders and naturally became part of the next generation carrying the tradition forward.\n\nIn addition to performing Jangar in traditional stage settings, Dorji Nyima has worked with other artists to develop new arrangements of its music and presentation. These adaptations aim to make the epic more engaging for younger audiences while preserving its traditional foundation. Through both performance and creative collaboration, he has played an active role in promoting Jangar and bringing the tradition to contemporary audiences.',
     instruments: [
       {
@@ -317,7 +317,7 @@ const performanceData = {
   mongolian: {
     title: 'MONGOLIAN LONG SONG',
     cover: longsongCover,
-    videoUrl: 'https://youtu.be/l8rV6WqlFiA',
+    videoUrl: 'https://youtu.be/wUChPPC7vKw',
     performerIntro: 'D. Utunason is a national-level inheritor of Mongolian Long Song, a form of intangible cultural heritage. As a member of an older generation, he learned Long Song through the traditional method of oral transmission from senior inheritors. He continues to use this approach in his own teaching today, guiding students through melodies and lyrics one line at a time and asking them to learn by listening and repeating.\n\nStudents who can read staff notation or numbered musical notation may use scores as an additional tool, but the ability to read music is not required. One notable part of his teaching method is that students who learn more quickly may help teach their classmates, while he continues to guide the process. This creates a transmission structure in which the teacher teaches students, and students then help teach one another.\n\nUtunason has been teaching continuously since around 2005 and has worked with dozens of students over the years. He also brings students to performances, cultural events, and competitions at both the Tacheng and Xinjiang regional levels.',
     instruments: [
       {

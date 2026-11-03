@@ -92,7 +92,7 @@
         <h2 class="mission-title">Mission</h2>
         <div class="mission-text">
           <p>Our mission is to create a clear way for young audiences to experience, <br></br>understand, and take part in these traditions.</p>
-          <p>Through <a href="#/performance"  class="caps-link" @click="scrollToTop">PERFORMANCE</a>, we begin with the traditions as they are experienced in sound, music, instruments, movement, and live performance. Through <a href="#/listen" class="caps-link" @click="scrollToTop">LISTEN</a>, we document the perspectives of the performers, inheritors, teachers, and researchers who continue to carry and interpret these traditions today.</p>
+          <p>Through <a href="#/performance"  class="caps-link" @click="scrollToTop">PERFORMANCE</a>, we begin with the traditions as they are experienced in sound, music, instruments, movement, and live performance. By  <a href="#/listen" class="caps-link" @click="scrollToTop">LISTENING</a>, we document the perspectives of the performers, inheritors, teachers, and researchers who continue to carry and interpret these traditions today.</p>
           <p>Finally, through <a href="#/voice"  class="highlight-link" @click="scrollToTop">VOICE OF OUR OWN</a>, we focus on Manas and provide scripts,<br> educational resources, and performance tools that allow young people<br> and educators to engage with the epic in a thoughtful and participatory way.</p>
           <p class="mission-conclude">Together, these three parts move from experiencing a tradition,
             to understanding the people<br> behind it,
@@ -547,6 +547,7 @@ const scrollToTop = () => {
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
+    margin-bottom: 50px;
   }
 
   .map-legend ul {
@@ -577,25 +578,15 @@ const scrollToTop = () => {
     background: #854529;
   }
 
-   .map-image{
-     position: relative;
-     top: 120px;
-     margin-bottom: 300px;
-   }
+  .map-image {
+    position: relative;
+  }
   .map-image img {
     max-width: 760px;
     width: 100%;
     height: auto;
-    border-radius: 0;
-    box-shadow: none;
-    display: block;
-  }
-
-  .map-image img {
-    max-width: 100%;
-    height: auto;
     border-radius: 8px;
-    //box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: block;
   }
 }
 

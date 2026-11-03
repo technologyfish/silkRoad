@@ -11,7 +11,7 @@
               <div class="video-wrap">
                 <a href="https://youtu.be/gRJhvY8_qXw" target="_blank" class="video-link">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/manas-cover.jpg" alt="Manas Performance" />
+                  <img src="../assets/images/home/manas1.png" alt="Manas Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
@@ -49,7 +49,7 @@
               <div class="video-wrap">
                 <a href="https://youtu.be/B8_drszW2jU" target="_blank" class="video-link">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/muqam-cover.jpg" alt="Muqam Performance" />
+                  <img src="../assets/images/home/muqam1.png" alt="Muqam Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
@@ -83,9 +83,9 @@
 
             <div class="video-meta-row">
               <div class="video-wrap">
-                <a href="https://youtu.be/O4LqQY__9Lw" target="_blank" class="video-link">
+                <a href="https://youtu.be/Lmp_Siamj0k" target="_blank" class="video-link">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/jangar-cover.jpg" alt="Jangar Performance" />
+                  <img src="../assets/images/home/jangar1.jpg" alt="Jangar Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
@@ -120,9 +120,9 @@
 
             <div class="video-meta-row">
               <div class="video-wrap">
-                <a href="https://youtu.be/l8rV6WqlFiA" target="_blank" class="video-link">
+                <a href="https://youtu.be/wUChPPC7vKw" target="_blank" class="video-link">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/longsong-cover.jpg" alt="Mongolian Long Song Performance" />
+                  <img src="../assets/images/home/longsong1.jpg" alt="Mongolian Long Song Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>
@@ -159,7 +159,7 @@
               <div class="video-wrap">
                 <a href="https://youtu.be/tkZAkURHLag" target="_blank" class="video-link">
                 <div class="video-thumb">
-                  <img src="../assets/images/home/aitys-cover.jpg" alt="Aitys Performance" />
+                  <img src="../assets/images/home/aitys1.png" alt="Aitys Performance" />
                   <div class="play-button">
                     <img class="play-icon-img" src="../assets/images/home/icon-play.png" alt="play" />
                   </div>

@@ -5,6 +5,7 @@
       <!-- Top: Keeping.png image as title -->
       <div class="bubble-title-wrap">
         <img src="../assets/images/home/Keeping.png" class="bubble-img" alt="Keeping Oral Traditions Alive" />
+      <div class="audio-row">
         <div
           class="audio-wave-wrap"
           @click="toggleAudio"
@@ -24,7 +25,13 @@
             alt="audio wave playing"
           />
         </div>
+        <!-- Press to Play 圆形按钮（与波形联动） -->
+        <button class="press-play-btn" :class="{ playing: isPlaying }" @click="toggleAudio" aria-label="Play audio">
+          <span v-if="!isPlaying">PRESS<br />TO<br />PLAY</span>
+          <span v-else>PLAYING</span>
+        </button>
       </div>
+    </div>
 
       <!-- Section 1: white bg -->
       <section class="detail-section white-bg">
@@ -225,13 +232,53 @@ const scrollToTop = () => {
   height: auto;
   display: block;
 }
-/* Audio waveform */
+/* Audio waveform + Press to Play 按钮行 */
+.audio-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
 .audio-wave-wrap {
   position: relative;
-  margin-top: 10px;
   margin-left: 200px;
   cursor: pointer;
   display: inline-block;
+}
+.press-play-btn {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  margin-left: 16px;
+  border: none;
+  border-radius: 50%;
+  background: #E1E0DA;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+
+  &:hover {
+    transform: scale(1.08);
+    background: #AEC3BC;
+  }
+
+  &.playing {
+    background: #AEC3BC;
+    animation: playPulse 1.6s ease-in-out infinite;
+  }
+}
+
+@keyframes playPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(143, 185, 138, 0.55);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(143, 185, 138, 0);
+  }
 }
 .audio-wave {
   width: 180px;

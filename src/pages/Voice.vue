@@ -13,30 +13,30 @@
         <div class="container">
           <h2 class="overview-title">Project Overview</h2>
           <div class="overview-desc">
-            <p>Brief description: What is the project, why is "Manas" chosen as the cultural foundation, who are the main participants, and how can teachers and students use it</p>
-            <p>Brief description: What is the project, why is "Manas" chosen as the cultural foundation, who are the main participants, and how can teachers and students use it</p>
-            <p>Brief description: What is the project, why is "Manas" chosen as the cultural foundation, who are the main participants, and how can teachers and students use it</p>
+            <p>Voices of Our Own is a drama-education framework that asks students to consider how cultures are represented on stage and who holds the authority to tell a community’s stories. It grew out of fieldwork in Xinjiang with oral tradition performers, whose retellings showed how a narrative shifts depending on who carries it. Students move through a cycle of choosing, assigning, preparing, rehearsing, performing, and reflecting, building their own interpretation from a shared text.</p>
+            <p>The framework was developed collaboratively. Four groups across China and the U.S. co-wrote a 38-page adaptation of the Manas epic, and the model was then piloted in six schools, where trained student facilitators ran workshops independently. A toolkit and video guide allow other classrooms to adopt the approach without outside support.</p>
           </div>
 
           <div class="cards-row">
             <div class="card">
               <div class="card-box">
+                <p>Classrooms where students from different backgrounds can perform and reinterpret traditions with care, in conversation with the communities those traditions belong to.</p>
                 <div class="card-title">Vision</div>
               </div>
-
             </div>
 
             <div class="card">
               <div class="card-box">
+                <p>To give students a practical way to engage with cultural stories on their own terms, treating representation as a skill to be practiced and questioned rather than only discussed.</p>
                 <div class="card-title">Mission</div>
               </div>
             </div>
 
             <div class="card">
               <div class="card-box">
+                <p>To make the framework easy to replicate, so that students and teachers anywhere can lead workshops themselves.</p>
                 <div class="card-title">Goals</div>
               </div>
-
             </div>
           </div>
         </div>
@@ -69,6 +69,32 @@
           </div>
         </div>
       </section>
+
+      <!-- From Script to Stage Section -->
+      <section class="stage-section">
+        <div class="container">
+          <h2 class="stage-title">FROM SCRIPT TO STAGE</h2>
+          <p class="stage-subtitle">Turning research and retelling into live performance.</p>
+
+          <div class="stage-videos">
+            <a class="stage-video" href="https://youtu.be/z1WNK0jEE_c" target="_blank">
+              <img src="../assets/images/voice/cover1.png" alt="From Script to Stage performance 1" class="stage-cover" />
+              <div class="stage-play">
+                <img src="../assets/images/home/icon-play.png" alt="play" />
+              </div>
+            </a>
+            <a class="stage-video" href="https://youtu.be/D1DRhBCXrTs" target="_blank">
+              <img src="../assets/images/voice/cover2.png" alt="From Script to Stage performance 2" class="stage-cover" />
+              <div class="stage-play">
+                <img src="../assets/images/home/icon-play.png" alt="play" />
+              </div>
+            </a>
+          </div>
+
+          <p class="stage-caption">Performed at Shenzhen Children’s Palace · Shenzhen, China</p>
+        </div>
+      </section>
+
       <!-- How to Use Section (moved below scripts) -->
       <section class="howto-section">
         <div class="howto-inner container">
@@ -229,18 +255,22 @@ import Footer from '../components/Footer.vue'
 }
 .overview-title {
   font-family: $font-serif;
-  font-size: 34px;
-  margin-bottom: 60px;
+  font-size: 40px;
+  margin-bottom: 48px;
   margin-top: 60px;
 }
 .overview-desc {
-  max-width: 980px;
+  width: 1160px;
+  max-width: 100%;
   margin: 0 auto 40px;
   color: #0d0a07;
-  line-height: 1.2;
+  font-family: $font-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
 }
 .cards-row {
-  margin-top: 80px;
+  margin-top: 72px;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -250,23 +280,34 @@ import Footer from '../components/Footer.vue'
   text-align: center;
   .card-box {
     width: 360px;
+    max-width: 100%;
     height: 440px;
     background: #adc3bb;
-    display: block;
-    margin: 0 auto 18px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 36px 32px 30px;
+    box-sizing: border-box;
+
+    p {
+      color: #ffffff;
+      font-family: $font-serif;
+      font-size: 18px;
+      line-height: 1.7;
+      margin: auto 0;
+      text-align: left;
+    }
   }
   .card-box.large {
     width: 660px;
   }
   .card-title {
-    position: absolute;
-    bottom: 30px;
-    left:50%;
-    transform: translateX(-50%);
     font-family: $font-serif;
     font-size: 28px;
-    margin-top: 10px;
+    font-weight: 700;
+    color: #111;
+    margin-top: 20px;
   }
 }
 
@@ -328,7 +369,85 @@ import Footer from '../components/Footer.vue'
 
 @media (max-width: 1024px) {
   .cards-row { flex-direction: column; align-items: center; }
+  .card .card-box { width: 360px; max-width: 100%; height: 360px; }
   .card .card-box.large { width: 360px; height: 360px; }
+}
+
+/* From Script to Stage */
+.stage-section {
+  padding: 40px 0 80px;
+  text-align: center;
+}
+.stage-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.stage-title {
+  font-family: $font-serif;
+  font-size: 34px;
+  margin: 60px 0 10px;
+  color: #0d0a07;
+}
+.stage-subtitle {
+  font-family: $font-serif;
+  font-size: 18px;
+  color: #4A4A4A;
+  margin: 0 0 40px;
+}
+.stage-videos {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.stage-video {
+  position: relative;
+  display: block;
+  width: 420px;
+  max-width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+.stage-cover {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  //transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.stage-video:hover .stage-cover {
+  //transform: translateY(-4px);
+  //box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+}
+.stage-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  //background: rgba(255, 255, 255, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //transition: transform 0.2s ease, background 0.2s ease;
+
+  img {
+    width: 43px;
+    height: 43px;
+  }
+}
+.stage-video:hover .stage-play {
+  //transform: translate(-50%, -50%) scale(1.1);
+  //background: #ffffff;
+}
+.stage-caption {
+  font-family: $font-serif;
+  font-size: 15px;
+  color: #4A4A4A;
+  margin-top: 22px;
 }
 
 /* How to Use */

@@ -583,7 +583,7 @@ const toggleExpand = (index) => {
 }
 
 .main-content-box {
-  width: 640px;
+  width: 435px;
   margin-left: 220px;
 }
 .list-icon {
