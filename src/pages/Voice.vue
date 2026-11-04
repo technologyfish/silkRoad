@@ -47,25 +47,21 @@
           <h2 class="overview-title">Scripts</h2>
 
           <div class="scripts-list">
-            <div class="script-row">
-              <div class="script-left">
-                <div class="script-title">Full-Length <Br></Br>Script</div>
-                <div class="script-desc">Version name, <br>applicable scenario tag, <br>basic information</div>
-              </div>
+            <a class="script-row" :href="docUrl('Full-Length-WHEN MANAS IS SPOKEN_script.docx')" download>
+              <div class="script-label">Full-Length Script</div>
+              <div class="script-name">WHEN MANAS IS SPOKEN</div>
               <div class="script-download">
                 <img src="../assets/images/home/icon-download.png" alt="download" />
               </div>
-            </div>
+            </a>
 
-            <div class="script-row">
-              <div class="script-left">
-                <div class="script-title">Youth Version</div>
-                <div class="script-desc">Version name,<br> applicable scenario tag,<br> basic information</div>
-              </div>
+            <a class="script-row" :href="docUrl('YouthVersion-当玛纳斯被歌唱时.docx')" download>
+              <div class="script-label">Youth Version</div>
+              <div class="script-name">WHEN MANAS IS SUNG</div>
               <div class="script-download">
                 <img src="../assets/images/home/icon-download.png" alt="download" />
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -95,113 +91,74 @@
         </div>
       </section>
 
-      <!-- How to Use Section (moved below scripts) -->
-      <section class="howto-section">
-        <div class="howto-inner container">
-          <div class="howto-box">
-            <h3 class="howto-title">How to Use</h3>
-
-            <div class="howto-video">
-              <div class="video-placeholder">
-                <div class="play-circle">
-                  <img src="../assets/images/home/icon-play.png" alt="play" />
-                </div>
-              </div>
-            </div>
-
-            <div class="howto-cards">
-              <div class="how-card" />
-              <div class="how-card" />
-              <div class="how-card" />
-              <div class="how-card" />
-              <div class="how-card" />
-              <div class="how-card" />
-            </div>
-
-            <div class="howto-steps">
-              <span>Choose</span>
-              <span>→</span>
-              <span>Assign</span>
-              <span>→</span>
-              <span>Prepare</span>
-              <span>→</span>
-              <span>Rehearse</span>
-              <span>→</span>
-              <span>Perform</span>
-              <span>→</span>
-              <span>Reflect</span>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- Teacher Resources Section -->
       <section class="resources-section">
         <div class="container">
           <h2 class="resources-title">Teacher Resources</h2>
 
           <div class="resources-grid">
-            <div class="resource-item">
-              <div class="resource-inner">
-                <div class="resource-label">Teacher <br> Guide</div>
-                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="icon" /></div>
-              </div>
-            </div>
-
-            <div class="resource-item">
-              <div class="resource-inner">
-                <div class="resource-label">Character <br> Guide</div>
-                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="icon" /></div>
-              </div>
-            </div>
-
-            <div class="resource-item">
-              <div class="resource-inner">
-                <div class="resource-label">Role<br> Assignment Sheet</div>
-                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="icon" /></div>
-              </div>
-            </div>
-
-            <div class="resource-item">
-              <div class="resource-inner">
-                <div class="resource-label">Story<br> Background</div>
-                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="icon" /></div>
-              </div>
-            </div>
-
-            <div class="resource-item">
-              <div class="resource-inner">
-                <div class="resource-label">Rehearsal<br> Guide</div>
-                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="icon" /></div>
-              </div>
-            </div>
-
-            <div class="resource-item">
-              <div class="resource-inner">
-                <div class="resource-label">Discussion<br> Questions</div>
-                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="icon" /></div>
-              </div>
-            </div>
-
-            <div class="resource-item">
+            <a class="resource-item" :href="docUrl('1. VOICES OF OUR OWN_Reflection Sheet.docx')" download>
               <div class="resource-inner">
                 <div class="resource-label">Reflection <br>Sheet</div>
-                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="icon" /></div>
+                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="download" /></div>
               </div>
-            </div>
+            </a>
 
-            <div class="resource-item">
+            <a class="resource-item" :href="docUrl('2. VOICES OF OUR OWN_Teacher Guide.docx')" download>
               <div class="resource-inner">
-                <div class="resource-label">Performance Checklist</div>
-                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="icon" /></div>
+                <div class="resource-label">Teacher <br>Guide</div>
+                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="download" /></div>
               </div>
-            </div>
+            </a>
 
-            <div class="resource-item">
+            <a class="resource-item" :href="docUrl('3. VOICES OF OUR OWN_Story Background.docx')" download>
               <div class="resource-inner">
-                <div class="resource-label">Download Teacher Resource Pack</div>
-                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="icon" /></div>
+                <div class="resource-label">Story <br>Background</div>
+                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="download" /></div>
               </div>
-            </div>
+            </a>
+
+            <a class="resource-item" :href="docUrl('4. VOICES OF OUR OWN_Role Assignment Worksheet.docx')" download>
+              <div class="resource-inner">
+                <div class="resource-label">Role Assignment <br>Worksheet</div>
+                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="download" /></div>
+              </div>
+            </a>
+
+            <a class="resource-item" :href="docUrl('6. VOICES OF OUR OWN_Performance Checklist.docx')" download>
+              <div class="resource-inner">
+                <div class="resource-label">Performance <br>Checklist</div>
+                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="download" /></div>
+              </div>
+            </a>
+
+            <a class="resource-item" :href="docUrl('7. VOICES OF OUR OWN_Character Guide.docx')" download>
+              <div class="resource-inner">
+                <div class="resource-label">Character <br>Guide</div>
+                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="download" /></div>
+              </div>
+            </a>
+
+            <a class="resource-item" :href="docUrl('8. VOICES OF OUR OWN_Discussion Questions.docx')" download>
+              <div class="resource-inner">
+                <div class="resource-label">Discussion <br>Questions</div>
+                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="download" /></div>
+              </div>
+            </a>
+
+            <a class="resource-item" :href="docUrl('9. VOICES OF OUR OWN_Rehearsal Guide.docx')" download>
+              <div class="resource-inner">
+                <div class="resource-label">Rehearsal <br>Guide</div>
+                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="download" /></div>
+              </div>
+            </a>
+
+            <a class="resource-item" :href="docUrl('10. VOICES OF OUR OWN_Resource Pack.docx')" download>
+              <div class="resource-inner">
+                <div class="resource-label">Download <br>Resource Pack</div>
+                <div class="resource-icon"><img src="../assets/images/home/icon-download2.png" alt="download" /></div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -217,7 +174,11 @@
 <!--            <div class="community-box box-green">Community/World Map</div>-->
 <!--          </div>-->
           <div class="map">
-            <img src="../assets/images/home/map.png" alt="icon" />
+            <div class="community-note">
+              <p>Voices of Our Own is still growing. After the initial pilots in six schools, the next step is to bring the framework into classrooms in more countries and to see how it holds up across different cultural and educational settings. This section will become a place to share what students and teachers learn along the way.</p>
+              <p>If you are an educator or student interested in piloting the framework, please get in touch through the <a href="#/contact">Contact page</a>. Feedback, adaptations, and reflections from participating schools will be added here as they come in.</p>
+            </div>
+            <img src="../assets/images/home/map.png" alt="world map" />
           </div>
         </div>
       </section>
@@ -229,6 +190,10 @@
 <script setup>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
+
+// Documents live in public/voice/ so they are copied verbatim into dist/
+// and served relative to the deployed site root.
+const docUrl = (name) => encodeURI(`voice/${name}`)
 </script>
 
 <style lang="scss" scoped>
@@ -331,35 +296,27 @@ import Footer from '../components/Footer.vue'
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
   padding: 36px 28px;
   background: transparent;
-  //border-top: 1px solid #e8e8e8;
+  text-decoration: none;
+  color: inherit;
 }
-.script-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 280px;
-  text-align: left;
-  width: 100%;
-}
-.script-title {
+.script-label {
   width: 260px;
   text-align: left;
+  font-family: $font-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d0905;
 }
-.script-desc {
+.script-name {
   flex: 1;
-  text-align: left;
-}
-.script-title {
-  font-size: 24px;
+  text-align: center;
+  font-family: $font-serif;
+  font-size: 26px;
+  letter-spacing: 0.08em;
   color: #0d0905;
-  margin-bottom: 6px;
-}
-.script-desc {
-  font-size: 24px;
-  color: #0d0905;
-  line-height: 1.2;
 }
 .script-download img {
   width: 60px;
@@ -450,80 +407,6 @@ import Footer from '../components/Footer.vue'
   margin-top: 22px;
 }
 
-/* How to Use */
-.howto-section {
-  background: transparent;
-  padding: 60px 0 100px;
-}
-.howto-inner {
-  max-width: 1253px;
-  margin: 0 auto;
-}
-.howto-box {
-  background: #fff;
-  border-radius: 14px;
-  padding: 40px 60px 36px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-}
-.howto-title {
-  font-family: $font-serif;
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.howto-video {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 36px;
-}
-.video-placeholder {
-  width: 740px;
-  height: 350px;
-  background: #0b0b0b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  position: relative;
-}
-.play-circle {
-  width: 86px;
-  height: 86px;
-  border-radius: 50%;
-}
-.play-circle img {
-  width: 100%;
-  height:  100%;
-}
-.howto-cards {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  margin-bottom: 30px;
-}
-.how-card {
-  width: 120px;
-  height: 220px;
-  background: #adc3bb;
-  border-radius: 2px;
-}
-.howto-steps {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 12px;
-  font-family: $font-serif;
-  color: #111;
-  letter-spacing: 1px;
-}
-
-@media (max-width: 900px) {
-  .video-placeholder { width: 100%; height: 200px; }
-  .how-card { width: 80px; height: 160px; }
-  .howto-box { padding: 24px; }
-}
-
 /* Teacher Resources */
 .resources-section {
   //background: #d1c4b4;
@@ -554,6 +437,8 @@ import Footer from '../components/Footer.vue'
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color: inherit;
 }
 .resource-inner {
   width: 100%;
@@ -605,10 +490,39 @@ import Footer from '../components/Footer.vue'
 }
 .map{
   margin-top: 80px;
-  height: 672px;
-  image{
-    width: 100%;
-    height: 100%;
+
+  img {
+    width: 68%;
+    height: auto;
+    display: block;
+    margin: 48px auto 0;
+  }
+}
+.community-note {
+  width: 1160px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: rgba(150, 150, 150, 0.35);
+  padding: 32px 40px;
+  box-sizing: border-box;
+  text-align: left;
+
+  p {
+    color: #ffffff;
+    font-family: $font-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 }
 .community-list {
@@ -650,6 +564,10 @@ import Footer from '../components/Footer.vue'
 
 @media (max-width: 900px) {
   .community-box { width: 90%; height: 84px; border-radius: 14px; padding-left: 20px; }
+  .community-note { padding: 24px; }
+  .script-name { font-size: 20px; }
+  .script-label { width: 140px; font-size: 18px; }
+  .script-download img { width: 44px; height: 44px; }
 }
 </style>
 

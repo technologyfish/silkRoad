@@ -54,7 +54,7 @@
             <div class="item-right"><img src="../assets/images/home/YouTube.png" alt="" /></div>
           </a>
           <a class="contact-item item-brown" href="#/voice">
-            <div class="item-left">Voice of Our Own Participation</div>
+            <div class="item-left">Voices of Our Own Participation</div>
             <div class="item-right"><img src="../assets/images/home/link.png" alt="" /></div>
           </a>
           <a class="contact-item item-gray" href="mailto:edriczrwang@gmail.com">

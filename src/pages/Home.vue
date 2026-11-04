@@ -93,7 +93,7 @@
         <div class="mission-text">
           <p>Our mission is to create a clear way for young audiences to experience, <br></br>understand, and take part in these traditions.</p>
           <p>Through <a href="#/performance"  class="caps-link" @click="scrollToTop">PERFORMANCE</a>, we begin with the traditions as they are experienced in sound, music, instruments, movement, and live performance. By  <a href="#/listen" class="caps-link" @click="scrollToTop">LISTENING</a>, we document the perspectives of the performers, inheritors, teachers, and researchers who continue to carry and interpret these traditions today.</p>
-          <p>Finally, through <a href="#/voice"  class="highlight-link" @click="scrollToTop">VOICE OF OUR OWN</a>, we focus on Manas and provide scripts,<br> educational resources, and performance tools that allow young people<br> and educators to engage with the epic in a thoughtful and participatory way.</p>
+          <p>Finally, through <a href="#/voice"  class="highlight-link" @click="scrollToTop">VOICES OF OUR OWN</a>, we focus on Manas and provide scripts,<br> educational resources, and performance tools that allow young people<br> and educators to engage with the epic in a thoughtful and participatory way.</p>
           <p class="mission-conclude">Together, these three parts move from experiencing a tradition,
             to understanding the people<br> behind it,
             to creating a meaningful opportunity for a new generation to participate.</p>

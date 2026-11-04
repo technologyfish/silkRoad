@@ -7,7 +7,7 @@
               <li :class="['nav-item', { active: isActive('/') }]"><a href="#/">HOME</a></li>
               <li :class="['nav-item', { active: isActive('/performance') }]"><a href="#/performance">PERFORMANCE</a></li>
               <li :class="['nav-item', { active: isActive('/listen') }]"><a href="#/listen">LISTEN</a></li>
-              <li :class="['nav-item', { active: isActive('/voice') }]"><a href="#/voice">VOICE OF OUR OWN</a></li>
+              <li :class="['nav-item', { active: isActive('/voice') }]"><a href="#/voice">VOICES OF OUR OWN</a></li>
               <li :class="['nav-item', { active: isActive('/contact') }]"><a href="#/contact">CONTACT</a></li>
             </ul>
           </nav>

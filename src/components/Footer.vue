@@ -12,7 +12,7 @@
           <li><a href="#/" target="_self" @click="scrollToTop">HOME | 首页</a></li>
           <li><a href="#/performance" target="_self" @click="scrollToTop">PERFORMANCE | 表演</a></li>
           <li><a href="#/listen" target="_self" @click="scrollToTop">LISTEN | 倾听</a></li>
-          <li><a href="#/voice" target="_self" @click="scrollToTop">VOICE OF OUR OWN</a></li>
+          <li><a href="#/voice" target="_self" @click="scrollToTop">VOICES OF OUR OWN</a></li>
           <li><a href="#/contact" target="_self" @click="scrollToTop">CONTACT | 联系</a></li>
         </ul>
       </div>
