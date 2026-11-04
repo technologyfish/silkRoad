@@ -24,7 +24,6 @@
                 <ul class="meta-list">
                   <li><span class="dot"></span> Location：Manas Epic Museum, Akqi County, Xinjiang, China</li>
                   <li><span class="dot"></span> Performer：Toktosun Khadrakhon</li>
-                  <li><span class="dot"></span> Date：July 2, 2026</li>
                 </ul>
               </div>
             </div>
@@ -62,7 +61,6 @@
                 <ul class="meta-list">
                   <li><span class="dot"></span> Location：Kashgar Ancient City, Xinjiang, China</li>
                   <li><span class="dot"></span> Performer：Gaotai Artist Center</li>
-                  <li><span class="dot"></span> Date：July 1, 2026</li>
                 </ul>
               </div>
             </div>
@@ -98,7 +96,6 @@
                 <ul class="meta-list">
                   <li><span class="dot"></span> Location：Hoboksar County Cultural Center, Tacheng, Xinjiang, China</li>
                   <li><span class="dot"></span> Performer：Dorj Nyima</li>
-                  <li><span class="dot"></span> Date：July 6, 2026</li>
                 </ul>
               </div>
             </div>
@@ -135,7 +132,6 @@
                 <ul class="meta-list">
                   <li><span class="dot"></span> Location：Hoboksar County Cultural Center, Tacheng, Xinjiang, China</li>
                   <li><span class="dot"></span> Performer：D. Utunason</li>
-                  <li><span class="dot"></span> Date：July 6, 2026</li>
                 </ul>
               </div>
             </div>
@@ -172,7 +168,6 @@
                 <ul class="meta-list">
                   <li><span class="dot"></span> Location：Emin County Cultural Center, Tacheng, Xinjiang, China</li>
                   <li><span class="dot"></span> Performer：A team of Aqyn Aitys inheritors led by Jiensihan Wulazimolla</li>
-                  <li><span class="dot"></span> Date：July 7, 2026</li>
                 </ul>
               </div>
             </div>

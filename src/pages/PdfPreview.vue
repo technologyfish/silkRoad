@@ -16,24 +16,31 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 
 // PDFs are hosted on our own server (Aliyun, managed via BT panel) over HTTPS,
 // NOT bundled into the site (GitHub Pages). The cert is a Let's Encrypt
 // IP-address certificate, auto-renewed by acme.sh on the server.
-const PDF_BASE = 'https://8.148.30.7/pdfs/'
+//
+// VPN fix: when the site itself is deployed together with a `pdfs/` folder
+// (e.g. uploaded to the same Aliyun host), prefer that same-origin copy —
+// requests then follow the same network path as the site itself, so a VPN
+// that can load the site can also load the PDFs. If the same-origin copy is
+// absent (e.g. GitHub Pages deploys), fall back to the dedicated server.
+const PDF_BASE_REMOTE = 'https://8.148.30.7/pdfs/'
+const PDF_BASE_LOCAL = 'pdfs/'
 
 const pdfMap = {
-  'manas-kyrgyz': { title: 'Manas Epic — Kyrgyz Language', file: PDF_BASE + 'manas-kyrgyz.pdf', fileName: 'Manas_in_Kyrgyz.pdf' },
-  'manas-chinese': { title: 'Manas Epic — Chinese Language', file: PDF_BASE + 'manas-chinese.pdf', fileName: 'Manas_in_Chinese.pdf' },
-  'muqam-uyghur': { title: 'The Twelve Muqam — Uyghur Language', file: PDF_BASE + 'muqam-uyghur.pdf', fileName: 'Muqam_in_Uyghur.pdf' },
-  'muqam-chinese': { title: 'The Twelve Muqam — Chinese Language', file: PDF_BASE + 'muqam-chinese.pdf', fileName: 'Muqam_in_Chinese.pdf' },
-  'jangar-tod': { title: 'Jangar Epic — Mongolian Tod', file: PDF_BASE + 'jangar-tod.pdf', fileName: 'Jangar_in_Tod_Script.pdf' },
-  'jangar-hudum': { title: 'Jangar Epic — Mongolian Hudum', file: PDF_BASE + 'jangar-hudum.pdf', fileName: 'Jangar_in_Hudum_Script.pdf' },
-  'jangar-chinese': { title: 'Jangar Epic — Chinese Language', file: PDF_BASE + 'jangar-chinese.pdf', fileName: 'Jargar_in_Chinese.pdf' },
-  'jangar-english': { title: 'Jangar Epic — English Language', file: PDF_BASE + 'jangar-english.pdf', fileName: 'Jangar_Epic_English.pdf' },
+  'manas-kyrgyz': { title: 'Manas Epic — Kyrgyz Language', file: 'manas-kyrgyz.pdf', fileName: 'Manas_in_Kyrgyz.pdf' },
+  'manas-chinese': { title: 'Manas Epic — Chinese Language', file: 'manas-chinese.pdf', fileName: 'Manas_in_Chinese.pdf' },
+  'muqam-uyghur': { title: 'The Twelve Muqam — Uyghur Language', file: 'muqam-uyghur.pdf', fileName: 'Muqam_in_Uyghur.pdf' },
+  'muqam-chinese': { title: 'The Twelve Muqam — Chinese Language', file: 'muqam-chinese.pdf', fileName: 'Muqam_in_Chinese.pdf' },
+  'jangar-tod': { title: 'Jangar Epic — Mongolian Tod', file: 'jangar-tod.pdf', fileName: 'Jangar_in_Tod_Script.pdf' },
+  'jangar-hudum': { title: 'Jangar Epic — Mongolian Hudum', file: 'jangar-hudum.pdf', fileName: 'Jangar_in_Hudum_Script.pdf' },
+  'jangar-chinese': { title: 'Jangar Epic — Chinese Language', file: 'jangar-chinese.pdf', fileName: 'Jargar_in_Chinese.pdf' },
+  'jangar-english': { title: 'Jangar Epic — English Language', file: 'jangar-english.pdf', fileName: 'Jangar_Epic_English.pdf' },
 }
 
 // Register the 11 English volumes: #/pdf-preview/manas-english-1-1 ... 4-2
@@ -46,7 +53,7 @@ const manasEnglishVols = [
 manasEnglishVols.forEach((vol) => {
   pdfMap[`manas-english-${vol}`] = {
     title: `Manas Epic — English Language ${vol}`,
-    file: `${PDF_BASE}manas-english-${vol}.pdf`,
+    file: `manas-english-${vol}.pdf`,
     fileName: `Manas_Epic_English_${vol}.pdf`,
   }
 })
@@ -59,8 +66,31 @@ const pdfKey = computed(() => {
 
 const currentPdf = computed(() => pdfMap[pdfKey.value] || {})
 const pdfTitle = computed(() => currentPdf.value.title || 'PDF Preview')
-const pdfUrl = computed(() => currentPdf.value.file || '')
 const pdfFileName = computed(() => currentPdf.value.fileName || 'document.pdf')
+
+// Start with the dedicated server URL so the preview renders immediately,
+// then switch to the same-origin copy if one exists.
+const pdfUrl = ref(PDF_BASE_REMOTE + (currentPdf.value.file || ''))
+
+const resolvePdfUrl = async (name) => {
+  if (!name) return ''
+  try {
+    // SPA fallback (dev server / nginx try_files) can answer 200 with
+    // index.html for missing files — only trust responses that are real PDFs.
+    const res = await fetch(PDF_BASE_LOCAL + name, { method: 'HEAD' })
+    const type = res.headers.get('content-type') || ''
+    if (res.ok && type.toLowerCase().includes('pdf')) {
+      return PDF_BASE_LOCAL + name
+    }
+  } catch (e) {
+    // same-origin copy unreachable — keep the dedicated server URL
+  }
+  return PDF_BASE_REMOTE + name
+}
+
+onMounted(async () => {
+  pdfUrl.value = await resolvePdfUrl(currentPdf.value.file)
+})
 </script>
 
 <style lang="scss" scoped>

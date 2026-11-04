@@ -136,13 +136,13 @@
         <h2 class="section-heading">Expert Perspective</h2>
         <div class="expert-top">
           <a v-if="currentData.expert.videoUrl" :href="currentData.expert.videoUrl" target="_blank" class="expert-video">
-            <img src="../assets/images/home/expert_perspective.png" alt="Expert" class="expert-cover" />
+            <img :src="currentData.expert.image || imgExpertDefault" alt="Expert" class="expert-cover" />
             <div class="play-button small">
               <img src="../assets/images/home/icon-play.png" alt="play" class="play-icon" />
             </div>
           </a>
           <div v-else class="expert-video">
-            <img src="../assets/images/home/expert_perspective.png" alt="Expert" class="expert-cover" />
+            <img :src="currentData.expert.image || imgExpertDefault" alt="Expert" class="expert-cover" />
             <div class="play-button small">
               <img src="../assets/images/home/icon-play.png" alt="play" class="play-icon" />
             </div>
@@ -178,6 +178,8 @@ import imgDap from '../assets/images/music/乐器-Dap.png'
 import imgRawap from '../assets/images/music/乐器-Rawap.png'
 import imgTash from '../assets/images/music/乐器-Tash.png'
 import imgKomuz from '../assets/images/music/乐器-Komuz.png'
+import imgMuqamEnsemble from '../assets/images/music/muqam-ensemble.jpg'
+import imgExpertDefault from '../assets/images/home/expert_perspective.png'
 import imgMorinKhuur from '../assets/images/music/乐器-Morin Khuur.png'
 import imgTobshuur from '../assets/images/music/乐器-Tubshuur.png'
 import jangarCover from '../assets/images/home/jangar1.jpg'
@@ -197,6 +199,17 @@ const performanceData = {
     cover: manasCover,
     videoUrl: 'https://youtu.be/gRJhvY8_qXw',
     performerIntro: 'Toktosun is a new-generation Manas inheritor from Akqi County, Xinjiang. He began learning to perform the Epic of Manas at the age of eight and can perform it in both Kyrgyz and Mandarin. As a university-educated young inheritor, he is currently recognized as a county-level Manas inheritor in Akqi County, Kizilsu Prefecture, Xinjiang. He promotes the Epic of Manas through both traditional stage performances and new media platforms such as Douyin, WeChat Channels, and Kuaishou.',
+    instruments: [
+      {
+        name: 'Komuz',
+        type: 'Kyrgyz · Plucked Instrument',
+        color: 'green',
+        image: imgKomuz,
+        introduction: 'The Komuz is the most representative musical instrument of the Kyrgyz people. It is a three-stringed plucked instrument with a pear-shaped body and short neck. The Komuz is central to Kyrgyz cultural identity and is used to accompany epic singing, folk songs, and instrumental pieces.',
+        history: 'The Komuz has a history of over 2,000 years among Turkic peoples. Ancient Chinese texts from the Han Dynasty mention similar instruments. The Komuz was particularly important during the Kyrgyz Khaganate period (6th-10th centuries). Legend says the instrument was created by a hunter who was inspired by the sounds of wind and water.',
+        features: 'The Komuz is traditionally carved from a single piece of apricot or juniper wood. It has three strings made from horsehair or gut. The body is pear-shaped with a flat soundboard. The instrument is played by plucking the strings with the right hand while pressing the strings against the neck with the left. Its tone is clear, bright, and resonant.',
+      },
+    ],
     contextCards: [
       { label: 'Manas Epic', sub: 'Kyrgyz language', url: '#/pdf-preview/manas-kyrgyz' },
       { label: 'Manas Epic', sub: 'Chinese language', url: '#/pdf-preview/manas-chinese' },
@@ -258,15 +271,6 @@ const performanceData = {
         history: 'The Tash is believed to be one of the earliest musical instruments, dating back to prehistoric times when early humans discovered that certain stones could produce musical tones when struck. In Uyghur culture, the Tash has been used for thousands of years in folk music and ceremonial contexts. The stones are carefully selected from riverbeds for their acoustic properties.',
         features: 'The Tash consists of two smooth, flat stones of different sizes, typically made from basalt or other dense volcanic rock. The stones are held in one hand and struck together rhythmically. Despite its simple construction, the Tash requires great skill to play expressively. Its clear, bell-like tone adds a unique percussive element to ensemble music.',
       },
-      {
-        name: 'Komuz',
-        type: 'Kyrgyz · Plucked Instrument',
-        color: 'green',
-        image: imgKomuz,
-        introduction: 'The Komuz is the most representative musical instrument of the Kyrgyz people. It is a three-stringed plucked instrument with a pear-shaped body and short neck. The Komuz is central to Kyrgyz cultural identity and is used to accompany epic singing, folk songs, and instrumental pieces.',
-        history: 'The Komuz has a history of over 2,000 years among Turkic peoples. Ancient Chinese texts from the Han Dynasty mention similar instruments. The Komuz was particularly important during the Kyrgyz Khaganate period (6th-10th centuries). Legend says the instrument was created by a hunter who was inspired by the sounds of wind and water.',
-        features: 'The Komuz is traditionally carved from a single piece of apricot or juniper wood. It has three strings made from horsehair or gut. The body is pear-shaped with a flat soundboard. The instrument is played by plucking the strings with the right hand while pressing the strings against the neck with the left. Its tone is clear, bright, and resonant.',
-      },
     ],
     contextCards: [
       { label: 'The Twelve Muqam', sub: 'Uyghur language', url: '#/pdf-preview/muqam-uyghur' },
@@ -274,6 +278,7 @@ const performanceData = {
     ],
     expert: {
       videoUrl: 'https://youtu.be/sjfZW9LWsFs',
+      image: imgMuqamEnsemble,
       intro: 'Professor Turghun has long taught courses on Chinese traditional and folk music, the music of Xinjiang\'s ethnic communities, Muqam musical structure, and Muqam appreciation. He has also conducted many years of field research on ethnic music across Xinjiang, visiting more than seventy counties. The interview therefore begins with his experience in both teaching and field research.',
       paragraphs: [
         'Professor Turghun emphasizes that Xinjiang Muqam is not a single musical form. He introduces several regional traditions, including the Twelve Muqam, Dolan Muqam, Turpan Muqam, and Hami Muqam, and compares their differences in length, structure, instrumentation, dance, and performance duration. The Twelve Muqam, for example, is extremely large in scale and contains multiple sections, while Dolan Muqam follows a different structure and performance format.',
