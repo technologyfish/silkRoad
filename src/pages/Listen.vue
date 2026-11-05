@@ -524,6 +524,7 @@ const toggleExpand = (index) => {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';
+@import '../assets/scss/base/_function.scss';
 
 .listen-hero {
   background-color: #fff;
@@ -867,6 +868,190 @@ a.howto-video,
   .text-left { display: none; }
   .main-content-box { width: 60%; margin-left: 20px; }
   .people-column { display: none; }
+}
+
+/* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
+@media (max-width: 768px) {
+  .listen-hero {
+    padding-bottom: pxToVw(60);
+
+    &.alt {
+      padding-bottom: pxToVw(60);
+    }
+  }
+
+  /* 内联样式 width:1366px / height:751px 需 !important 覆盖 */
+  .listen-inner {
+    width: 100% !important;
+    height: auto !important;
+    padding: pxToVw(80) pxToVw(50) pxToVw(140) !important;
+    box-sizing: border-box;
+  }
+
+  .text-left {
+    display: none;
+  }
+
+  .people-column {
+    display: none;
+  }
+
+  .main-content-box {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+
+  .list-icon {
+    width: pxToVw(72);
+    margin-bottom: pxToVw(24);
+  }
+
+  .mc-subtitle {
+    font-size: pxToVw(32);
+    margin-bottom: pxToVw(16);
+  }
+
+  .mc-list li {
+    font-size: pxToVw(30);
+    line-height: 1.6;
+    margin-bottom: pxToVw(14);
+    padding-left: pxToVw(28);
+  }
+
+  .down-indicator {
+    bottom: pxToVw(50);
+
+    img {
+      width: pxToVw(90);
+      height: pxToVw(90);
+    }
+  }
+
+  /* 展开后的内容 */
+  .expand-content {
+    max-width: 100%;
+    padding: pxToVw(60) pxToVw(30);
+    box-sizing: border-box;
+  }
+
+  .expand-block {
+    margin-bottom: pxToVw(70);
+  }
+
+  .expand-header {
+    text-align: center;
+    padding: 0 pxToVw(10);
+    margin-bottom: pxToVw(30);
+  }
+
+  .expand-name {
+    display: block;
+    font-size: pxToVw(34);
+    margin-right: 0;
+    margin-bottom: pxToVw(6);
+  }
+
+  .expand-subtitle {
+    display: block;
+    font-size: pxToVw(28);
+  }
+
+  .expand-title {
+    font-size: pxToVw(40);
+    margin-bottom: pxToVw(24);
+    gap: pxToVw(12);
+
+    .title-icon {
+      width: pxToVw(44);
+      height: pxToVw(44);
+    }
+  }
+
+  .expand-desc {
+    font-size: pxToVw(26);
+    line-height: 1.85;
+    margin-bottom: pxToVw(50);
+    max-width: 100%;
+  }
+
+  a.howto-video,
+  .howto-video {
+    margin-bottom: pxToVw(40);
+  }
+
+  .video-placeholder {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+  }
+
+  .howto-video-dual {
+    flex-direction: column;
+    align-items: center;
+    gap: pxToVw(30);
+    margin-bottom: pxToVw(40);
+  }
+
+  .video-half {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 470 / 264;
+  }
+
+  .play-circle {
+    width: pxToVw(130);
+    height: pxToVw(130);
+  }
+
+  .collapse-indicator {
+    margin-top: pxToVw(20);
+
+    img {
+      width: pxToVw(90);
+      height: pxToVw(90);
+    }
+  }
+
+  /* 访谈卡片 */
+  .interview-section {
+    min-height: auto;
+    padding: pxToVw(80) pxToVw(30);
+    box-sizing: border-box;
+  }
+
+  .interview-card {
+    width: 100%;
+    padding: pxToVw(70) pxToVw(40) pxToVw(110);
+    box-sizing: border-box;
+  }
+
+  .interview-titles {
+    margin-bottom: pxToVw(40);
+
+    h2 {
+      font-size: pxToVw(40);
+    }
+
+    h3 {
+      font-size: pxToVw(32);
+    }
+  }
+
+  .interview-info p {
+    font-size: pxToVw(26);
+    line-height: 1.8;
+  }
+
+  .interview-arrow {
+    right: pxToVw(30);
+    bottom: pxToVw(30);
+
+    img {
+      width: pxToVw(60);
+      height: pxToVw(60);
+    }
+  }
 }
 </style>
 

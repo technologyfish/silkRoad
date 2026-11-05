@@ -455,6 +455,7 @@ const goToNext = () => {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';
+@import '../assets/scss/base/_function.scss';
 
 .performance-detail-page {
   font-family: $font-sans;
@@ -962,6 +963,235 @@ const goToNext = () => {
   .inst-header { flex-direction: column; text-align: center; }
   .inst-info { text-align: center; }
   .detail-label, .detail-text { text-align: center; }
+}
+
+/* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
+@media (max-width: 768px) {
+  /* 封面视频区 */
+  .video-container {
+    height: pxToVw(760);
+  }
+
+  .play-button {
+    width: pxToVw(120);
+    height: pxToVw(120);
+
+    &.small {
+      width: pxToVw(100);
+      height: pxToVw(100);
+    }
+  }
+
+  /* 标题 */
+  .title-section {
+    padding: pxToVw(50) pxToVw(30) pxToVw(30);
+  }
+
+  .main-title {
+    font-size: pxToVw(76);
+    letter-spacing: pxToVw(10);
+  }
+
+  .section-heading {
+    font-size: pxToVw(48);
+    margin-bottom: pxToVw(30);
+  }
+
+  /* Performer Introduction / What Are We Watching */
+  .intro-section {
+    padding: pxToVw(60) pxToVw(30);
+  }
+
+  .intro-text {
+    font-size: pxToVw(28);
+    line-height: 1.8;
+  }
+
+  .watching-section {
+    padding: pxToVw(60) pxToVw(30);
+  }
+
+  .watching-text {
+    font-size: pxToVw(28);
+    line-height: 1.8;
+  }
+
+  /* Story Parts */
+  .story-section {
+    padding: pxToVw(40) pxToVw(30) pxToVw(60);
+  }
+
+  .story-columns {
+    gap: pxToVw(50);
+  }
+
+  .story-part-title {
+    font-size: pxToVw(30);
+  }
+
+  .story-part-subtitle {
+    font-size: pxToVw(36);
+    margin-bottom: pxToVw(24);
+  }
+
+  .story-part-text {
+    font-size: pxToVw(26);
+    line-height: 1.7;
+  }
+
+  /* Music & Instruments */
+  .instruments-section {
+    padding: pxToVw(60) pxToVw(30);
+  }
+
+  .instruments-list {
+    gap: pxToVw(36);
+  }
+
+  .inst-header {
+    padding: pxToVw(50) pxToVw(30) 0;
+    gap: pxToVw(30);
+  }
+
+  .inst-img-wrap {
+    width: 100%;
+    max-width: pxToVw(560);
+  }
+
+  .inst-name {
+    font-size: pxToVw(44);
+  }
+
+  .inst-type {
+    font-size: pxToVw(24);
+    margin-bottom: pxToVw(24);
+  }
+
+  .inst-label {
+    font-size: pxToVw(28);
+    margin: pxToVw(10) 0;
+  }
+
+  .inst-expand-btn {
+    padding: pxToVw(10) 0 pxToVw(20);
+  }
+
+  .expand-icon,
+  .collapse-icon {
+    width: pxToVw(36);
+    height: pxToVw(36);
+  }
+
+  /* 展开后的详情 */
+  .inst-detail {
+    padding: 0 pxToVw(30) pxToVw(40);
+  }
+
+  .inst-detail-header {
+    gap: pxToVw(24);
+    margin-bottom: pxToVw(30);
+    flex-direction: row;
+  }
+
+  .inst-detail-img-wrap {
+    width: pxToVw(300);
+    height: pxToVw(210);
+  }
+
+  .detail-label {
+    font-size: pxToVw(32);
+    margin: pxToVw(30) 0 pxToVw(12);
+  }
+
+  .detail-text {
+    font-size: pxToVw(26);
+    line-height: 1.7;
+  }
+
+  .inst-collapse-btn {
+    margin-top: pxToVw(30);
+  }
+
+  /* Oral / Cultural Context */
+  .context-section {
+    padding: pxToVw(60) pxToVw(30);
+  }
+
+  .context-cards {
+    gap: pxToVw(30);
+  }
+
+  .context-card {
+    width: pxToVw(420);
+    height: pxToVw(420);
+    padding: pxToVw(30);
+  }
+
+  .card-icon {
+    width: pxToVw(100);
+    height: pxToVw(100);
+    margin-bottom: pxToVw(24);
+  }
+
+  .card-label {
+    font-size: pxToVw(30);
+  }
+
+  .card-sub {
+    font-size: pxToVw(26);
+  }
+
+  .english-swiper-wrap {
+    margin-top: pxToVw(60);
+  }
+
+  .swiper-nav {
+    width: pxToVw(88);
+    height: pxToVw(88);
+
+    &.prev { left: pxToVw(-8); }
+    &.next { right: pxToVw(-8); }
+
+    .nav-icon {
+      width: pxToVw(32);
+      height: pxToVw(32);
+    }
+  }
+
+  /* Expert Perspective */
+  .expert-section {
+    padding: pxToVw(60) pxToVw(30);
+  }
+
+  .expert-top {
+    gap: pxToVw(30);
+    margin-bottom: pxToVw(40);
+  }
+
+  .expert-video {
+    width: 100%;
+    height: pxToVw(400);
+  }
+
+  .expert-intro p {
+    font-size: pxToVw(26);
+    line-height: 1.7;
+  }
+
+  .expert-body p {
+    font-size: pxToVw(26);
+    line-height: 1.7;
+    margin-bottom: pxToVw(24);
+  }
+
+  /* NEXT 按钮 */
+  .next-section {
+    padding: pxToVw(60) pxToVw(20) pxToVw(100);
+  }
+
+  .next-btn-img {
+    width: pxToVw(200);
+  }
 }
 </style>
 

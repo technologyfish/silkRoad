@@ -95,6 +95,7 @@ onMounted(async () => {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';
+@import '../assets/scss/base/_function.scss';
 
 .pdf-preview-page {
   min-height: 100vh;
@@ -166,6 +167,42 @@ onMounted(async () => {
   .hint-link {
     color: #854529;
     text-decoration: underline;
+  }
+}
+
+/* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
+@media (max-width: 768px) {
+  .pdf-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: pxToVw(20);
+    padding: pxToVw(30) pxToVw(30) pxToVw(20);
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .pdf-title {
+    font-size: pxToVw(38);
+    line-height: 1.4;
+  }
+
+  .download-btn {
+    padding: pxToVw(18) pxToVw(44);
+    font-size: pxToVw(26);
+    border-radius: pxToVw(12);
+  }
+
+  .pdf-container {
+    padding: 0 pxToVw(30) pxToVw(50);
+    box-sizing: border-box;
+  }
+
+  .pdf-iframe {
+    height: 75vh;
+  }
+
+  .pdf-open-hint {
+    font-size: pxToVw(24);
   }
 }
 </style>
