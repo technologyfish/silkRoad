@@ -357,7 +357,6 @@ const performanceData = {
         type: 'Kazakh · Plucked Instrument',
         color: 'green',
         image: imgDombra,
-        defaultExpanded: true,
         introduction: 'The Dombra is the most popular musical instrument among the Kazakh people. It is a two-stringed plucked lute with a long neck and pear-shaped body. The Dombra is the primary accompanying instrument for Aken Aytes (improvisational singing contests) and is essential to Kazakh folk music.',
         history: 'The Dombra has been played by Kazakhs for over 1,000 years. It is believed to have originated from ancient Turkic lutes. The instrument was central to the nomadic lifestyle, as it was portable and could accompany singing around campfires. Famous Kazakh poets and musicians like Abai Kunanbayev were known for their Dombra playing.',
         features: 'The Dombra has a pear-shaped body carved from a single piece of wood, typically pine or birch. It has two strings made from horsehair or gut, tuned a fourth or fifth apart. The long neck has frets tied with gut or string. The instrument is played by strumming or plucking. Its tone is warm, mellow, and well-suited for both accompaniment and solo performance.',
