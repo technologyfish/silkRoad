@@ -8,14 +8,32 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-    <!-- 51La 统计：注册 https://www.51.la 后，把下面的 id / ck 换成你自己的站点 ID -->
+
+    <!-- 51La 统计 -->
     <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     <script>
       LA.init({
-        id: "3RjRKAO9QRXmhleq",
-        ck: "3RjRKAO9QRXmhleq",
+        id: "3RjdTbutN65Llaev",
+        ck: "3RjdTbutN65Llaev",
         autoTrack: true,
         hashMode: true, // 站点是 hash 路由（/#/xxx），必须开启才能正确统计每个页面
+      });
+    </script>
+
+    <!-- 百度统计 -->
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6e31fb1f94e4d974bf0679cbf2c62906";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      // SPA hash 路由：切页面时手动上报一次 PV，否则每个子页面统计不到
+      window.addEventListener("hashchange", function () {
+        if (window._hmt) {
+          _hmt.push(["_trackPageview", location.pathname + location.search + location.hash]);
+        }
       });
     </script>
   </body>
