@@ -233,6 +233,7 @@ const scrollToTop = () => {
     .banner-right {
       order: -1;
       position: relative;
+      z-index: 1; /* 图片在下层 */
       width: 100%;
 
       /* 注意：模板中该 img 的 class 是 hero-right-img（历史命名） */
@@ -250,6 +251,7 @@ const scrollToTop = () => {
 
     .banner-left {
       position: relative; /* 保证标题盖在图片之上 */
+      z-index: 2; /* 显式层级，真机浏览器不认 order 的绘制顺序，必须用 z-index 保证文字在图片上层 */
       /* 图片展示高度 560（750 设计稿），负 margin 把标题压到图片上部 */
       margin-top: pxToVw(-460);
       padding: 0 pxToVw(40) pxToVw(10);
