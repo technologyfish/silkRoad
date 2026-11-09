@@ -282,32 +282,40 @@ import Footer from '../components/Footer.vue'
     width: 100%;
   }
 
-  /* 图片左、ABOUT ME 标题和首段放图片右侧，其余段落仍在下方整行 */
+  /* 图片左、ABOUT ME 标题右侧；首段文案放图片下方整行 */
   .about-top {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: pxToVw(30);
+    display: grid;
+    grid-template-columns: pxToVw(240) 1fr;
+    column-gap: pxToVw(30);
+    row-gap: pxToVw(40);
     margin-bottom: pxToVw(50);
   }
 
   .portrait-wrap {
     /* 图小一点 */
-    flex: 0 0 pxToVw(240);
+    grid-column: 1;
+    grid-row: 1;
     width: pxToVw(240);
     max-width: pxToVw(240);
   }
 
   .about-intro {
-    flex: 1;
-    min-width: 0;
-    width: auto;
-    max-width: none;
-    padding-top: 0;
+    /* display: contents 把标题/段落提升为 grid 子项，便于分别定位 */
+    display: contents;
   }
 
   .about-title {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
     font-size: pxToVw(76);
     margin-bottom: pxToVw(30);
+  }
+
+  /* 首段文案：图片下方，占满整行 */
+  .about-intro .about-text {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 
   .about-text {

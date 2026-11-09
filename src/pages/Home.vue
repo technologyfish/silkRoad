@@ -239,21 +239,17 @@ const scrollToTop = () => {
       /* 注意：模板中该 img 的 class 是 hero-right-img（历史命名） */
       .hero-right-img {
         width: 100%;
-        /* 限制展示高度，裁掉合成图偏下的装饰部分，避免图片过高 */
-        height: pxToVw(560);
-        object-fit: cover;
-        object-position: center top;
+        /* 不限制高度，按图片原始比例完整显示 */
+        height: auto;
         display: block;
-        /* 轻微投影，卡片浮起效果 */
-        box-shadow: 0 pxToVw(10) pxToVw(28) rgba(0, 0, 0, 0.12);
       }
     }
 
     .banner-left {
       position: relative; /* 保证标题盖在图片之上 */
       z-index: 2; /* 显式层级，真机浏览器不认 order 的绘制顺序，必须用 z-index 保证文字在图片上层 */
-      /* 图片展示高度 560（750 设计稿），负 margin 把标题压到图片上部 */
-      margin-top: pxToVw(-460);
+      /* 图片完整高度 ≈ 831（750 设计稿），负 margin 把标题压到图片上部 */
+      margin-top: pxToVw(-711);
       padding: 0 pxToVw(40) pxToVw(10);
       text-align: center; /* SEE MORE 按钮居中 */
 
@@ -264,8 +260,8 @@ const scrollToTop = () => {
         line-height: pxToVw(84);
         /* 柔和文字阴影：白云等浅色区域上依然可读 */
         text-shadow: 0 pxToVw(3) pxToVw(14) rgba(0, 0, 0, 0.5);
-        /* 大 margin 把按钮推到图片下方，与图片保持小段间距 */
-        margin: 0 0 pxToVw(56) 0;
+        /* 大 margin 把按钮推到完整图片下方约 24 处 */
+        margin: 0 0 pxToVw(315) 0;
       }
 
       .banner-button {
