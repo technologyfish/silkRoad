@@ -873,10 +873,10 @@ a.howto-video,
 /* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
 @media (max-width: 768px) {
   .listen-hero {
-    padding-bottom: pxToVw(60);
+    padding-bottom: pxToVw(24);
 
     &.alt {
-      padding-bottom: pxToVw(60);
+      padding-bottom: pxToVw(24);
     }
   }
 
@@ -884,7 +884,10 @@ a.howto-video,
   .listen-inner {
     width: 100% !important;
     height: auto !important;
-    padding: pxToVw(80) pxToVw(50) pxToVw(140) !important;
+    /* 桌面端是 flex 行布局（space-between + 垂直居中），
+       不改块级布局的话箭头按钮会被挤到最右侧 */
+    display: block;
+    padding: pxToVw(40) pxToVw(30) pxToVw(30) !important;
     box-sizing: border-box;
   }
 
@@ -919,12 +922,18 @@ a.howto-video,
     padding-left: pxToVw(28);
   }
 
+  /* 双箭头按钮改随文档流：紧跟内容下方居中，不再绝对定位预留大片空白 */
   .down-indicator {
-    bottom: pxToVw(50);
+    position: static;
+    left: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-top: pxToVw(20);
 
     img {
-      width: pxToVw(90);
-      height: pxToVw(90);
+      width: pxToVw(60);
+      height: pxToVw(60);
     }
   }
 
@@ -1008,8 +1017,8 @@ a.howto-video,
     margin-top: pxToVw(20);
 
     img {
-      width: pxToVw(90);
-      height: pxToVw(90);
+      width: pxToVw(60);
+      height: pxToVw(60);
     }
   }
 

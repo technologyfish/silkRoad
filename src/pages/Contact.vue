@@ -282,13 +282,27 @@ import Footer from '../components/Footer.vue'
     width: 100%;
   }
 
+  /* 图片左、ABOUT ME 标题和首段放图片右侧，其余段落仍在下方整行 */
   .about-top {
-    gap: pxToVw(40);
+    flex-direction: row;
+    align-items: flex-start;
+    gap: pxToVw(30);
     margin-bottom: pxToVw(50);
   }
 
   .portrait-wrap {
-    max-width: pxToVw(560);
+    /* 图小一点 */
+    flex: 0 0 pxToVw(240);
+    width: pxToVw(240);
+    max-width: pxToVw(240);
+  }
+
+  .about-intro {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    max-width: none;
+    padding-top: 0;
   }
 
   .about-title {

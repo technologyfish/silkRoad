@@ -218,21 +218,58 @@ const scrollToTop = () => {
   }
 
 
+  /* 窄屏（≤900px，含手机端）：图片整块置顶，白色标题缩小靠左叠在图片之上，
+     按钮通过大 margin 推到图片下方，与图片保持间距 */
   @media (max-width: 900px) {
-    .hero-content {
+    padding: 0;
+    /* 与顶部 header 拉开间距 */
+    margin-top: pxToVw(40);
+
+    .banner-content {
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      align-items: stretch;
     }
 
-    .hero-right {
-      width: 320px;
-      height: 260px;
+    .banner-right {
+      order: -1;
+      position: relative;
+      width: 100%;
+
+      /* 注意：模板中该 img 的 class 是 hero-right-img（历史命名） */
+      .hero-right-img {
+        width: 100%;
+        /* 限制展示高度，裁掉合成图偏下的装饰部分，避免图片过高 */
+        height: pxToVw(560);
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+        /* 轻微投影，卡片浮起效果 */
+        box-shadow: 0 pxToVw(10) pxToVw(28) rgba(0, 0, 0, 0.12);
+      }
     }
 
-    .hero-right-img {
-      width: 300px;
-      height: 220px;
+    .banner-left {
+      position: relative; /* 保证标题盖在图片之上 */
+      /* 图片展示高度 560（750 设计稿），负 margin 把标题压到图片上部 */
+      margin-top: pxToVw(-460);
+      padding: 0 pxToVw(40) pxToVw(10);
+      text-align: center; /* SEE MORE 按钮居中 */
+
+      h1 {
+        color: #fff;
+        text-align: left; /* 标题保持靠左 */
+        font-size: pxToVw(60);
+        line-height: pxToVw(84);
+        /* 柔和文字阴影：白云等浅色区域上依然可读 */
+        text-shadow: 0 pxToVw(3) pxToVw(14) rgba(0, 0, 0, 0.5);
+        /* 大 margin 把按钮推到图片下方，与图片保持小段间距 */
+        margin: 0 0 pxToVw(56) 0;
+      }
+
+      .banner-button {
+        width: pxToVw(320);
+        height: pxToVw(130);
+      }
     }
   }
 }
@@ -618,45 +655,11 @@ const scrollToTop = () => {
 
 /* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
 @media (max-width: 768px) {
-  /* Hero：左文案上、右图片下 */
-  .banner-section {
-    padding: pxToVw(60) 0;
-
-    .banner-content {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .banner-left {
-      padding-left: pxToVw(40);
-      padding-right: pxToVw(40);
-      text-align: center;
-
-      h1 {
-        font-size: pxToVw(68);
-        line-height: pxToVw(94);
-        margin: 0 0 pxToVw(60) 0;
-      }
-
-      .banner-button {
-        width: pxToVw(430);
-        height: pxToVw(176);
-      }
-    }
-
-    .banner-right {
-      width: 100%;
-
-      .banner-right-img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
+  /* Hero banner 的窄屏样式统一由上方 banner-section 内的 900px 媒体查询处理 */
 
   /* Intro 卡片手机端一行横排 */
   .intro-section {
-    padding: pxToVw(40) 0;
+    padding: pxToVw(16) 0 pxToVw(24);
 
     .title {
       font-size: pxToVw(52);
@@ -674,7 +677,7 @@ const scrollToTop = () => {
       align-items: center;
       gap: pxToVw(20);
       padding: 0 pxToVw(20);
-      margin-bottom: pxToVw(40);
+      margin-bottom: 0; /* 覆盖桌面端的 margin-bottom: 20px */
 
       .card {
         flex: 1;
@@ -692,11 +695,11 @@ const scrollToTop = () => {
 
   /* Opening Statement */
   .opening-statement-section {
-    padding: pxToVw(60) pxToVw(40);
+    padding: pxToVw(24) pxToVw(40);
 
     .title {
       font-size: pxToVw(52);
-      margin-bottom: pxToVw(40);
+      margin-bottom: pxToVw(28);
     }
 
     .opening-box {
@@ -712,11 +715,12 @@ const scrollToTop = () => {
 
   /* Vision：图上文下 */
   .vision-section {
-    padding: pxToVw(60) 0;
+    padding: pxToVw(40) 0;
 
     h2.title {
       font-size: pxToVw(52);
-      margin-bottom: pxToVw(40);
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     .vision-content {
@@ -751,11 +755,11 @@ const scrollToTop = () => {
 
   /* Mission */
   .mission-section {
-    padding: pxToVw(70) pxToVw(40);
+    padding: pxToVw(40) pxToVw(40);
 
     .mission-title {
       font-size: pxToVw(52);
-      margin-bottom: pxToVw(30);
+      margin-bottom: pxToVw(24);
     }
 
     .mission-text {
@@ -783,7 +787,7 @@ const scrollToTop = () => {
     h2,
     .fieldwork-title {
       font-size: pxToVw(52);
-      margin-bottom: pxToVw(40);
+      margin-bottom: pxToVw(28);
     }
 
     .map-content {

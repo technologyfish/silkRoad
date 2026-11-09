@@ -696,7 +696,7 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
 
   /* Teacher Resources */
   .resources-section {
-    padding: pxToVw(60) 0 pxToVw(80);
+    padding: pxToVw(40) 0 pxToVw(50);
   }
 
   .resources-title {
@@ -705,25 +705,28 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
   }
 
   .resources-grid {
-    padding-top: pxToVw(50);
-    /* 3 个一行 */
-    grid-template-columns: repeat(3, 1fr);
-    gap: pxToVw(24) pxToVw(16);
+    padding-top: pxToVw(36);
+    /* 3 个一行，圆缩小后整体居中（justify-content 继承桌面端 center） */
+    grid-template-columns: repeat(3, pxToVw(200));
+    gap: pxToVw(28) pxToVw(30);
   }
 
   .resource-item {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1; /* 保持正圆 */
+    width: pxToVw(200);
+    height: pxToVw(200);
+  }
+
+  .resource-inner {
+    padding: pxToVw(12);
   }
 
   .resource-label {
-    font-size: pxToVw(22);
-    margin-bottom: pxToVw(14);
+    font-size: pxToVw(20);
+    margin-bottom: pxToVw(10);
   }
 
   .resource-icon img {
-    width: pxToVw(70);
+    width: pxToVw(54);
     height: auto;
   }
 

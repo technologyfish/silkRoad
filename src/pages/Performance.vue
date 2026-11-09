@@ -422,18 +422,19 @@ const scrollToTop = () => {
 
 /* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
 @media (max-width: 768px) {
+  /* 模块间距整体收紧，一屏尽量多展示内容 */
   .performance-hero {
-    padding: pxToVw(60) 0 pxToVw(90);
+    padding: pxToVw(40) 0 pxToVw(30);
 
     &.alt {
-      padding: pxToVw(60) 0 pxToVw(90);
+      padding: pxToVw(40) 0 pxToVw(30);
     }
   }
 
   .performance-inner {
     flex-direction: column;
     align-items: stretch;
-    gap: pxToVw(30);
+    gap: pxToVw(24);
     padding: 0 pxToVw(30);
     box-sizing: border-box;
   }
@@ -455,7 +456,7 @@ const scrollToTop = () => {
   /* 视频 + 竖排信息 */
   .video-meta-row {
     flex-direction: column;
-    gap: pxToVw(30);
+    gap: pxToVw(24);
     align-items: stretch;
   }
 
@@ -499,7 +500,7 @@ const scrollToTop = () => {
     position: static;
     display: flex;
     justify-content: center;
-    margin-top: pxToVw(40);
+    margin-top: 0;
   }
 
   .see-more-btn {
@@ -508,11 +509,11 @@ const scrollToTop = () => {
 
   /* 底部 callout 大按钮 */
   .performance-hero.callout {
-    padding: pxToVw(60) 0 pxToVw(100);
+    padding: pxToVw(40) 0 pxToVw(60);
   }
 
   .callout-inner {
-    padding-top: pxToVw(60);
+    padding-top: pxToVw(40);
     padding-bottom: pxToVw(20);
     min-height: auto;
   }
