@@ -146,6 +146,7 @@ const scrollToTop = () => {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';
+@import '../assets/scss/base/_function.scss';
 
 .home-page {
   font-family: Georgia, 'Times New Roman', serif;
@@ -611,6 +612,200 @@ const scrollToTop = () => {
     img {
       height: auto;
       object-fit: cover;
+    }
+  }
+}
+
+/* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
+@media (max-width: 768px) {
+  /* Hero：左文案上、右图片下 */
+  .banner-section {
+    padding: pxToVw(60) 0;
+
+    .banner-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .banner-left {
+      padding-left: pxToVw(40);
+      padding-right: pxToVw(40);
+      text-align: center;
+
+      h1 {
+        font-size: pxToVw(80);
+        line-height: pxToVw(110);
+        margin: 0 0 pxToVw(60) 0;
+      }
+
+      .banner-button {
+        width: pxToVw(430);
+        height: pxToVw(176);
+      }
+    }
+
+    .banner-right {
+      width: 100%;
+
+      .banner-right-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  /* Intro 卡片手机端一行横排 */
+  .intro-section {
+    padding: pxToVw(40) 0;
+
+    .title {
+      font-size: pxToVw(60);
+      margin-bottom: pxToVw(24);
+    }
+
+    .desc {
+      font-size: pxToVw(30);
+      margin-bottom: pxToVw(70);
+    }
+
+    /* 卡片一行横排展示 */
+    .intro-cards {
+      flex-direction: row;
+      align-items: center;
+      gap: pxToVw(20);
+      padding: 0 pxToVw(20);
+      margin-bottom: pxToVw(40);
+
+      .card {
+        flex: 1;
+        min-width: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 1 / 1; /* 保持正圆 */
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  /* Opening Statement */
+  .opening-statement-section {
+    padding: pxToVw(60) pxToVw(40);
+
+    .title {
+      font-size: pxToVw(60);
+      margin-bottom: pxToVw(40);
+    }
+
+    .opening-box {
+      padding: pxToVw(50) pxToVw(20);
+
+      p {
+        font-size: pxToVw(28);
+        line-height: 1.7;
+        margin-bottom: pxToVw(30);
+      }
+    }
+  }
+
+  /* Vision：图上文下 */
+  .vision-section {
+    padding: pxToVw(60) 0;
+
+    h2.title {
+      font-size: pxToVw(60);
+      margin-bottom: pxToVw(40);
+    }
+
+    .vision-content {
+      flex-direction: column;
+      align-items: center;
+      gap: pxToVw(40);
+    }
+
+    .vision-image-wrapper {
+      width: pxToVw(560);
+      height: auto;
+    }
+
+    .vision-text {
+      flex: none;
+      width: 100%;
+      text-align: center;
+
+      .vision-text-bar {
+        width: 100%;
+        height: pxToVw(20);
+        margin: pxToVw(20) 0 pxToVw(40);
+      }
+
+      p {
+        text-align: center;
+        font-size: pxToVw(28);
+        margin-bottom: pxToVw(24);
+      }
+    }
+  }
+
+  /* Mission */
+  .mission-section {
+    padding: pxToVw(70) pxToVw(40);
+
+    .mission-title {
+      font-size: pxToVw(60);
+      margin-bottom: pxToVw(30);
+    }
+
+    .mission-text {
+      font-size: pxToVw(30);
+      line-height: 1.6;
+    }
+
+    .caps-link {
+      font-size: pxToVw(34);
+    }
+
+    .highlight-link {
+      font-size: pxToVw(34);
+      padding: pxToVw(6) pxToVw(16);
+    }
+
+    .mission-conclude {
+      font-size: pxToVw(28);
+      line-height: 1.6;
+    }
+  }
+
+  /* Fieldwork Map */
+  .fieldwork-map-section {
+    h2,
+    .fieldwork-title {
+      font-size: pxToVw(60);
+      margin-bottom: pxToVw(40);
+    }
+
+    .map-content {
+      flex-direction: column;
+      gap: pxToVw(40);
+      padding: 0 pxToVw(40);
+    }
+
+    .map-legend ul li {
+      font-size: pxToVw(30);
+      padding-left: pxToVw(32);
+      margin-bottom: pxToVw(22);
+
+      &::before {
+        width: pxToVw(14);
+        height: pxToVw(14);
+        top: pxToVw(12);
+      }
+    }
+
+    .map-image img {
+      max-width: 100%;
     }
   }
 }

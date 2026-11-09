@@ -75,6 +75,7 @@ import Footer from '../components/Footer.vue'
 
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';
+@import '../assets/scss/base/_function.scss';
 
 .contact-hero {
   background: #f8f7ef;
@@ -267,25 +268,62 @@ import Footer from '../components/Footer.vue'
   }
 }
 
-@media (max-width: 700px) {
+/* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
+@media (max-width: 768px) {
   .contact-hero {
-    padding: 48px 0 80px;
+    padding: pxToVw(60) 0 pxToVw(90);
   }
 
   .about-section.container {
-    padding: 0 24px;
+    padding: 0 pxToVw(30);
+  }
+
+  .about-layout {
+    width: 100%;
+  }
+
+  .about-top {
+    gap: pxToVw(40);
+    margin-bottom: pxToVw(50);
   }
 
   .portrait-wrap {
-    max-width: 280px;
+    max-width: pxToVw(560);
   }
 
   .about-title {
-    font-size: 40px;
+    font-size: pxToVw(90);
+    margin-bottom: pxToVw(30);
+  }
+
+  .about-text {
+    font-size: pxToVw(28);
+    line-height: 1.75;
+  }
+
+  .about-divider {
+    margin-top: pxToVw(20);
+  }
+
+  .contact-container {
+    margin-top: pxToVw(70);
+  }
+
+  .contact-items {
+    gap: pxToVw(30);
+    padding: 0 pxToVw(30);
+  }
+
+  .contact-item {
+    width: 100%;
+    max-width: 100%;
+    min-height: pxToVw(180);
+    border-radius: pxToVw(32);
+    padding: pxToVw(36) pxToVw(36);
   }
 
   .item-left {
-    font-size: 22px;
+    font-size: pxToVw(38);
   }
 }
 </style>

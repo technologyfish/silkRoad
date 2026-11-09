@@ -198,6 +198,7 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
 
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';
+@import '../assets/scss/base/_function.scss';
 
 .voice-banner {
   img {
@@ -568,6 +569,192 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
   .script-name { font-size: 20px; }
   .script-label { width: 140px; font-size: 18px; }
   .script-download img { width: 44px; height: 44px; }
+}
+
+/* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
+@media (max-width: 768px) {
+  /* 顶部 banner 满宽 */
+  .voice-banner img {
+    width: 100%;
+  }
+
+  /* Project Overview */
+  .project-overview {
+    padding: pxToVw(40) 0 pxToVw(80);
+  }
+
+  .overview-title {
+    font-size: pxToVw(56);
+    margin-bottom: pxToVw(36);
+    margin-top: pxToVw(40);
+    padding: 0 pxToVw(30);
+  }
+
+  .overview-desc {
+    width: 100%;
+    padding: 0 pxToVw(30);
+    box-sizing: border-box;
+    font-size: pxToVw(28);
+    line-height: 1.8;
+  }
+
+  .cards-row {
+    margin-top: pxToVw(60);
+    flex-direction: column;
+    gap: pxToVw(40);
+    padding: 0 pxToVw(30);
+  }
+
+  .card .card-box {
+    width: 100%;
+    height: auto;
+    min-height: pxToVw(360);
+    padding: pxToVw(50) pxToVw(40) pxToVw(40);
+
+    p {
+      font-size: pxToVw(28);
+      line-height: 1.7;
+    }
+  }
+
+  .card .card-title {
+    font-size: pxToVw(40);
+    margin-top: pxToVw(24);
+  }
+
+  /* Scripts */
+  .scripts-section {
+    padding: pxToVw(60) 0 pxToVw(70);
+  }
+
+  .scripts-list {
+    gap: pxToVw(40);
+    padding: 0 pxToVw(30);
+  }
+
+  .script-row {
+    flex-direction: column;
+    gap: pxToVw(16);
+    padding: pxToVw(44) pxToVw(28);
+    background: #fff;
+    border-radius: pxToVw(20);
+  }
+
+  .script-label {
+    width: auto;
+    text-align: center;
+    font-size: pxToVw(30);
+  }
+
+  .script-name {
+    font-size: pxToVw(34);
+    text-align: center;
+  }
+
+  .script-download img {
+    width: pxToVw(88);
+    height: pxToVw(88);
+  }
+
+  /* From Script to Stage */
+  .stage-section {
+    padding: pxToVw(40) 0 pxToVw(70);
+  }
+
+  .stage-title {
+    font-size: pxToVw(48);
+    margin: pxToVw(40) 0 pxToVw(16);
+  }
+
+  .stage-subtitle {
+    font-size: pxToVw(28);
+    margin-bottom: pxToVw(40);
+  }
+
+  .stage-videos {
+    gap: pxToVw(30);
+    padding: 0 pxToVw(30);
+  }
+
+  .stage-video {
+    width: 100%;
+  }
+
+  .stage-play {
+    width: pxToVw(100);
+    height: pxToVw(100);
+
+    img {
+      width: pxToVw(66);
+      height: pxToVw(66);
+    }
+  }
+
+  .stage-caption {
+    font-size: pxToVw(24);
+  }
+
+  /* Teacher Resources */
+  .resources-section {
+    padding: pxToVw(60) 0 pxToVw(80);
+  }
+
+  .resources-title {
+    font-size: pxToVw(40);
+    margin-bottom: pxToVw(20);
+  }
+
+  .resources-grid {
+    padding-top: pxToVw(50);
+    grid-template-columns: repeat(2, pxToVw(320));
+    gap: pxToVw(30) pxToVw(28);
+  }
+
+  .resource-item {
+    width: pxToVw(320);
+    height: pxToVw(320);
+  }
+
+  .resource-label {
+    font-size: pxToVw(30);
+    margin-bottom: pxToVw(20);
+  }
+
+  .resource-icon img {
+    width: pxToVw(90);
+    height: auto;
+  }
+
+  /* Future Community */
+  .community-section {
+    padding: pxToVw(60) 0 pxToVw(80);
+  }
+
+  .community-title {
+    font-size: pxToVw(40);
+    margin-bottom: pxToVw(20);
+    padding: 0 pxToVw(30);
+  }
+
+  .map {
+    margin-top: pxToVw(50);
+
+    img {
+      width: 90%;
+      margin-top: pxToVw(50);
+    }
+  }
+
+  .community-note {
+    width: auto;
+    margin: 0 pxToVw(30);
+    padding: pxToVw(40) pxToVw(30);
+
+    p {
+      font-size: pxToVw(26);
+      line-height: 1.7;
+    }
+  }
 }
 </style>
 

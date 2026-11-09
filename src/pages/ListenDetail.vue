@@ -210,6 +210,7 @@ const scrollToTop = () => {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';
+@import '../assets/scss/base/_function.scss';
 
 .listen-detail-page {
   min-height: 100vh;
@@ -385,6 +386,73 @@ const scrollToTop = () => {
   }
   .bubble-img {
     width: 80%;
+  }
+}
+
+/* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
+@media (max-width: 768px) {
+  .bubble-title-wrap {
+    padding: pxToVw(60) 0 pxToVw(40);
+  }
+
+  .bubble-img {
+    width: pxToVw(620);
+  }
+
+  .audio-row {
+    margin-top: pxToVw(24);
+  }
+
+  .audio-wave-wrap {
+    margin-left: 0;
+  }
+
+  .audio-wave {
+    width: pxToVw(300);
+  }
+
+  .press-play-btn {
+    width: pxToVw(110);
+    height: pxToVw(110);
+    margin-left: pxToVw(20);
+    font-size: pxToVw(18);
+  }
+
+  .detail-section {
+    padding: pxToVw(70) 0;
+  }
+
+  .section-inner {
+    padding: 0 pxToVw(30);
+  }
+
+  .subtitle-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: pxToVw(20);
+    margin-bottom: pxToVw(36);
+  }
+
+  .list-icon {
+    width: pxToVw(56);
+  }
+
+  .section-subtitle {
+    font-size: pxToVw(32);
+    line-height: 1.5;
+  }
+
+  .section-text p {
+    font-size: pxToVw(26);
+    line-height: 1.9;
+  }
+
+  .rollback-section {
+    padding: pxToVw(60) 0 pxToVw(80);
+  }
+
+  .rollback-btn img {
+    width: pxToVw(320);
   }
 }
 </style>

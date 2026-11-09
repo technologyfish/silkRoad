@@ -38,6 +38,7 @@ const scrollToTop = () => {
 </script>
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';
+@import '../assets/scss/base/_function.scss';
 
 .footer {
 
@@ -104,6 +105,48 @@ const scrollToTop = () => {
     border-top: 1px solid rgba(255,255,255,0.12);
     font-size: 0.9em;
     color: rgba(255,255,255,0.8);
+  }
+}
+
+/* 手机端适配 */
+@media (max-width: 768px) {
+  .footer {
+    padding: pxToVw(60) pxToVw(40);
+
+    .footer-content {
+      flex-direction: column;
+      gap: pxToVw(50);
+    }
+
+    .footer-section {
+      min-width: auto;
+      width: 100%;
+      margin-right: 0;
+
+      h2 {
+        font-size: pxToVw(34);
+        margin-bottom: pxToVw(24);
+      }
+
+      p,
+      li a {
+        font-size: pxToVw(26);
+      }
+
+      li {
+        margin-bottom: pxToVw(14);
+      }
+    }
+
+    .footer-logo {
+      height: pxToVw(100);
+      margin-bottom: pxToVw(20);
+    }
+
+    .footer-bottom {
+      padding-top: pxToVw(40);
+      font-size: pxToVw(22);
+    }
   }
 }
 </style>

@@ -203,6 +203,7 @@ const scrollToTop = () => {
 
 <style lang="scss" scoped>
 @import '../assets/scss/_var.scss';
+@import '../assets/scss/base/_function.scss';
 
 .performance-page {
   font-family: $font-sans;
@@ -416,6 +417,108 @@ const scrollToTop = () => {
   }
   .see-more-wrap {
     justify-content: center;
+  }
+}
+
+/* ===== 手机端适配（750 设计稿，pxToVw 换算） ===== */
+@media (max-width: 768px) {
+  .performance-hero {
+    padding: pxToVw(60) 0 pxToVw(90);
+
+    &.alt {
+      padding: pxToVw(60) 0 pxToVw(90);
+    }
+  }
+
+  .performance-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: pxToVw(30);
+    padding: 0 pxToVw(30);
+    box-sizing: border-box;
+  }
+
+  .perf-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .perf-title {
+    font-size: pxToVw(44);
+
+    .title-en {
+      font-size: pxToVw(72);
+      letter-spacing: pxToVw(4);
+    }
+  }
+
+  /* 视频 + 竖排信息 */
+  .video-meta-row {
+    flex-direction: column;
+    gap: pxToVw(30);
+    align-items: stretch;
+  }
+
+  .video-wrap {
+    margin-top: pxToVw(16);
+  }
+
+  .video-thumb {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 623 / 327;
+  }
+
+  .play-button {
+    width: pxToVw(100);
+    height: pxToVw(100);
+  }
+
+  .meta-column {
+    width: 100%;
+    min-height: auto;
+    align-items: flex-start;
+  }
+
+  .meta-title {
+    font-size: pxToVw(36);
+    margin-bottom: pxToVw(20);
+  }
+
+  .meta-list li {
+    font-size: pxToVw(28);
+    margin-bottom: pxToVw(14);
+
+    .dot {
+      margin-top: pxToVw(12);
+    }
+  }
+
+  /* See more 按钮：随文档流、居中 */
+  .see-more-absolute {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: pxToVw(40);
+  }
+
+  .see-more-btn {
+    width: pxToVw(320);
+  }
+
+  /* 底部 callout 大按钮 */
+  .performance-hero.callout {
+    padding: pxToVw(60) 0 pxToVw(100);
+  }
+
+  .callout-inner {
+    padding-top: pxToVw(60);
+    padding-bottom: pxToVw(20);
+    min-height: auto;
+  }
+
+  .callout-btn {
+    width: pxToVw(600);
   }
 }
 </style>
