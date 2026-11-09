@@ -706,22 +706,24 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
 
   .resources-grid {
     padding-top: pxToVw(50);
-    grid-template-columns: repeat(2, pxToVw(320));
-    gap: pxToVw(30) pxToVw(28);
+    /* 3 个一行 */
+    grid-template-columns: repeat(3, 1fr);
+    gap: pxToVw(24) pxToVw(16);
   }
 
   .resource-item {
-    width: pxToVw(320);
-    height: pxToVw(320);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* 保持正圆 */
   }
 
   .resource-label {
-    font-size: pxToVw(26);
-    margin-bottom: pxToVw(20);
+    font-size: pxToVw(22);
+    margin-bottom: pxToVw(14);
   }
 
   .resource-icon img {
-    width: pxToVw(90);
+    width: pxToVw(70);
     height: auto;
   }
 
