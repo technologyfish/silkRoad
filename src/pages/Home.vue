@@ -654,7 +654,7 @@ const scrollToTop = () => {
     }
   }
 
-  /* Intro 卡片竖排 */
+  /* Intro 卡片手机端一行横排 */
   .intro-section {
     padding: pxToVw(40) 0;
 
@@ -668,13 +668,24 @@ const scrollToTop = () => {
       margin-bottom: pxToVw(70);
     }
 
+    /* 卡片一行横排展示 */
     .intro-cards {
-      flex-direction: column;
-      gap: pxToVw(60);
+      flex-direction: row;
+      align-items: center;
+      gap: pxToVw(20);
+      padding: 0 pxToVw(20);
+      margin-bottom: pxToVw(40);
 
-      .card img {
-        width: pxToVw(560);
-        height: pxToVw(560);
+      .card {
+        flex: 1;
+        min-width: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 1 / 1; /* 保持正圆 */
+          margin-bottom: 0;
+        }
       }
     }
   }
