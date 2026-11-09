@@ -292,12 +292,12 @@ import Footer from '../components/Footer.vue'
   }
 
   .about-title {
-    font-size: pxToVw(90);
+    font-size: pxToVw(76);
     margin-bottom: pxToVw(30);
   }
 
   .about-text {
-    font-size: pxToVw(28);
+    font-size: pxToVw(24);
     line-height: 1.75;
   }
 
@@ -323,7 +323,7 @@ import Footer from '../components/Footer.vue'
   }
 
   .item-left {
-    font-size: pxToVw(38);
+    font-size: pxToVw(32);
   }
 }
 </style>

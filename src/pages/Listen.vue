@@ -908,12 +908,12 @@ a.howto-video,
   }
 
   .mc-subtitle {
-    font-size: pxToVw(32);
+    font-size: pxToVw(28);
     margin-bottom: pxToVw(16);
   }
 
   .mc-list li {
-    font-size: pxToVw(30);
+    font-size: pxToVw(26);
     line-height: 1.6;
     margin-bottom: pxToVw(14);
     padding-left: pxToVw(28);
@@ -947,18 +947,18 @@ a.howto-video,
 
   .expand-name {
     display: block;
-    font-size: pxToVw(34);
+    font-size: pxToVw(30);
     margin-right: 0;
     margin-bottom: pxToVw(6);
   }
 
   .expand-subtitle {
     display: block;
-    font-size: pxToVw(28);
+    font-size: pxToVw(24);
   }
 
   .expand-title {
-    font-size: pxToVw(40);
+    font-size: pxToVw(34);
     margin-bottom: pxToVw(24);
     gap: pxToVw(12);
 
@@ -969,7 +969,7 @@ a.howto-video,
   }
 
   .expand-desc {
-    font-size: pxToVw(26);
+    font-size: pxToVw(22);
     line-height: 1.85;
     margin-bottom: pxToVw(50);
     max-width: 100%;
@@ -1030,16 +1030,16 @@ a.howto-video,
     margin-bottom: pxToVw(40);
 
     h2 {
-      font-size: pxToVw(40);
+      font-size: pxToVw(34);
     }
 
     h3 {
-      font-size: pxToVw(32);
+      font-size: pxToVw(28);
     }
   }
 
   .interview-info p {
-    font-size: pxToVw(26);
+    font-size: pxToVw(22);
     line-height: 1.8;
   }
 

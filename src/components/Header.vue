@@ -248,7 +248,7 @@ function isActive(path) {
       font-weight: 600;
       font-family: $font-sans;
       text-decoration: none;
-      font-size: pxToVw(30);
+      font-size: pxToVw(26);
       border-bottom: 1px solid rgba(14, 10, 6, 0.06);
     }
 

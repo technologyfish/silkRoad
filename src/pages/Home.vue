@@ -633,8 +633,8 @@ const scrollToTop = () => {
       text-align: center;
 
       h1 {
-        font-size: pxToVw(80);
-        line-height: pxToVw(110);
+        font-size: pxToVw(68);
+        line-height: pxToVw(94);
         margin: 0 0 pxToVw(60) 0;
       }
 
@@ -659,12 +659,12 @@ const scrollToTop = () => {
     padding: pxToVw(40) 0;
 
     .title {
-      font-size: pxToVw(60);
+      font-size: pxToVw(52);
       margin-bottom: pxToVw(24);
     }
 
     .desc {
-      font-size: pxToVw(30);
+      font-size: pxToVw(26);
       margin-bottom: pxToVw(70);
     }
 
@@ -695,7 +695,7 @@ const scrollToTop = () => {
     padding: pxToVw(60) pxToVw(40);
 
     .title {
-      font-size: pxToVw(60);
+      font-size: pxToVw(52);
       margin-bottom: pxToVw(40);
     }
 
@@ -703,7 +703,7 @@ const scrollToTop = () => {
       padding: pxToVw(50) pxToVw(20);
 
       p {
-        font-size: pxToVw(28);
+        font-size: pxToVw(24);
         line-height: 1.7;
         margin-bottom: pxToVw(30);
       }
@@ -715,7 +715,7 @@ const scrollToTop = () => {
     padding: pxToVw(60) 0;
 
     h2.title {
-      font-size: pxToVw(60);
+      font-size: pxToVw(52);
       margin-bottom: pxToVw(40);
     }
 
@@ -743,7 +743,7 @@ const scrollToTop = () => {
 
       p {
         text-align: center;
-        font-size: pxToVw(28);
+        font-size: pxToVw(24);
         margin-bottom: pxToVw(24);
       }
     }
@@ -754,26 +754,26 @@ const scrollToTop = () => {
     padding: pxToVw(70) pxToVw(40);
 
     .mission-title {
-      font-size: pxToVw(60);
+      font-size: pxToVw(52);
       margin-bottom: pxToVw(30);
     }
 
     .mission-text {
-      font-size: pxToVw(30);
+      font-size: pxToVw(26);
       line-height: 1.6;
     }
 
     .caps-link {
-      font-size: pxToVw(34);
+      font-size: pxToVw(30);
     }
 
     .highlight-link {
-      font-size: pxToVw(34);
+      font-size: pxToVw(30);
       padding: pxToVw(6) pxToVw(16);
     }
 
     .mission-conclude {
-      font-size: pxToVw(28);
+      font-size: pxToVw(24);
       line-height: 1.6;
     }
   }
@@ -782,7 +782,7 @@ const scrollToTop = () => {
   .fieldwork-map-section {
     h2,
     .fieldwork-title {
-      font-size: pxToVw(60);
+      font-size: pxToVw(52);
       margin-bottom: pxToVw(40);
     }
 
@@ -793,7 +793,7 @@ const scrollToTop = () => {
     }
 
     .map-legend ul li {
-      font-size: pxToVw(30);
+      font-size: pxToVw(26);
       padding-left: pxToVw(32);
       margin-bottom: pxToVw(22);
 

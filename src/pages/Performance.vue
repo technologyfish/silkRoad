@@ -444,10 +444,10 @@ const scrollToTop = () => {
   }
 
   .perf-title {
-    font-size: pxToVw(44);
+    font-size: pxToVw(38);
 
     .title-en {
-      font-size: pxToVw(72);
+      font-size: pxToVw(60);
       letter-spacing: pxToVw(4);
     }
   }
@@ -481,12 +481,12 @@ const scrollToTop = () => {
   }
 
   .meta-title {
-    font-size: pxToVw(36);
+    font-size: pxToVw(30);
     margin-bottom: pxToVw(20);
   }
 
   .meta-list li {
-    font-size: pxToVw(28);
+    font-size: pxToVw(24);
     margin-bottom: pxToVw(14);
 
     .dot {

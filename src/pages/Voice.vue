@@ -584,7 +584,7 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
   }
 
   .overview-title {
-    font-size: pxToVw(56);
+    font-size: pxToVw(48);
     margin-bottom: pxToVw(36);
     margin-top: pxToVw(40);
     padding: 0 pxToVw(30);
@@ -594,7 +594,7 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
     width: 100%;
     padding: 0 pxToVw(30);
     box-sizing: border-box;
-    font-size: pxToVw(28);
+    font-size: pxToVw(24);
     line-height: 1.8;
   }
 
@@ -612,13 +612,13 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
     padding: pxToVw(50) pxToVw(40) pxToVw(40);
 
     p {
-      font-size: pxToVw(28);
+      font-size: pxToVw(24);
       line-height: 1.7;
     }
   }
 
   .card .card-title {
-    font-size: pxToVw(40);
+    font-size: pxToVw(34);
     margin-top: pxToVw(24);
   }
 
@@ -643,11 +643,11 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
   .script-label {
     width: auto;
     text-align: center;
-    font-size: pxToVw(30);
+    font-size: pxToVw(26);
   }
 
   .script-name {
-    font-size: pxToVw(34);
+    font-size: pxToVw(30);
     text-align: center;
   }
 
@@ -662,12 +662,12 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
   }
 
   .stage-title {
-    font-size: pxToVw(48);
+    font-size: pxToVw(40);
     margin: pxToVw(40) 0 pxToVw(16);
   }
 
   .stage-subtitle {
-    font-size: pxToVw(28);
+    font-size: pxToVw(24);
     margin-bottom: pxToVw(40);
   }
 
@@ -691,7 +691,7 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
   }
 
   .stage-caption {
-    font-size: pxToVw(24);
+    font-size: pxToVw(20);
   }
 
   /* Teacher Resources */
@@ -700,7 +700,7 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
   }
 
   .resources-title {
-    font-size: pxToVw(40);
+    font-size: pxToVw(34);
     margin-bottom: pxToVw(20);
   }
 
@@ -716,7 +716,7 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
   }
 
   .resource-label {
-    font-size: pxToVw(30);
+    font-size: pxToVw(26);
     margin-bottom: pxToVw(20);
   }
 
@@ -731,7 +731,7 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
   }
 
   .community-title {
-    font-size: pxToVw(40);
+    font-size: pxToVw(34);
     margin-bottom: pxToVw(20);
     padding: 0 pxToVw(30);
   }
@@ -751,7 +751,7 @@ const docUrl = (name) => encodeURI(`voice/${name}`)
     padding: pxToVw(40) pxToVw(30);
 
     p {
-      font-size: pxToVw(26);
+      font-size: pxToVw(22);
       line-height: 1.7;
     }
   }

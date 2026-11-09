@@ -988,12 +988,12 @@ const goToNext = () => {
   }
 
   .main-title {
-    font-size: pxToVw(76);
+    font-size: pxToVw(64);
     letter-spacing: pxToVw(10);
   }
 
   .section-heading {
-    font-size: pxToVw(48);
+    font-size: pxToVw(40);
     margin-bottom: pxToVw(30);
   }
 
@@ -1003,7 +1003,7 @@ const goToNext = () => {
   }
 
   .intro-text {
-    font-size: pxToVw(28);
+    font-size: pxToVw(24);
     line-height: 1.8;
   }
 
@@ -1012,7 +1012,7 @@ const goToNext = () => {
   }
 
   .watching-text {
-    font-size: pxToVw(28);
+    font-size: pxToVw(24);
     line-height: 1.8;
   }
 
@@ -1026,16 +1026,16 @@ const goToNext = () => {
   }
 
   .story-part-title {
-    font-size: pxToVw(30);
+    font-size: pxToVw(26);
   }
 
   .story-part-subtitle {
-    font-size: pxToVw(36);
+    font-size: pxToVw(30);
     margin-bottom: pxToVw(24);
   }
 
   .story-part-text {
-    font-size: pxToVw(26);
+    font-size: pxToVw(22);
     line-height: 1.7;
   }
 
@@ -1059,16 +1059,16 @@ const goToNext = () => {
   }
 
   .inst-name {
-    font-size: pxToVw(44);
+    font-size: pxToVw(38);
   }
 
   .inst-type {
-    font-size: pxToVw(24);
+    font-size: pxToVw(20);
     margin-bottom: pxToVw(24);
   }
 
   .inst-label {
-    font-size: pxToVw(28);
+    font-size: pxToVw(24);
     margin: pxToVw(10) 0;
   }
 
@@ -1099,12 +1099,12 @@ const goToNext = () => {
   }
 
   .detail-label {
-    font-size: pxToVw(32);
+    font-size: pxToVw(28);
     margin: pxToVw(30) 0 pxToVw(12);
   }
 
   .detail-text {
-    font-size: pxToVw(26);
+    font-size: pxToVw(22);
     line-height: 1.7;
   }
 
@@ -1134,11 +1134,11 @@ const goToNext = () => {
   }
 
   .card-label {
-    font-size: pxToVw(30);
+    font-size: pxToVw(26);
   }
 
   .card-sub {
-    font-size: pxToVw(26);
+    font-size: pxToVw(22);
   }
 
   .english-swiper-wrap {
@@ -1174,12 +1174,12 @@ const goToNext = () => {
   }
 
   .expert-intro p {
-    font-size: pxToVw(26);
+    font-size: pxToVw(22);
     line-height: 1.7;
   }
 
   .expert-body p {
-    font-size: pxToVw(26);
+    font-size: pxToVw(22);
     line-height: 1.7;
     margin-bottom: pxToVw(24);
   }

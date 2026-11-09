@@ -182,13 +182,13 @@ onMounted(async () => {
   }
 
   .pdf-title {
-    font-size: pxToVw(38);
+    font-size: pxToVw(32);
     line-height: 1.4;
   }
 
   .download-btn {
     padding: pxToVw(18) pxToVw(44);
-    font-size: pxToVw(26);
+    font-size: pxToVw(22);
     border-radius: pxToVw(12);
   }
 
@@ -202,7 +202,7 @@ onMounted(async () => {
   }
 
   .pdf-open-hint {
-    font-size: pxToVw(24);
+    font-size: pxToVw(20);
   }
 }
 </style>

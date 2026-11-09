@@ -415,7 +415,7 @@ const scrollToTop = () => {
     width: pxToVw(110);
     height: pxToVw(110);
     margin-left: pxToVw(20);
-    font-size: pxToVw(18);
+    font-size: pxToVw(16);
   }
 
   .detail-section {
@@ -438,12 +438,12 @@ const scrollToTop = () => {
   }
 
   .section-subtitle {
-    font-size: pxToVw(32);
+    font-size: pxToVw(28);
     line-height: 1.5;
   }
 
   .section-text p {
-    font-size: pxToVw(26);
+    font-size: pxToVw(22);
     line-height: 1.9;
   }
 

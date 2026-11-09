@@ -114,8 +114,14 @@ const scrollToTop = () => {
     padding: pxToVw(60) pxToVw(40);
 
     .footer-content {
-      flex-direction: column;
-      gap: pxToVw(50);
+      /* 手机端两列布局：logo 区独占一行，Quick Links 左、Contact 右 */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: pxToVw(50) pxToVw(40);
+    }
+
+    .footer-section.about {
+      grid-column: 1 / -1;
     }
 
     .footer-section {
@@ -124,13 +130,13 @@ const scrollToTop = () => {
       margin-right: 0;
 
       h2 {
-        font-size: pxToVw(34);
+        font-size: pxToVw(30);
         margin-bottom: pxToVw(24);
       }
 
       p,
       li a {
-        font-size: pxToVw(26);
+        font-size: pxToVw(22);
       }
 
       li {
@@ -145,7 +151,7 @@ const scrollToTop = () => {
 
     .footer-bottom {
       padding-top: pxToVw(40);
-      font-size: pxToVw(22);
+      font-size: pxToVw(20);
     }
   }
 }
